@@ -1,15 +1,19 @@
-import React from 'react'
+import React from "react";
 
-import "./App.scss"
+import "./App.scss";
+import Calculator from "./components/calculator";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const App = () => {
-    return (
-        <>
-            <div className="app_container">
-                This is React App , The <span style={{ fontFamily: "sansation" }} > Sansation Font . </span>
-            </div>
-        </>
-    )
-}
+  return (
+    <>
+      <Router>
+        <Switch>
+          <Route path="/" component={Calculator} />
+        </Switch>
+      </Router>
+    </>
+  );
+};
 
-export default App
+export default App;
