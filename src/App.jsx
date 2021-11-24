@@ -1,17 +1,18 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+import Calculator from "./components/calculator";
+import Header from "./Components/Header/Header";
 
 import "./App.scss";
-import Calculator from "./components/calculator";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const App = () => {
   return (
     <>
-      <Router>
         <Switch>
+          <Route path="/header" component={Header} />
           <Route path="/" component={Calculator} />
         </Switch>
-      </Router>
     </>
   );
 };
