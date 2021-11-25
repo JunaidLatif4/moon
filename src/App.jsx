@@ -4,6 +4,7 @@ import "./App.scss";
 // import Calculator from "./components/calculator";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Token from "./Components/Token/Token";
+import Comic from "./Components/comic/Comic";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Switch>
           {/* <Route path="/" component={Calculator} /> */}
           <Route path="/token" component={Token} />
+          <Route path="/comic" component={Comic} />
         </Switch>
       </Router>
     </>

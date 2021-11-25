@@ -1,0 +1,36 @@
+.comic__container {
+  background-image: url("../../assests/comic/comic-bg.jpg");
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 300px;
+  padding-bottom: 100px;
+
+  .comic_section {
+    .heading_style {
+      background: -webkit-linear-gradient(left, #5dc7fe, #f831ec);
+      background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background: -webkit-linear-gradient(left, #5dc7fe, #f831ec);
+      background: -o-linear-gradient(right, red, yellow);
+      background: -moz-linear-gradient(right, red, yellow);
+      background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      font-size: 85px;
+      font-family: "Nurom Bold";
+      padding-bottom: 10px;
+      line-height: 1em;
+      font-weight: 500;
+    }
+    .comic_paragraph {
+      text-align: center;
+      font-size: 34px;
+      line-height: 50px !important;
+      font-family: "Sansation Regular";
+      color: #ffffff;
+    }
+  }
+}
