@@ -7,6 +7,7 @@
   padding-bottom: 100px;
 
   .comic_section {
+    padding: 100px 0px;
     .heading_style {
       background: -webkit-linear-gradient(left, #5dc7fe, #f831ec);
       background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
@@ -26,11 +27,127 @@
       font-weight: 500;
     }
     .comic_paragraph {
+      width: 67%;
       text-align: center;
       font-size: 34px;
       line-height: 50px !important;
       font-family: "Sansation Regular";
       color: #ffffff;
+    }
+    .comic_getabsorbed {
+      text-align: center;
+      font-size: 34px;
+      line-height: 50px !important;
+      font-family: "Sansation Regular";
+      color: #ffffff;
+    }
+  }
+
+  .story_section {
+    padding: 100px 0px;
+    background-image: url("../../assests/comic/comin-4.jpg");
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .story_heading_style {
+      background: -webkit-linear-gradient(left, #5dc7fe, #f831ec);
+      background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      font-size: 40px;
+      font-family: "Nurom Bold";
+      padding-bottom: 10px;
+      line-height: 1em;
+      font-weight: 500;
+    }
+    .story_comic_button {
+      color: #ffffff !important;
+      border-width: 0px !important;
+      border-radius: 20px;
+      text-transform: uppercase !important;
+      background-image: linear-gradient(180deg, #fa4cf0 0%, #5d15e3 100%);
+      background-color: #6923ea;
+      text-align: center;
+      font-size: 34px;
+      line-height: 1.7em !important;
+      font-family: "Nurom Bold";
+      box-shadow: 1px 2px 160px 11px #631de7;
+      padding-right: 30px !important;
+      padding-left: 30px !important;
+    }
+  }
+
+  .parts_section {
+    padding: 100px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .nft_part1_style {
+      width: 20.875%;
+      .part1_footer {
+        background-color: rgba(10, 10, 10, 0.8);
+        position: relative;
+        border-radius: 0 0 15px 15px;
+        overflow: hidden;
+        border-right-color: RGBA(0, 0, 0, 0);
+        padding-top: 15px !important;
+        padding-right: 15px !important;
+        padding-bottom: 10px !important;
+        padding-left: 15px !important;
+        margin-bottom: 10px !important;
+        width: 100%;
+        max-width: 98%;
+        position: absolute !important;
+        bottom: 25px;
+        top: auto;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        text-align: left;
+      }
+    }
+    .nft_comic_button {
+      color: #ffffff !important;
+      border-width: 0px !important;
+      border-radius: 20px;
+      text-transform: uppercase !important;
+      background-image: linear-gradient(180deg, #fa4cf0 0%, #5d15e3 100%);
+      background-color: #6923ea;
+      text-align: center;
+      font-size: 34px;
+      line-height: 1.7em !important;
+      font-family: "Nurom Bold";
+      box-shadow: 1px 2px 160px 11px #631de7;
+      padding-right: 30px !important;
+      padding-left: 30px !important;
+    }
+  }
+
+  .nft_section {
+      padding: 100px 0px;
+    .heading_style {
+      background: -webkit-linear-gradient(left, #5dc7fe, #f831ec);
+      background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      font-size: 40px;
+      font-family: "Nurom Bold";
+      padding-bottom: 10px;
+      line-height: 1em;
+      font-weight: 500;
+    }
+    .nft_paragraph {
+      width: 65%;
+      text-align: center;
+      font-size: 34px;
+      line-height: 50px !important;
+      font-family: "Sansation Regular";
+      color: #FFFFFF;
     }
   }
 }
