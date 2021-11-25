@@ -1,19 +1,21 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+import Calculator from "./Components/calculator";
+import Header from "./Components/Header/Header";
+import Token from "./Components/Token/Token";
 
 import "./App.scss";
-// import Calculator from "./components/calculator";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Token from "./Components/Token/Token";
 
 const App = () => {
   return (
     <>
-      <Router>
+      <Header>
         <Switch>
-          {/* <Route path="/" component={Calculator} /> */}
+          <Route path="/" component={Calculator} />
           <Route path="/token" component={Token} />
         </Switch>
-      </Router>
+      </Header>
     </>
   );
 };
