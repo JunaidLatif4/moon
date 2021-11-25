@@ -85,9 +85,6 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className="free">
-                sdasd
-            </div>
         </>
     )
 }
