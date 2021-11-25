@@ -103,6 +103,7 @@ const Token = () => {
           </div>
         </div>
       </div>
+
       <div className="tok__sec4">
         <div className="sec4__left">
           <div className="heading">ACQUIRE COMIC PAGES</div>
@@ -248,6 +249,7 @@ An extra 1% on each winning bet and up to 3%
         </div>
        
       </div>
+
       <div className="tok__sec7">
         <table>
           <tr>
@@ -291,7 +293,6 @@ An extra 1% on each winning bet and up to 3%
         
       </div>
 
-
       <div className="tok__sec9">
         <div className="sec9__left">
           <div className="heading">BANKROLL</div>
@@ -303,6 +304,28 @@ An extra 1% on each winning bet and up to 3%
         </div>
         <div className="sec9__right">
           <img src={monkey8} alt="" className="sec1__img" />
+        </div>
+      </div>
+
+      <div className="tok__sec10">
+        <div className="para1">
+        In our game, whether they win or lose,<span>4% </span> out of the<span>5% </span>house hedge is redistributed to players in cashback, minimizing the chances of losing!
+        </div>
+        <div className="para2">
+        As you can see, <span>The Crash Game</span> on MooningMonkey.com provides unlimited benefits to its players, and this is why so many people choose this platform…
+        </div>
+        <div className="para3">
+        You Earn Even If You Lose, And Earn EVEN MORE When You Win!
+        </div>
+        <div className="para4">
+        Visit our staking calculator for non NFT holders to see potential earnings
+        </div>
+        <div className="btn">CHECK CALCULATORS</div>
+        <div className="para6">
+        $TAK is the utility token at the center of Mooning Monkey ecosystem.
+        </div>
+        <div className="para6">
+        It is NOT investment advice and the $TAK token has NO economic value.
         </div>
       </div>
       
