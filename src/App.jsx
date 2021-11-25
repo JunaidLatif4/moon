@@ -10,12 +10,11 @@ import "./App.scss";
 const App = () => {
   return (
     <>
-      <Header>
+      <Header />
         <Switch>
-          <Route path="/" component={Calculator} />
+          <Route exact path="/" component={Calculator} />
           <Route path="/token" component={Token} />
         </Switch>
-      </Header>
     </>
   );
 };
