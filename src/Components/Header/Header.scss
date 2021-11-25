@@ -160,6 +160,10 @@
     .show_drop {
       height: 400px;
     }
+
+    @media only screen and (min-width: 951px) {
+      display: none;
+    }
   }
 }
 .scroll_header {
