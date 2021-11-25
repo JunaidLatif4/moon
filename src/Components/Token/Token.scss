@@ -46,7 +46,7 @@
     color: white;
     .sec1__img {
       height: 290px;
-      width: 340px;
+    //   width: 340px;
     }
     .sec1__heading {
       font-size: 55px;
@@ -178,4 +178,41 @@
       }
     }
   }
+  .tok__sec4{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+    padding: 0 6rem;
+    .sec4__left{
+        // margin-right: 7rem;
+       .heading{
+        font-size: 46px;
+        font-weight: 700;
+        color: #ffffff !important;
+        // text-align: center;
+        background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+       } 
+       .para{
+        font-size: 35px;
+        color: white; 
+        span{
+            color: #f831ec;
+        }
+       }
+    }
+    .sec4__right{
+        padding:0 10rem;
+        
+
+        .sec1__img{
+            height: 290px;
+            width: 340px;
+        }
+    }
+
+  }
+
+
 }
