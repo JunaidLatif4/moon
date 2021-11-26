@@ -201,6 +201,47 @@ const Home2 = () => {
             </div>
           </div>
         </div>
+
+<div className="heading">THE MOONING MONKEY COMIC SERIE</div>
+
+
+        <div className="sect3">
+          <div className="sect3__left">
+            <div className="right__paras">
+              <div className="para1">
+              The amazing and intriguing <span>Mooning Monkey Space Odyssey</span> will be released into 4 comic books of 14 pages. If you want to receive a special surprise, you just need to be one of the first 10 people to own the full 14 pages of any chapter, trust us, you won’t be disappointed.
+              </div>
+              <div className="para2">
+              Additionally, owning a full comic will unlock exclusive privileges in the future, and as much as we’d love to tell you what they are, we can’t reveal them just yet.
+              </div>
+            </div>
+            <div className="right__btn">
+              <Parallax
+                renderLayer={(percentage) => (
+                  <button
+                    // style={{
+                    //   transform: `scale(${
+                    //     1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                    //   }) `,
+                    //   transition: "all .3s linear",
+                    // }}
+                  >
+                   CHECK OUT COMIC PAGE
+                    <span>
+                      <IoIosArrowForward />
+                    </span>
+                  </button>
+                )}
+              ></Parallax>
+            </div>
+          </div>
+          <div className="sect3__right">
+            
+            <div className="img">
+              <img src={img6} alt="Error" className="left__img" />
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
