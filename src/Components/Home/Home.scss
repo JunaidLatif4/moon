@@ -138,8 +138,8 @@
         padding: 0 2rem;
       }
       .btn_box {
-          flex-direction: column;
-          padding:2rem;
+        flex-direction: column;
+        padding: 2rem;
         button {
           font-size: 1.5rem;
         }
@@ -156,8 +156,8 @@
         line-height: 1.5rem;
       }
       .btn_box {
-          flex-direction: column;
-          padding:2rem;
+        flex-direction: column;
+        padding: 2rem;
         button {
           font-size: 1.1rem;
         }
@@ -175,9 +175,113 @@
         padding: 0 1rem;
       }
       .btn_box {
-          padding:1rem;
+        padding: 1rem;
         button {
           font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .section2_container {
+    background-color: black;
+    .box {
+      background-color: black;
+      width: 85%;
+      margin: 0 auto;
+      display: flex;
+      gap: 5rem;
+      align-items: center;
+
+      .card {
+        position: relative;
+        width: 100%;
+        img {
+          z-index: 5;
+        }
+        .back {
+          // top: -5%;
+          position: absolute;
+          z-index: 1;
+          width: 100%;
+        }
+        background-color: black;
+      }
+      .data {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 1.8rem;
+
+        // transition: all .5s ease-in-out;
+        .heading {
+          font-size: 3.5rem;
+          font-family: "nurom";
+          background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .detail {
+          font-size: 1.7rem;
+          span {
+            color: #f831ec;
+          }
+        }
+      }
+      @media only screen and (max-width: 1600px) {
+        .data{
+          gap: 1.2rem;
+          .heading{
+            font-size: 3.2rem;
+          }
+          .detail{
+            font-size: 1.3rem;
+          }
+        }
+      }
+      @media only screen and (max-width: 1200px) {
+        .data{
+          gap: 1rem;
+          .heading{
+            font-size: 3rem;
+          }
+          .detail{
+            font-size: 1.1rem;
+          }
+        }
+      }
+      @media only screen and (max-width: 1000px) {
+        .data{
+          gap: .5rem;
+          .heading{
+            font-size: 2rem;
+          }
+          .detail{
+            font-size: .9rem;
+          }
+        }
+      }
+      @media only screen and (max-width: 900px) {
+        flex-direction: column;
+        .data{
+          gap: 1.5rem;
+          .heading{
+            font-size: 3rem;
+          }
+          .detail{
+            font-size: 1.4rem;
+          }
+        }
+      }
+      @media only screen and (max-width: 900px) {
+        .data{
+          gap: 1rem;
+          .heading{
+            font-size: 2rem;
+          }
+          .detail{
+            font-size: 1rem;
+          }
         }
       }
     }

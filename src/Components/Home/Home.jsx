@@ -1,8 +1,11 @@
 import React from 'react'
 
 import { IoIosArrowForward } from "react-icons/io"
+import { Parallax, Background } from "react-parallax";
 
 import Sec1 from "../../assests/Home/sec1.jpg"
+import CardImg from "../../assests/Home/cardg.png"
+import BackBlur from "../../assests/Home/cardback.png"
 import Button from "../ButtonComponent/Button"
 
 import "./Home.scss"
@@ -32,6 +35,46 @@ const Home = () => {
                         <button> one pager  <span> <IoIosArrowForward /> </span> </button>
                         <button> profit calculator  <span> <IoIosArrowForward /> </span> </button>
                     </div>
+                </section>
+
+                <section className="section2_container">
+                    <div className="box">
+                        <div className="card">
+                            <img src={BackBlur} alt="ERROR" className='back' />
+                            <img src={CardImg} alt="ERROR" />
+                        </div>
+
+                        <Parallax
+                            // strength={}
+                            renderLayer={(percentage) => (
+                                <div className="data" style={{ transform: `scale(${(1 * (percentage + .2) ) > 1 ? 1 : 1 * (percentage + .2)})` }}>
+                                    <div className="heading">
+                                        RARITY AND SPEC
+                                    </div>
+                                    <div className="detail">
+                                        <span> Mooning Monkeys </span> HATE Being Boring Copies Of Each Other,
+                                    </div>
+                                    <div className="detail">
+                                        This epic space journey is going to begin with <span> 12,000 </span> exciting, unique, and valuable mooning monkeys being sent to the moon and beyond.
+                                    </div>
+                                    <div className="detail">
+                                        They will have to evolve to survive, reducing their population to only <span> 500 Elite Beings </span> that are infinitely more powerful, and of course, more <span> Valuable </span>.
+                                    </div>
+                                    <div className="detail">
+                                        <span> Unique, Distinct, Rare, And Valuable! </span>
+                                        All <span> Mooning Monkeys </span> are unique crypto heroes that have been drilled around <span> 239 DISTINCTIVE TRAITS </span> which define their rarity, and their value.
+                                    </div>
+                                </div>
+                            )}
+                        >
+                        </Parallax>
+
+
+                    </div>
+                </section>
+
+                <section className="section3_container">
+
                 </section>
             </div>
         </>
