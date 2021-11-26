@@ -1,8 +1,13 @@
 import React from 'react'
 
 import { IoIosArrowForward } from "react-icons/io"
+import { Parallax, Background } from "react-parallax";
 
 import Sec1 from "../../assests/Home/sec1.jpg"
+import Sec3 from "../../assests/Home/sec3.jpg"
+import Sec3B from "../../assests/Home/sec3back.png"
+import CardImg from "../../assests/Home/cardg.png"
+import BackBlur from "../../assests/Home/cardback.png"
 import Button from "../ButtonComponent/Button"
 
 import "./Home.scss"
@@ -31,6 +36,69 @@ const Home = () => {
                         <button> buy now  <span> <IoIosArrowForward /> </span> </button>
                         <button> one pager  <span> <IoIosArrowForward /> </span> </button>
                         <button> profit calculator  <span> <IoIosArrowForward /> </span> </button>
+                    </div>
+                </section>
+
+                <section className="section2_container">
+                    <div className="box">
+                        <div className="card">
+                            <img src={BackBlur} alt="ERROR" className='back' />
+                            <img src={CardImg} alt="ERROR" />
+                        </div>
+
+                        <Parallax
+                            // strength={}
+                            renderLayer={(percentage) => (
+                                <div className="data" style={{ transform: `scale(${(1 * (percentage + .2)) > 1 ? 1 : 1 * (percentage + .2)})`, transition: "all .2s linear" }}>
+                                    <div className="heading">
+                                        RARITY AND SPEC
+                                    </div>
+                                    <div className="detail">
+                                        <span> Mooning Monkeys </span> HATE Being Boring Copies Of Each Other,
+                                    </div>
+                                    <div className="detail">
+                                        This epic space journey is going to begin with <span> 12,000 </span> exciting, unique, and valuable mooning monkeys being sent to the moon and beyond.
+                                    </div>
+                                    <div className="detail">
+                                        They will have to evolve to survive, reducing their population to only <span> 500 Elite Beings </span> that are infinitely more powerful, and of course, more <span> Valuable </span>.
+                                    </div>
+                                    <div className="detail">
+                                        <span> Unique, Distinct, Rare, And Valuable! </span>
+                                        All <span> Mooning Monkeys </span> are unique crypto heroes that have been drilled around <span> 239 DISTINCTIVE TRAITS </span> which define their rarity, and their value.
+                                    </div>
+                                </div>
+                            )}
+                        >
+                        </Parallax>
+
+
+                    </div>
+                </section>
+
+                <section className="section3_container">
+                    <img src={Sec3} alt="ERROR" className="back" />
+                    <div className="box">
+                        <div className="heading">
+                            CO-OWN THE GAME AND SHARE PROFIT
+                        </div>
+                        <div className="detail">
+                            <p style={{ color: '#5dcbf6' }}> GAME CONCEPT </p>
+                            <span></span>
+                            <p> BENEFITS OVERVIEW </p>
+                        </div>
+
+                        <div className="data">
+                            <div className="content">
+                                <div className="title">
+                                    What’s The Mooning Monkey Crash Game?
+                                </div>
+                                <ul>
+                                    <li> Mooning Monkey is an exciting, online, multiplayer gambling game that will provide you with endless hours of thrilling fun, while also giving you the opportunity to win MILLIONS. </li>
+                                    <li> The gameplay consists of an increasing curve that an crash at any time, keeping everyone at the edges of their seats, trying to figure out when they should cash out. </li>
+                                    <li> While we are preparing the game launch, have fun playing with our profit calculator </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
