@@ -30,11 +30,10 @@ const Home2 = () => {
                   renderLayer={(percentage) => (
                     <div
                       style={{
-                        transform: `scale(${
-                          1 * (percentage + 0.2) > 1
+                        transform: `scale(${1 * (percentage + 0.2) > 1
                             ? 1
                             : 1 * (percentage + 0.2)
-                        }) `,
+                          }) `,
                         transition: "all .3s linear",
                       }}
                     >
@@ -65,11 +64,10 @@ const Home2 = () => {
                     renderLayer={(percentage) => (
                       <div
                         style={{
-                          transform: `scale(${
-                            1 * (percentage + 0.2) > 1
+                          transform: `scale(${1 * (percentage + 0.2) > 1
                               ? 1
                               : 1 * (percentage + 0.2)
-                          }) `,
+                            }) `,
                           transition: "all .3s linear",
                         }}
                       >
@@ -95,11 +93,10 @@ const Home2 = () => {
                     renderLayer={(percentage) => (
                       <div
                         style={{
-                          transform: `scale(${
-                            1 * (percentage + 0.2) > 1
+                          transform: `scale(${1 * (percentage + 0.2) > 1
                               ? 1
                               : 1 * (percentage + 0.2)
-                          }) `,
+                            }) `,
                           transition: "all .3s linear",
                         }}
                       >
@@ -126,11 +123,10 @@ const Home2 = () => {
                     renderLayer={(percentage) => (
                       <div
                         style={{
-                          transform: `scale(${
-                            1 * (percentage + 0.2) > 1
+                          transform: `scale(${1 * (percentage + 0.2) > 1
                               ? 1
                               : 1 * (percentage + 0.2)
-                          }) `,
+                            }) `,
                           transition: "all .3s linear",
                         }}
                       >
@@ -164,9 +160,8 @@ const Home2 = () => {
                 <div
                   className="right__paras"
                   style={{
-                    transform: `scale(${
-                      1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                    }) `,
+                    transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                      }) `,
                     transition: "all .3s linear",
                   }}
                 >
@@ -197,9 +192,8 @@ const Home2 = () => {
                 renderLayer={(percentage) => (
                   <button
                     style={{
-                      transform: `scale(${
-                        1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                      }) `,
+                      transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                        }) `,
                       transition: "all .3s linear",
                     }}
                   >
@@ -234,17 +228,16 @@ const Home2 = () => {
               </div>
             </div>
             <div className="right__btn">
-            <Parallax
+              <Parallax
                 renderLayer={(percentage) => (
                   <button
                     style={{
-                      transform: `scale(${
-                        1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                      }) `,
+                      transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                        }) `,
                       transition: "all .3s linear",
                     }}
                   >
-                   CHECK OUT COMIC PAGE
+                    CHECK OUT COMIC PAGE
                     <span>
                       <IoIosArrowForward />
                     </span>
@@ -255,20 +248,19 @@ const Home2 = () => {
           </div>
           <div className="sect3__right">
             <div className="img">
-            <Parallax
-              renderLayer={(percentage) => (
-                <div
-                  style={{
-                    transform: `scale(${
-                      1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                    }) `,
-                    transition: "all .3s linear",
-                  }}
-                >
-                  <img src={img6} alt="Error" className="left__img" />
-                </div>
-              )}
-            ></Parallax>
+              <Parallax
+                renderLayer={(percentage) => (
+                  <div
+                    style={{
+                      transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                        }) `,
+                      transition: "all .3s linear",
+                    }}
+                  >
+                    <img src={img6} alt="Error" className="left__img" />
+                  </div>
+                )}
+              ></Parallax>
             </div>
           </div>
         </div>
@@ -277,20 +269,19 @@ const Home2 = () => {
           <div className="sect2__left">
             <div className="heading">TOKEN REWARD PROGRAM</div>
             <div className="img">
-            <Parallax
-              renderLayer={(percentage) => (
-                <div
-                  style={{
-                    transform: `scale(${
-                      1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                    }) `,
-                    transition: "all .3s linear",
-                  }}
-                >
-                  <img src={img7} alt="Error" className="left__img" />
-                </div>
-              )}
-            ></Parallax>
+              <Parallax
+                renderLayer={(percentage) => (
+                  <div
+                    style={{
+                      transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                        }) `,
+                      transition: "all .3s linear",
+                    }}
+                  >
+                    <img src={img7} alt="Error" className="left__img" />
+                  </div>
+                )}
+              ></Parallax>
             </div>
           </div>
           <div className="sect2__right">
@@ -299,20 +290,19 @@ const Home2 = () => {
                 <div
                   className="right__paras"
                   style={{
-                    transform: `scale(${
-                      1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                    }) `,
+                    transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                      }) `,
                     transition: "all .3s linear",
                   }}
                 >
                   <div className="para1">
-                  <span>The Mooning Monkey Mission</span> goes far beyond the simple NFT collectible sphere.
+                    <span>The Mooning Monkey Mission</span> goes far beyond the simple NFT collectible sphere.
                   </div>
                   <div className="para2">
-                  We are building a galactical ecosystem that will handsomely reward <span>ALL</span> participants. By simply holding any of the evolution <span>NFT’s</span>, you’ll receive daily <span>Takion Tokens ($TAK)</span>
+                    We are building a galactical ecosystem that will handsomely reward <span>ALL</span> participants. By simply holding any of the evolution <span>NFT’s</span>, you’ll receive daily <span>Takion Tokens ($TAK)</span>
                   </div>
                   <div className="para3">
-                  You’ll be able to Yield, stake, evolve earn extra rewards and much more… All of which will <span>EARN YOU MONEY</span>, passively, without requiring any extra effort.
+                    You’ll be able to Yield, stake, evolve earn extra rewards and much more… All of which will <span>EARN YOU MONEY</span>, passively, without requiring any extra effort.
                   </div>
                 </div>
               )}
@@ -322,13 +312,12 @@ const Home2 = () => {
                 renderLayer={(percentage) => (
                   <button
                     style={{
-                      transform: `scale(${
-                        1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                      }) `,
+                      transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                        }) `,
                       transition: "all .3s linear",
                     }}
                   >
-                   TOKEN UTILITY OVERVIEW
+                    TOKEN UTILITY OVERVIEW
                     <span>
                       <IoIosArrowForward />
                     </span>
@@ -341,72 +330,69 @@ const Home2 = () => {
 
         <div className="heading">INSANE SURPRISES</div>
 
-<div className="sect3">
-  <div className="sect3__left">
+        <div className="sect3">
+          <div className="sect3__left">
 
-  <Parallax
+            <Parallax
               renderLayer={(percentage) => (
-    <div className="right__paras"
-    style={{
-        transform: `scale(${
-          1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-        }) `,
-        transition: "all .3s linear",
-      }}
-    >
-      <div className="para1">
-      These surprises will be announced along with the pre and post roadmap launch of the game. These surprises range from airdrops, to winning prizes, to massive project developments.
-      </div>
-      <div className="para2">
-      In order to have access to the surprises, all you need to do is own a <span>Mooning Monkey</span>, if you don’t already own one, click <span>HERE</span> to get your own <span>Mooning Monkey</span>.
-      </div>
-      <div className="para3">
-      <span>P.S.</span> There won’t be another sequel. If you want to be a part of this journey, you need to start minting As <span>Soon As Possible</span>.
-      </div>
-    </div>
-      )}
-      ></Parallax>
+                <div className="right__paras"
+                  style={{
+                    transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                      }) `,
+                    transition: "all .3s linear",
+                  }}
+                >
+                  <div className="para1">
+                    These surprises will be announced along with the pre and post roadmap launch of the game. These surprises range from airdrops, to winning prizes, to massive project developments.
+                  </div>
+                  <div className="para2">
+                    In order to have access to the surprises, all you need to do is own a <span>Mooning Monkey</span>, if you don’t already own one, click <span>HERE</span> to get your own <span>Mooning Monkey</span>.
+                  </div>
+                  <div className="para3">
+                    <span>P.S.</span> There won’t be another sequel. If you want to be a part of this journey, you need to start minting As <span>Soon As Possible</span>.
+                  </div>
+                </div>
+              )}
+            ></Parallax>
 
 
-    <div className="right__btn">
-    <Parallax
-        renderLayer={(percentage) => (
-          <button
-            style={{
-              transform: `scale(${
-                1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-              }) `,
-              transition: "all .3s linear",
-            }}
-          >
-           CHECK OUT ROADMAP
-            <span>
-              <IoIosArrowForward />
-            </span>
-          </button>
-        )}
-      ></Parallax>
-    </div>
-  </div>
-  <div className="sect3__right">
-    <div className="img">
-    <Parallax
-      renderLayer={(percentage) => (
-        <div
-          style={{
-            transform: `scale(${
-              1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-            }) `,
-            transition: "all .3s linear",
-          }}
-        >
-          <img src={img8} alt="Error" className="left__img" />
+            <div className="right__btn">
+              <Parallax
+                renderLayer={(percentage) => (
+                  <button
+                    style={{
+                      transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                        }) `,
+                      transition: "all .3s linear",
+                    }}
+                  >
+                    CHECK OUT ROADMAP
+                    <span>
+                      <IoIosArrowForward />
+                    </span>
+                  </button>
+                )}
+              ></Parallax>
+            </div>
+          </div>
+          <div className="sect3__right">
+            <div className="img">
+              <Parallax
+                renderLayer={(percentage) => (
+                  <div
+                    style={{
+                      transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                        }) `,
+                      transition: "all .3s linear",
+                    }}
+                  >
+                    <img src={img8} alt="Error" className="left__img" />
+                  </div>
+                )}
+              ></Parallax>
+            </div>
+          </div>
         </div>
-      )}
-    ></Parallax>
-    </div>
-  </div>
-</div>
       </div>
     </>
   );
