@@ -6,6 +6,7 @@ import border from "../../assests/Lab/border.png"
 import sidearrow from "../../assests/Lab/sidearrow.png"
 import { IoIosArrowForward } from "react-icons/io"
 import "./Evaluation.scss"
+import EvolutionTree from '../calculator/evolutionTree'
 
 function Evaluation() {
     const [active, setActive] = useState("2")
@@ -265,6 +266,8 @@ function Evaluation() {
 
                     </div>
                 </section>
+
+                {/* <EvolutionTree /> */}
             </div>
         </>
     )
