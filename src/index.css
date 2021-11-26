@@ -2,7 +2,11 @@
   font-family: "sansation";
   src: local("fonts"), url(./fonts/Sansation_Regular.ttf) format("truetype");
 }
-*{
+@font-face {
+  font-family: "nurom";
+  src: local("fonts"), url(./fonts/nurom/Nurom-Bold.ttf) format("truetype");
+}
+* {
   margin: 0;
   padding: 0;
 }

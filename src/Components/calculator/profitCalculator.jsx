@@ -2,6 +2,25 @@ import React, { useState } from "react";
 import styles from "./calculator.module.css";
 import { Slider, InputNumber } from "antd";
 import { Row, Col } from "react-bootstrap";
+import { Bar } from "react-chartjs-2";
+import faker from "faker";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+);
 const ProfitCalculator = () => {
   const [inputValue, setInput] = useState(75000);
 
@@ -9,6 +28,56 @@ const ProfitCalculator = () => {
     console.log(value);
     setInput(value);
   };
+  const labels = ["Y1", "Y2", "Y3", "Y4", "Y5", "Y6", "Y7", "Y8", "Y9", "Y10"];
+
+  const data = {
+    labels,
+    datasets: [
+      {
+        label: "Dataset 1",
+        data: labels.map(() =>
+          faker.datatype.number({ min: 0, max: 80000000 })
+        ),
+        borderColor: "rgb(255, 99, 132)",
+        backgroundColor: "rgba(255, 99, 132, 0.5)",
+      },
+      {
+        label: "Dataset 2",
+        data: labels.map(() =>
+          faker.datatype.number({ min: 0, max: 80000000 })
+        ),
+        borderColor: "rgb(53, 162, 235)",
+        backgroundColor: "rgba(53, 162, 235, 0.5)",
+      },
+      {
+        label: "Dataset 3",
+        data: labels.map(() =>
+          faker.datatype.number({ min: 0, max: 80000000 })
+        ),
+        borderColor: "rgb(253, 162, 235)",
+        backgroundColor: "rgba(53, 12, 235, 0.5)",
+      },
+    ],
+  };
+  const options = {
+    indexAxis: "y",
+    elements: {
+      bar: {
+        borderWidth: 0.5,
+      },
+    },
+    responsive: true,
+    plugins: {
+      legend: {
+        position: "bottom",
+      },
+      title: {
+        display: true,
+        text: "Chart.js Horizontal Bar Chart",
+      },
+    },
+  };
+
   return (
     <div>
       <div className="py-1">
@@ -286,6 +355,10 @@ const ProfitCalculator = () => {
             <td>Germany</td>
           </tr>
         </table>
+        <div>
+          <Bar data={data} options={options} />
+        </div>
+        
       </div>
     </div>
   );
