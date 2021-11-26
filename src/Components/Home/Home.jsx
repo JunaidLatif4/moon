@@ -4,9 +4,14 @@ import { IoIosArrowForward } from "react-icons/io"
 import { Parallax, Background } from "react-parallax";
 
 import Sec1 from "../../assests/Home/sec1.jpg"
+import Sec3 from "../../assests/Home/sec3.jpg"
+import Sec3F from "../../assests/Home/sec3front.png"
+import Sec4P from "../../assests/Home/sec4profile.png"
 import CardImg from "../../assests/Home/cardg.png"
 import BackBlur from "../../assests/Home/cardback.png"
 import Button from "../ButtonComponent/Button"
+
+import CardData from './sec11Data'
 
 import "./Home.scss"
 
@@ -47,7 +52,7 @@ const Home = () => {
                         <Parallax
                             // strength={}
                             renderLayer={(percentage) => (
-                                <div className="data" style={{ transform: `scale(${(1 * (percentage + .2) ) > 1 ? 1 : 1 * (percentage + .2)})` }}>
+                                <div className="data" style={{ transform: `scale(${(1 * (percentage + .2)) > 1 ? 1 : 1 * (percentage + .2)})`, transition: "all .2s linear" }}>
                                     <div className="heading">
                                         RARITY AND SPEC
                                     </div>
@@ -74,7 +79,127 @@ const Home = () => {
                 </section>
 
                 <section className="section3_container">
+                    <img src={Sec3} alt="ERROR" className="back" />
+                    <div className="box">
+                        <Parallax
+                            // strength={}
+                            renderLayer={(percentage) => (
+                                <div className="heading" style={{ transform: `scale(${(1 * (percentage + .2)) > 1 ? 1 : 1 * (percentage + .2)})`, transition: "all .2s linear" }}>
+                                    CO-OWN THE GAME AND SHARE PROFIT
+                                </div>
+                            )}
+                        >
+                        </Parallax>
+                        <div className="detail">
+                            <p style={{ color: '#5dcbf6' }}> GAME CONCEPT </p>
+                            <span></span>
+                            <p className="p2"> BENEFITS OVERVIEW </p>
+                        </div>
 
+                        <div className="data">
+                            <div className="content">
+                                <div className="title">
+                                    What’s The Mooning Monkey Crash Game?
+                                </div>
+                                <ul>
+                                    <li> Mooning Monkey is an exciting, online, multiplayer gambling game that will provide you with endless hours of thrilling fun, while also giving you the opportunity to win MILLIONS. </li>
+                                    <li> The gameplay consists of an increasing curve that an crash at any time, keeping everyone at the edges of their seats, trying to figure out when they should cash out. </li>
+                                    <li> While we are preparing the game launch, have fun playing with our profit calculator </li>
+                                </ul>
+                                <img src={Sec3F} alt="ERROR" className="sec3f" />
+                            </div>
+                            <div className="btn_box">
+                                <button>  profit calculator <span> <IoIosArrowForward /> </span> </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="section4_container">
+                    <div className="box">
+                        <div className="heading">
+                            MINTING
+                        </div>
+                        <div className="data">
+                            <div className="content">
+                                <p className="p1">
+                                    TAKE OFF IS IMMINENT.
+                                </p>
+                                <p className="p2">
+                                    SUIT UP AND GET READY!
+                                </p>
+                                <div className="time">
+
+                                </div>
+                            </div>
+                            <Parallax
+                                style={{ overflow: "inharit !important" }}
+                                // strength={}
+                                renderLayer={(percentage) => (
+                                    <div className="wallet" style={{ transform: `scale(${(1 * (percentage + .2)) > 1 ? 1 : 1 * (percentage + .2)})`, transition: "all .2s linear" }}>
+                                        <div className="title"> COUNT YOUR COUNTS </div>
+                                        <div className="detail"> Enter the amount of Mooning Monkeys You would like to purchase </div>
+                                        <div className="profile">
+                                            <img src={Sec4P} alt="ERROR" />
+                                            <div className="price">
+                                                <div className="p1">
+                                                    Price per Monkey
+                                                </div>
+                                                <div className="p2">
+                                                    <span> 2.99 </span> SOL each
+                                                </div>
+                                                <div className="p3">
+                                                    12,000 amount remaining
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="input">
+                                            <input type="text" defaultValue="10" /> <span> 129 SOL max </span>
+                                        </div>
+                                        <div className="total">
+                                            <div className="p1"> Total </div>
+                                            <div className="p2"> <span> 29.9 </span> SOL </div>
+                                        </div>
+                                        <button> connect to wallet <span> <IoIosArrowForward /> </span> </button>
+                                    </div>
+                                )}
+                            >
+                            </Parallax>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="section11_container">
+                    <div className="box">
+                        <div className="heading">
+                            DEGEN MONKEY LAUNCHERS
+                        </div>
+                        <div className="content">
+                            Meet the team
+                        </div>
+                        <div className="cards">
+                            {
+                                CardData.map((data) => {
+                                    return (
+                                        <>
+                                            <div className="crd">
+                                                <img src={data.img} alt="ERROR" />
+                                                <div className="data">
+                                                    <div className="title">
+                                                        {data.heading}
+                                                    </div>
+                                                    <div className="detail">
+                                                        {data.detail} <span> Read more </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </>
+                                    )
+                                })
+                            }
+
+                        </div>
+                    </div>
                 </section>
             </div>
         </>
