@@ -45,9 +45,9 @@ const Home = () => {
                         </div>
 
                         <Parallax
-                            strength={100}
+                            // strength={}
                             renderLayer={(percentage) => (
-                                <div className="data" style={{ transform: `scale(${.8 * percentage})` }}>
+                                <div className="data" style={{ transform: `scale(${(1 * (percentage + .2) ) > 1 ? 1 : 1 * (percentage + .2)})` }}>
                                     <div className="heading">
                                         RARITY AND SPEC
                                     </div>
