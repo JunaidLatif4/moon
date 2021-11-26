@@ -822,4 +822,106 @@
       }
     }
   }
+
+  .section11_container {
+    background-image: url(../../assests/Home/sec11.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 5rem 0;
+    font-family: "sansation";
+
+    .box {
+      width: 85%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      .heading {
+        font-family: "nurom";
+        background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 3rem;
+      }
+      .content {
+        margin-top: -2rem;
+        font-size: 1.5rem;
+      }
+
+      .cards {
+        display: flex;
+        gap: 8rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 5rem;
+        .crd {
+          width: 300px;
+          height: 450px;
+          padding: 0.2rem;
+          border: 1px solid #7330ee;
+          background-color: #7330ee;
+          border-radius: 0.5rem;
+          img {
+            border-radius: inherit;
+            width: 100%;
+            object-fit: cover;
+          }
+          .data {
+            padding: 0.6rem;
+            .title {
+              margin-top: 0.5rem;
+              font-size: 1.3rem;
+              text-align: center;
+              color: #f838eb;
+            }
+            .detail {
+              text-align: center;
+              font-size: 1.05rem;
+
+              span {
+                color: #f838eb;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 900px) {
+      .box {
+        width: 90%;
+
+        .heading {
+          font-size: 2rem;
+        }
+        .content {
+          font-size: 1.2rem;
+        }
+
+        .cards {
+          gap: 4rem;
+        }
+      }
+    }
+    @media only screen and (max-width: 550px) {
+      .box {
+        .heading {
+          font-size: 1.2rem;
+        }
+        .content {
+          font-size: 1rem;
+        }
+
+        .cards {
+          margin-top: 1rem;
+          gap: 3rem;
+        }
+      }
+    }
+  }
 }

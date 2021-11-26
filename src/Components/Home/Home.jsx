@@ -11,6 +11,8 @@ import CardImg from "../../assests/Home/cardg.png"
 import BackBlur from "../../assests/Home/cardback.png"
 import Button from "../ButtonComponent/Button"
 
+import CardData from './sec11Data'
+
 import "./Home.scss"
 
 const Home = () => {
@@ -152,17 +154,50 @@ const Home = () => {
                                             </div>
                                         </div>
                                         <div className="input">
-                                            <input type="text" /> <span> 129 SOL max </span>
+                                            <input type="text" defaultValue="10" /> <span> 129 SOL max </span>
                                         </div>
                                         <div className="total">
                                             <div className="p1"> Total </div>
                                             <div className="p2"> <span> 29.9 </span> SOL </div>
                                         </div>
-                                        <button> connect to wallet </button>
+                                        <button> connect to wallet <span> <IoIosArrowForward /> </span> </button>
                                     </div>
                                 )}
                             >
                             </Parallax>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="section11_container">
+                    <div className="box">
+                        <div className="heading">
+                            DEGEN MONKEY LAUNCHERS
+                        </div>
+                        <div className="content">
+                            Meet the team
+                        </div>
+                        <div className="cards">
+                            {
+                                CardData.map((data) => {
+                                    return (
+                                        <>
+                                            <div className="crd">
+                                                <img src={data.img} alt="ERROR" />
+                                                <div className="data">
+                                                    <div className="title">
+                                                        {data.heading}
+                                                    </div>
+                                                    <div className="detail">
+                                                        {data.detail} <span> Read more </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </>
+                                    )
+                                })
+                            }
+
                         </div>
                     </div>
                 </section>
