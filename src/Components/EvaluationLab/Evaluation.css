@@ -1,0 +1,218 @@
+.Evaluation_mainDiv {
+  background-image: url("/src/assests/Lab/firstbg.jpg");
+  background-position: top;
+  width: 100%;
+  height: 100%;
+}
+.Evaluation_Innersection1 {
+  padding-top: 16rem;
+  margin: auto;
+  max-width: 1200px;
+
+  width: 100%;
+}
+.section1_h1 {
+  text-transform: uppercase;
+  font-size: 72px;
+  color: #ffffff !important;
+  text-align: center;
+  font-family: "nurom";
+  background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section1_h3 {
+  font-family: "sansation";
+  text-align: center;
+  color: #ffffff !important;
+  font-size: 30px;
+  line-height: 40px;
+  width: 87%;
+  margin: auto;
+  padding-bottom: 1em;
+}
+.section1_h33 {
+  padding-bottom: 0;
+  font-family: "sansation";
+  text-align: center;
+  color: #ffffff !important;
+  font-size: 30px;
+  line-height: 40px;
+  width: 87%;
+  margin: auto;
+  margin-bottom: 2.75%;
+}
+.section1_h4 {
+  line-height: 30px;
+  padding-bottom: 0;
+  font-family: "sansation";
+  color: #ffffff !important;
+  font-size: 24px;
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+}
+.Evaluation_section1 {
+  padding: 2% 0;
+}
+
+/* cards */
+.card_main_section2 {
+  padding-top: 30px;
+  /* max-width: 1200px; */
+  padding: 2% 0;
+  font-size: 20px;
+  background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 4.9rem;
+}
+.h4_section2 {
+  color: #ffffff !important;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 30px;
+  background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.h44_section2 {
+  color: #ffffff !important;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 30px;
+  background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cards_twos {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card_one_section2 {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+.monkey_section2 {
+  width: 246px;
+  height: 292px;
+  box-shadow: 0px 2px 80px -16px #631de7;
+}
+.section3_main {
+  background-image: url("/src/assests/Lab/secondbg.jpg");
+  background-size: cover;
+}
+.section3_innerDiv {
+  padding: 100px 0px;
+}
+.evolve_section3Div {
+  margin-bottom: 2.75%;
+}
+.evolve_section3 {
+  font-family: "nurom";
+  text-align: center;
+  font-size: 42px;
+  background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 10px;
+}
+.select_section3 {
+  font-size: 24px;
+  color: #fff;
+  max-width: 65%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 30px;
+}
+.active_stageButton {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3.5rem;
+}
+.active_stage2 {
+  background: transparent;
+  border: 0px;
+  font-size: 22px !important;
+  color: #f831ec !important;
+  /* color: #5dcbf6!important; */
+  /* width: 200px; */
+  padding: 4px 30px;
+  vertical-align: middle;
+  font-family: "sansation";
+  font-weight: bold;
+}
+.active_stage22 {
+  background: transparent;
+  border: 0px;
+  font-size: 22px !important;
+  color: #f831ec !important;
+  /* color: #5dcbf6!important; */
+  /* width: 200px; */
+  padding: 4px 30px;
+  vertical-align: middle;
+  font-family: "sansation";
+  font-weight: bold;
+}
+.box_mainDiv {
+  border-radius: 20px 20px 20px 20px;
+  overflow: hidden;
+  box-shadow: 0px 2px 18px 0px #6923ea;
+  margin-top: 50px;
+  background-color: RGBA(0, 0, 0, 0);
+  max-width: 1200px;
+  margin: auto;
+}
+.box_textDiv {
+  padding: 24px 30px;
+}
+.box_nftText {
+  padding-top: 15px;
+  font-size: 38px;
+  background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "nurom";
+}
+/* .first_textDiv {
+  padding: 24px 30px;
+} */
+.order_text,
+.note_text {
+  font-size: 24px;
+  color: #fff;
+  line-height: 30px;
+  max-width: 100%;
+  padding-bottom: 0;
+  margin-top: 20px;
+  padding-right: 5px;
+}
+.gal {
+  color: #f531ec;
+}
+.evolve_process {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1600px) and (max-width: 2100px) {
+  .section1_h3 {
+    font-size: 34px;
+    line-height: 40px;
+    width: 100%;
+  }
+  .section1_h33 {
+    font-size: 34px;
+    line-height: 40px;
+    width: 100%;
+  }
+  .section1_h4 {
+    line-height: 30px;
+    padding-bottom: 0;
+    font-family: "sansation";
+    color: #ffffff !important;
+    font-size: 34px;
+    width: 70%;
+  }
+}

@@ -8,6 +8,7 @@ import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home"
 
 import "./App.scss";
+import Evaluation from "./Components/EvaluationLab/Evaluation";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/token" component={Token} />
+        <Route path="/Evaluation" component={Evaluation} />
       </Switch>
       <Footer />
     </>
