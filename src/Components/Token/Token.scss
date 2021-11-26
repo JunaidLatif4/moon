@@ -528,10 +528,21 @@
   .tok__sec9 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 2rem;
     padding: 0 6rem;
+    @media only screen and (max-width:"1050px"){
+      flex-direction: column;
+     }
+     @media only screen and (max-width:"750px"){
+       padding: 0 2rem;
+     }
     .sec9__left {
       margin-right: 5rem;
+      @media only screen and (max-width:"1050px"){
+        margin-right: 0rem;
+        margin-bottom: 2rem;
+       }
       .heading {
         font-size: 46px;
         font-weight: 700;
@@ -544,16 +555,32 @@
       .para1 {
         font-size: 35px;
         color: white;
+        @media only screen and (max-width:"1300px"){
+          font-size: 22px;
+  
+        }
       }
       .para2 {
         font-size: 35px;
         color: white;
         margin: 3rem 0;
+        @media only screen and (max-width:"1300px"){
+          font-size: 22px;
+  
+        }
+        @media only screen and (max-width:"750px"){
+          margin: 2rem 0;
+  
+        }
       }
 
       .para3 {
         font-size: 35px;
         color: white;
+        @media only screen and (max-width:"1300px"){
+          font-size: 22px;
+  
+        }
         span {
           color: #f831ec;
         }
@@ -561,10 +588,17 @@
     }
     .sec9__right {
       padding: 0 10rem;
+      @media only screen and (max-width:"1500px"){
+        padding: 0 2rem;
+
+      }
 
       .sec1__img {
-        height: 300px;
-        // width: 340px;
+        height: 350px;
+        @media only screen and (max-width:"500px"){
+          height: 280px;
+  
+        }
       }
     }
   }
