@@ -5,6 +5,7 @@ import Calculator from "./Components/calculator";
 import Header from "./Components/Header/Header";
 import Token from "./Components/Token/Token";
 import Comic from "./Components/comic/Comic";
+import Footer from "./Components/Footer/Footer";
 
 import "./App.scss";
 
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/token" component={Token} />
           <Route path="/comic" component={Comic} />
         </Switch>
+      <Footer />
     </>
   );
 };

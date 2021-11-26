@@ -27,12 +27,12 @@ const Comic = () => {
           <div className="text-center">
             <button className="story_comic_button">READ STORYLINE</button>
           </div>
-        </div>
+        
 
         <div className="parts_section ">
           <div className="nft_part1_style">
             <div>
-              <img src={part1} alt="" />
+              <img src={part1} alt=""  className="image_style image_shadow"/>
             </div>
             {/* <div className="part1_footer">
               <h3>PART 1:</h3>
@@ -42,7 +42,7 @@ const Comic = () => {
           </div>
           <div className="nft_part1_style">
             <div>
-              <img src={part2} alt="" />
+              <img src={part2} alt="" className="image_style image_shadow1" />
             </div>
             {/* <div className="part1_footer">
               <h3>PART 1:</h3>
@@ -52,7 +52,7 @@ const Comic = () => {
           </div>
           <div className="nft_part1_style">
             <div>
-              <img src={part3} alt="" />
+              <img src={part3} alt="" className="image_style image_shadow" />
             </div>
             {/* <div className="part1_footer">
               <h3>PART 1:</h3>
@@ -62,7 +62,7 @@ const Comic = () => {
           </div>
           <div className="nft_part1_style">
             <div>
-              <img src={part4} alt="" />
+              <img src={part4} alt="" className="image_style image_shadow1" />
             </div>
             {/* <div className="part1_footer">
               <h3>PART 1:</h3>
@@ -71,16 +71,28 @@ const Comic = () => {
             </div> */}
           </div>
         </div>
-
+        </div>
 
         <div className="nft_section">
           <h2 className="heading_style">OWN AN NFT PAGE OF THE COMIC</h2>
           <div className="d-flex justify-content-center">
             <p className="nft_paragraph">
-            Owning a page, or even better, a full comic book, will allow you to receive special surprises, bonuses, and rewards!
+              Owning a page, or even better, a full comic book, will allow you
+              to receive special surprises, bonuses, and rewards!
             </p>
           </div>
-        
+        </div>
+
+        <div className="release_section">
+          <h2 className="heading_style">ENJOY THE LATEST PAGE RELEASES</h2>
+          <div className="d-flex justify-content-center">
+            <p className="release_paragraph">
+              <span>THIS IS JUST A COMING-SOON SAMPLE!</span>
+              Our comic book releases will be published here in the very near
+              future, you’ll be able to read them right here as if you were
+              flipping through a book!
+            </p>
+          </div>
         </div>
       </div>
     </>
