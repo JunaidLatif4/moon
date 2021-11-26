@@ -40,35 +40,39 @@ const Calculator = () => {
           </div>
           <div style={{ padding: "50px 0px" }}>
             <table className={styles.table_main}>
-              <tr>
-                <th>Y6</th>
-                <th>Y1</th>
-                <th>Y2</th>
-                <th>Y3</th>
-                <th>Y4</th>
-              </tr>
-              <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Get 1 Eternal Yeti by burning 2 Alien Gorilla</td>
-                <td rowspan="3">$50</td>
-                <td>Maria Anders</td>
-              </tr>
+              <thead>
+                <tr>
+                  <th>Y6</th>
+                  <th>Y1</th>
+                  <th>Y2</th>
+                  <th>Y3</th>
+                  <th>Y4</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Alfreds Futterkiste</td>
+                  <td>Maria Anders</td>
+                  <td>Get 1 Eternal Yeti by burning 2 Alien Gorilla</td>
+                  <td rowspan="3">$50</td>
+                  <td>Maria Anders</td>
+                </tr>
 
-              <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Get 1 Eternal Yeti by burning 2 Alien Gorilla</td>
+                <tr>
+                  <td>Alfreds Futterkiste</td>
+                  <td>Maria Anders</td>
+                  <td>Get 1 Eternal Yeti by burning 2 Alien Gorilla</td>
 
-                <td>Maria Anders</td>
-              </tr>
-              <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Get 1 Eternal Yeti by burning 2 Alien Gorilla</td>
+                  <td>Maria Anders</td>
+                </tr>
+                <tr>
+                  <td>Alfreds Futterkiste</td>
+                  <td>Maria Anders</td>
+                  <td>Get 1 Eternal Yeti by burning 2 Alien Gorilla</td>
 
-                <td>Maria Anders</td>
-              </tr>
+                  <td>Maria Anders</td>
+                </tr>
+              </tbody>
             </table>
           </div>
         </div>
