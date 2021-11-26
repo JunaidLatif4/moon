@@ -130,32 +130,38 @@ const Home = () => {
 
                                 </div>
                             </div>
-                            <div className="wallet">
-                                <div className="title"> COUNT YOUR COUNTS </div>
-                                <div className="detail"> Enter the amount of Mooning Monkeys You would like to purchase </div>
-                                <div className="profile">
-                                    <img src={Sec4P} alt="ERROR" />
-                                    <div className="price">
-                                        <div className="p1">
-                                            Price per Monkey
+                            <Parallax
+                                // strength={}
+                                renderLayer={(percentage) => (
+                                    <div className="wallet" style={{ transform: `scale(${(1 * (percentage + .2)) > 1 ? 1 : 1 * (percentage + .2)})`, transition: "all .2s linear" }}>
+                                        <div className="title"> COUNT YOUR COUNTS </div>
+                                        <div className="detail"> Enter the amount of Mooning Monkeys You would like to purchase </div>
+                                        <div className="profile">
+                                            <img src={Sec4P} alt="ERROR" />
+                                            <div className="price">
+                                                <div className="p1">
+                                                    Price per Monkey
+                                                </div>
+                                                <div className="p2">
+                                                    <span> 2.99 </span> SOL each
+                                                </div>
+                                                <div className="p3">
+                                                    12,000 amount remaining
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className="p2">
-                                            <span> 2.99 </span> SOL each
+                                        <div className="input">
+                                            <input type="text" /> <span> 129 SOL max </span>
                                         </div>
-                                        <div className="p3">
-                                            12,000 amount remaining
+                                        <div className="total">
+                                            <div className="p1"> Total </div>
+                                            <div className="p2"> <span> 29.9 </span> SOL </div>
                                         </div>
+                                        <button> connect to wallet </button>
                                     </div>
-                                </div>
-                                <div className="input">
-                                    <input type="text" /> <span> 129 SOL max </span>
-                                </div>
-                                <div className="total">
-                                    <div className="p1"> Total </div>
-                                    <div className="p2"> <span> 29.9 </span> SOL </div>
-                                </div>
-                                <button> connect to wallet </button>
-                            </div>
+                                )}
+                            >
+                            </Parallax>
                         </div>
                     </div>
                 </section>
