@@ -52,7 +52,7 @@ const Header = () => {
                         </div>
                     </div>
                     <nav>
-                        <NavLink to="/"> EVOLUTION LAB </NavLink>
+                        <NavLink to="/Evaluation"> EVOLUTION LAB </NavLink>
                         <NavLink to="/"> COMICS </NavLink>
                         <NavLink to="/"> CALCULATOR </NavLink>
                         <NavLink to="/"> ATTRIBUTES </NavLink>
@@ -80,7 +80,7 @@ const Header = () => {
                             <NavLink to="/" className="sub"> MEMBERSHIP </NavLink>
                             <NavLink to="/" className="sub"> TEAM </NavLink>
                             <NavLink to="/" className="sub"> FAQS </NavLink>
-                            <NavLink to="/"> EVOLUTION LAB </NavLink>
+                            <NavLink to="/Evaluation"> EVOLUTION LAB </NavLink>
                         </div>
                     </div>
                 </div>

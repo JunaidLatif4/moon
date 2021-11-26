@@ -11,6 +11,7 @@ import Token from "./Components/Token/Token";
 import Comic from "./Components/comic/Comic";
 import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
+import Evaluation from "./Components/EvaluationLab/Evaluation";
 
 import "./App.scss";
 
@@ -21,6 +22,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/token" component={Token} />
+        <Route path="/Evaluation" component={Evaluation} />
         <Route path="/calculator" component={Calculator} />
       </Switch>
       <Footer />
