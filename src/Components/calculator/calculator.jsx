@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 
 import styles from "./calculator.module.css";
+import './evolutionTree.modules.css'
 import ProfitCalculator from "./profitCalculator";
+import EvolutionTree from "./evolutionTree";
 
 const Calculator = () => {
   const [state, setState] = useState({ x: 0 });
@@ -35,7 +37,8 @@ const Calculator = () => {
           </div>
           <div className={styles.cardmain}>
             <div className={styles.inercard}>
-              <ProfitCalculator />
+              {/* <ProfitCalculator /> */}
+              <EvolutionTree />
             </div>
           </div>
           <div style={{ padding: "50px 0px" }}>
