@@ -12,7 +12,7 @@ import monkey8 from "../../assests/Token/monkey8.png";
 const Token = () => {
   return (
     <div className="token__container">
-      <div className="token__header">
+      {/* <div className="token__header">
         <div className="heading">THE TAKION TOKEN</div>
         <p className="header__para1">WHAT ARE TAKIONS USED FOR?</p>
         <p className="header__para2">
@@ -22,9 +22,9 @@ const Token = () => {
           or winning bonuses while playing playing the{" "}
           <span>Mooning Monkey Crash game</span>.
         </p>
-      </div>
+      </div> */}
 
-      <div className="tok__sec1">
+    {/* <div className="tok__sec1">
         <div>
           <img src={monkey1} alt="Error" className="sec1__img" />
         </div>
@@ -33,9 +33,9 @@ const Token = () => {
           You can yield $TAK via any of the Mooning Monkey evolution or through
           the NFT comic pages you own.
         </div>
-      </div>
+      </div> */}
 
-      <div className="tok__sec2">
+       {/* <div className="tok__sec2">
         <div>
           <div className="sec2__left">
             <div className="left__upper">
@@ -67,9 +67,9 @@ const Token = () => {
         <div className="sec2__right">
           <img src={monkey2} alt="" className="sec2__img" />
         </div>
-      </div>
+      </div> */}
 
-      <div className="tok__sec3">
+        {/* <div className="tok__sec3">
         <div className="sec3__left">
           <img src={monkey3} alt="" className="sec3__img" />
         </div>
@@ -102,9 +102,9 @@ const Token = () => {
             for your daily, passive rewards!
           </div>
         </div>
-      </div>
-
-      <div className="tok__sec4">
+      </div> */}
+{/* 
+   <div className="tok__sec4">
         <div className="sec4__left">
           <div className="heading">ACQUIRE COMIC PAGES</div>
           <div className="para">
@@ -120,9 +120,11 @@ const Token = () => {
         <div className="sec4__right">
           <img src={monkey4} alt="" className="sec1__img" />
         </div>
-      </div>
+      </div> */}
 
-      <div className="tok__sec3">
+
+
+       {/* <div className="tok__sec3">
         <div className="sec3__left">
           <img src={monkey5} alt="" className="sec3__img" />
         </div>
@@ -156,9 +158,9 @@ const Token = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="tok__sec6">
+     {/* <div className="tok__sec6">
         <div className="sec6__right">
           <div className="heading">EXTRA CASHBACK</div>
           <div className="right__para1">
@@ -182,9 +184,9 @@ const Token = () => {
         <div className="sec6__left">
           <img src={monkey6} alt="" className="sec6__img" />
         </div>
-      </div>
+      </div> */}
 
-      <div className="tok__sec7">
+    {/* <div className="tok__sec7">
         <table>
           <tr>
             <th>LEVEL</th>
@@ -225,9 +227,9 @@ const Token = () => {
           
         </table>
         
-      </div>
+      </div>  */}
 
-      <div className="tok__sec8">
+   <div className="tok__sec8">
       <div className="sec8__right">
           <img src={monkey7} alt="" className="sec8__img" />
         </div>
@@ -250,7 +252,7 @@ An extra 1% on each winning bet and up to 3%
        
       </div>
 
-      <div className="tok__sec7">
+         {/*   <div className="tok__sec7">
         <table>
           <tr>
             <th>LEVEL</th>
@@ -327,7 +329,7 @@ An extra 1% on each winning bet and up to 3%
         <div className="para6">
         It is NOT investment advice and the $TAK token has NO economic value.
         </div>
-      </div>
+      </div> */}
       
 
     </div>
