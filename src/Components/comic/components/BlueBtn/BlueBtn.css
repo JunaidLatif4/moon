@@ -1,0 +1,35 @@
+.blue__btn_wrapper {
+  width: 335px;
+  height: 45px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #6923ea;
+  border-radius: 15px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+  cursor: pointer;
+}
+#blue__btn_icn {
+  visibility: hidden;
+}
+#blue__btn_wpr:hover #blue__btn_icn {
+  visibility: visible;
+  display: inline;
+  animation: showIcon 0.4s ease-in-out forwards;
+}
+@keyframes showIcon {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+    margin-left: 0px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 10px;
+    transform: translateX(0px);
+  }
+}
