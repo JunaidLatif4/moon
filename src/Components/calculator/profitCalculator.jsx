@@ -3,7 +3,7 @@ import styles from "./calculator.module.css";
 import { Slider, InputNumber } from "antd";
 import { Row, Col } from "react-bootstrap";
 import { Bar } from "react-chartjs-2";
-import faker from "faker";
+
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -1229,12 +1229,12 @@ const ProfitCalculator = () => {
           <thead>
             {" "}
             <tr>
-              <th>ALL LEVELS</th>
-              <th>Y1</th>
-              <th>Y2</th>
-              <th>Y3</th>
-              <th>Y4</th>
-              <th>Y5</th>
+              <th>Y6</th>
+              <th>Y7</th>
+              <th>Y8</th>
+              <th>Y9</th>
+              <th>Y10</th>
+              <th>TOTAL</th>
             </tr>
           </thead>
           <tbody id="levels-data1"></tbody>

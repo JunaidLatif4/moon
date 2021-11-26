@@ -103,3 +103,44 @@
   text-transform: uppercase;
   font-family: "sansation";
 }
+.total-r {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #fff;
+  margin-top: 10px;
+
+  font-family: "sansation";
+}
+.clc-res-sec {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  color: #adaab3;
+  font-family: "sansation";
+}
+.clc-res-sec > .vertical-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  box-sizing: border-box;
+  margin: 5px 0;
+}
+.vertical-center > .clc-res-title {
+  font-size: 24px;
+  color: #fff;
+}
+.vertical-center > .clc-res-title::before {
+  content: "\27A4";
+  display: inline-block;
+  color: #b414c1;
+  top: 0;
+  margin-right: 10px;
+  background: transparent;
+}
+.vertical-center > .clc-res {
+  color: #fff;
+  font-size: 24px;
+}

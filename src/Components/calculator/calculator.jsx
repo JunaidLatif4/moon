@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 
 import styles from "./calculator.module.css";
+import EvolutionCalculator from "./evolutionCalculator";
 import ProfitCalculator from "./profitCalculator";
+import StackingCalculator from "./stackingCalculator";
 
 const Calculator = () => {
   const [state, setState] = useState({ x: 0 });
@@ -35,42 +37,53 @@ const Calculator = () => {
           </div>
           <div className={styles.cardmain}>
             <div className={styles.inercard}>
-              <ProfitCalculator />
+              {/* <ProfitCalculator /> */}
+              {/* <EvolutionCalculator /> */}
+
+              <StackingCalculator />
             </div>
           </div>
           <div style={{ padding: "50px 0px" }}>
+            <div className={styles.cust}>REWARD DISTRIBUTION MODEL</div>
             <table className={styles.table_main}>
               <thead>
                 <tr>
-                  <th>Y6</th>
-                  <th>Y1</th>
-                  <th>Y2</th>
-                  <th>Y3</th>
-                  <th>Y4</th>
+                  <th>STAGE </th>
+                  <th>UNIT</th>
+                  <th>REMARKS</th>
+                  <th>REWARDS*</th>
+                  <th>BONUS*</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Alfreds Futterkiste</td>
-                  <td>Maria Anders</td>
+                  <td>Eternal Yeti</td>
+                  <td>500</td>
                   <td>Get 1 Eternal Yeti by burning 2 Alien Gorilla</td>
-                  <td rowspan="3">$50</td>
-                  <td>Maria Anders</td>
+                  <td rowspan="4">25%</td>
+                  <td>+15%</td>
                 </tr>
 
                 <tr>
-                  <td>Alfreds Futterkiste</td>
-                  <td>Maria Anders</td>
-                  <td>Get 1 Eternal Yeti by burning 2 Alien Gorilla</td>
+                  <td>Alien Gorilla</td>
+                  <td>1,000</td>
+                  <td>Get 1 Alien Gorilla by burning 3 Galactic Gorilla</td>
 
-                  <td>Maria Anders</td>
+                  <td>+7.5%</td>
                 </tr>
                 <tr>
-                  <td>Alfreds Futterkiste</td>
-                  <td>Maria Anders</td>
-                  <td>Get 1 Eternal Yeti by burning 2 Alien Gorilla</td>
+                  <td>Galactic Gorilla </td>
+                  <td>3,000</td>
+                  <td>Get 1 Galactic Gorilla by burning 4 Mooning Monkeys</td>
 
-                  <td>Maria Anders</td>
+                  <td>+2.5%</td>
+                </tr>
+                <tr>
+                  <td>Mooning Monkey </td>
+                  <td>12,000</td>
+                  <td>None</td>
+
+                  <td>0%</td>
                 </tr>
               </tbody>
             </table>
