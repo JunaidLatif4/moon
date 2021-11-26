@@ -2,11 +2,15 @@ import React, { useState } from "react";
 
 import styles from "./calculator.module.css";
 import EvolutionCalculator from "./evolutionCalculator";
-import ProfitCalculator from "./profitCalculator";
+
 import StackingCalculator from "./stackingCalculator";
+import "./evolutionTree.modules.css";
+import ProfitCalculator from "./profitCalculator";
+import EvolutionTree from "./evolutionTree";
+import ComsicProfit from "./comsicProfit";
 
 const Calculator = () => {
-  const [state, setState] = useState({ x: 0 });
+  const [state, setState] = useState("1");
   return (
     <div>
       <div className={styles.bg1}>
@@ -17,76 +21,130 @@ const Calculator = () => {
       </div>
       <div className={`${styles.bg2} `} style={{ paddingBottom: "50px" }}>
         <div className="container">
-          <div className="d-flex justify-content-center py-3 ">
-            <div className="d-flex flex-row flex-wrap">
-              <div className={styles.cal_headings}>PROFIT CALCULATOR </div>{" "}
-              <div style={{ borderRight: "3px solid white " }}></div>
-              <div className={styles.cal_headings}>EVOLUTION CALCULATOR</div>
+          <div className={`d-flex justify-content-center py-3 ${styles.cal_h}`}>
+            <div className={`d-flex flex-row flex-wrap ${styles.cal_h}`}>
+              <div
+                className={state == "1" ? styles.pcolor : styles.cal_headings}
+                onClick={() => {
+                  setState("1");
+                }}
+              >
+                PROFIT CALCULATOR{" "}
+              </div>{" "}
+              <div
+                style={{ borderRight: "3px solid white " }}
+                className="dn"
+              ></div>
+              <div
+                className={state == "2" ? styles.pcolor : styles.cal_headings}
+                onClick={() => {
+                  setState("2");
+                }}
+              >
+                EVOLUTION CALCULATOR
+              </div>
             </div>
           </div>
-          <div className="d-flex justify-content-center py-3 ">
-            <div className="d-flex flex-row flex-wrap">
-              <div className={styles.cal_headings}>EVOLUTION TREE </div>{" "}
-              <div style={{ borderRight: "3px solid white " }}></div>
-              <div className={styles.cal_headings}>STAKING CALCULATOR</div>
-              <div style={{ borderRight: "3px solid white " }}></div>
-              <div className={styles.cal_headings}>
+          <div className={`d-flex justify-content-center py-3 `}>
+            <div className={`d-flex flex-row flex-wrap ${styles.cal_h}`}>
+              <div
+                className={state == "3" ? styles.pcolor : styles.cal_headings}
+                onClick={() => {
+                  setState("3");
+                }}
+              >
+                EVOLUTION TREE{" "}
+              </div>{" "}
+              <div
+                style={{ borderRight: "3px solid white " }}
+                className="dn"
+              ></div>
+              <div
+                className={state == "4" ? styles.pcolor : styles.cal_headings}
+                onClick={() => {
+                  setState("4");
+                }}
+              >
+                STAKING CALCULATOR
+              </div>
+              <div
+                style={{ borderRight: "3px solid white " }}
+                className="dn"
+              ></div>
+              <div
+                className={state == "5" ? styles.pcolor : styles.cal_headings}
+                onClick={() => {
+                  setState("5");
+                }}
+              >
                 COMICS PROFIT CALCULATOR
               </div>
             </div>
           </div>
           <div className={styles.cardmain}>
             <div className={styles.inercard}>
-              {/* <ProfitCalculator /> */}
-              {/* <EvolutionCalculator /> */}
-
-              <StackingCalculator />
+              {(() => {
+                switch (state) {
+                  case "1":
+                    return <ProfitCalculator />;
+                  case "2":
+                    return <EvolutionCalculator />;
+                  case "3":
+                    return <EvolutionTree />;
+                  case "4":
+                    return <StackingCalculator />;
+                  case "5":
+                    return <ComsicProfit />;
+                }
+              })()}
             </div>
           </div>
           <div style={{ padding: "50px 0px" }}>
             <div className={styles.cust}>REWARD DISTRIBUTION MODEL</div>
-            <table className={styles.table_main}>
-              <thead>
-                <tr>
-                  <th>STAGE </th>
-                  <th>UNIT</th>
-                  <th>REMARKS</th>
-                  <th>REWARDS*</th>
-                  <th>BONUS*</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Eternal Yeti</td>
-                  <td>500</td>
-                  <td>Get 1 Eternal Yeti by burning 2 Alien Gorilla</td>
-                  <td rowspan="4">25%</td>
-                  <td>+15%</td>
-                </tr>
+            <div className="result-table-sec">
+              <table class="result-table">
+                <thead>
+                  <tr>
+                    <th>STAGE </th>
+                    <th>UNIT</th>
+                    <th>REMARKS</th>
+                    <th>REWARDS*</th>
+                    <th>BONUS*</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Eternal Yeti</td>
+                    <td>500</td>
+                    <td>Get 1 Eternal Yeti by burning 2 Alien Gorilla</td>
+                    <td rowspan="4">25%</td>
+                    <td>+15%</td>
+                  </tr>
 
-                <tr>
-                  <td>Alien Gorilla</td>
-                  <td>1,000</td>
-                  <td>Get 1 Alien Gorilla by burning 3 Galactic Gorilla</td>
+                  <tr>
+                    <td>Alien Gorilla</td>
+                    <td>1,000</td>
+                    <td>Get 1 Alien Gorilla by burning 3 Galactic Gorilla</td>
 
-                  <td>+7.5%</td>
-                </tr>
-                <tr>
-                  <td>Galactic Gorilla </td>
-                  <td>3,000</td>
-                  <td>Get 1 Galactic Gorilla by burning 4 Mooning Monkeys</td>
+                    <td>+7.5%</td>
+                  </tr>
+                  <tr>
+                    <td>Galactic Gorilla </td>
+                    <td>3,000</td>
+                    <td>Get 1 Galactic Gorilla by burning 4 Mooning Monkeys</td>
 
-                  <td>+2.5%</td>
-                </tr>
-                <tr>
-                  <td>Mooning Monkey </td>
-                  <td>12,000</td>
-                  <td>None</td>
+                    <td>+2.5%</td>
+                  </tr>
+                  <tr>
+                    <td>Mooning Monkey </td>
+                    <td>12,000</td>
+                    <td>None</td>
 
-                  <td>0%</td>
-                </tr>
-              </tbody>
-            </table>
+                    <td>0%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>

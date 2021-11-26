@@ -4,6 +4,8 @@ import { IoIosArrowForward } from "react-icons/io"
 import { Parallax, Background } from "react-parallax";
 
 import Sec1 from "../../assests/Home/sec1.jpg"
+import Sec3 from "../../assests/Home/sec3.jpg"
+import Sec3B from "../../assests/Home/sec3back.png"
 import CardImg from "../../assests/Home/cardg.png"
 import BackBlur from "../../assests/Home/cardback.png"
 import Button from "../ButtonComponent/Button"
@@ -47,7 +49,7 @@ const Home = () => {
                         <Parallax
                             // strength={}
                             renderLayer={(percentage) => (
-                                <div className="data" style={{ transform: `scale(${(1 * (percentage + .2) ) > 1 ? 1 : 1 * (percentage + .2)})` }}>
+                                <div className="data" style={{ transform: `scale(${(1 * (percentage + .2)) > 1 ? 1 : 1 * (percentage + .2)})`, transition: "all .2s linear" }}>
                                     <div className="heading">
                                         RARITY AND SPEC
                                     </div>
@@ -74,7 +76,30 @@ const Home = () => {
                 </section>
 
                 <section className="section3_container">
+                    <img src={Sec3} alt="ERROR" className="back" />
+                    <div className="box">
+                        <div className="heading">
+                            CO-OWN THE GAME AND SHARE PROFIT
+                        </div>
+                        <div className="detail">
+                            <p style={{ color: '#5dcbf6' }}> GAME CONCEPT </p>
+                            <span></span>
+                            <p> BENEFITS OVERVIEW </p>
+                        </div>
 
+                        <div className="data">
+                            <div className="content">
+                                <div className="title">
+                                    What’s The Mooning Monkey Crash Game?
+                                </div>
+                                <ul>
+                                    <li> Mooning Monkey is an exciting, online, multiplayer gambling game that will provide you with endless hours of thrilling fun, while also giving you the opportunity to win MILLIONS. </li>
+                                    <li> The gameplay consists of an increasing curve that an crash at any time, keeping everyone at the edges of their seats, trying to figure out when they should cash out. </li>
+                                    <li> While we are preparing the game launch, have fun playing with our profit calculator </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
         </>

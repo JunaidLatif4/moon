@@ -93,47 +93,49 @@ const EvolutionCalculator = () => {
           </div>
         </div>
 
-        <table className={styles.table_main}>
-          <thead>
-            <tr>
-              <th>Stages</th>
-              <th>Level 1</th>
-              <th>Level 2</th>
-              <th>Level 3</th>
-              <th>Level 4</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Mooning Monkey</td>
-              <td id="l1_mm"></td>
-              <td id="l2_mm"></td>
-              <td id="l3_mm"></td>
-              <td id="l4_mm"></td>
-            </tr>
-            <tr>
-              <td>Galactic Gorilla</td>
-              <td>-</td>
-              <td id="l2_gg"></td>
-              <td id="l3_gg"></td>
-              <td id="l4_gg"></td>
-            </tr>
-            <tr>
-              <td>Alien Gorilla</td>
-              <td>-</td>
-              <td>-</td>
-              <td id="l3_ag"></td>
-              <td id="l4_ag"></td>
-            </tr>
-            <tr>
-              <td>Eternal Yeti</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td id="l4_ey"></td>
-            </tr>
-          </tbody>
-        </table>
+        <div className="result-table-sec">
+          <table class="result-table">
+            <thead>
+              <tr>
+                <th>Stages</th>
+                <th>Level 1</th>
+                <th>Level 2</th>
+                <th>Level 3</th>
+                <th>Level 4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mooning Monkey</td>
+                <td id="l1_mm"></td>
+                <td id="l2_mm"></td>
+                <td id="l3_mm"></td>
+                <td id="l4_mm"></td>
+              </tr>
+              <tr>
+                <td>Galactic Gorilla</td>
+                <td>-</td>
+                <td id="l2_gg"></td>
+                <td id="l3_gg"></td>
+                <td id="l4_gg"></td>
+              </tr>
+              <tr>
+                <td>Alien Gorilla</td>
+                <td>-</td>
+                <td>-</td>
+                <td id="l3_ag"></td>
+                <td id="l4_ag"></td>
+              </tr>
+              <tr>
+                <td>Eternal Yeti</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td id="l4_ey"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );

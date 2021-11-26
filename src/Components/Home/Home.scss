@@ -185,6 +185,7 @@
 
   .section2_container {
     background-color: black;
+    padding: 5rem 0;
     .box {
       background-color: black;
       width: 85%;
@@ -213,7 +214,6 @@
         flex-direction: column;
         gap: 1.8rem;
 
-        // transition: all .5s ease-in-out;
         .heading {
           font-size: 3.5rem;
           font-family: "nurom";
@@ -229,58 +229,142 @@
         }
       }
       @media only screen and (max-width: 1600px) {
-        .data{
+        .data {
           gap: 1.2rem;
-          .heading{
+          .heading {
             font-size: 3.2rem;
           }
-          .detail{
+          .detail {
             font-size: 1.3rem;
           }
         }
       }
       @media only screen and (max-width: 1200px) {
-        .data{
+        .data {
           gap: 1rem;
-          .heading{
+          .heading {
             font-size: 3rem;
           }
-          .detail{
+          .detail {
             font-size: 1.1rem;
           }
         }
       }
       @media only screen and (max-width: 1000px) {
-        .data{
-          gap: .5rem;
-          .heading{
+        .data {
+          gap: 0.5rem;
+          .heading {
             font-size: 2rem;
           }
-          .detail{
-            font-size: .9rem;
+          .detail {
+            font-size: 0.9rem;
           }
         }
       }
       @media only screen and (max-width: 900px) {
         flex-direction: column;
-        .data{
+        .data {
           gap: 1.5rem;
-          .heading{
+          .heading {
             font-size: 3rem;
           }
-          .detail{
+          .detail {
             font-size: 1.4rem;
           }
         }
       }
       @media only screen and (max-width: 900px) {
-        .data{
+        .data {
           gap: 1rem;
-          .heading{
+          .heading {
             font-size: 2rem;
           }
-          .detail{
+          .detail {
             font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .section3_container {
+    position: relative;
+    padding: 5rem 0;
+    color: white;
+    .back {
+      top: 0;
+      position: absolute;
+      object-fit: cover;
+      width: -webkit-fill-available;
+      height: -webkit-fill-available;
+      z-index: -1;
+    }
+
+    .box {
+      width: 85%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // align-items: center;
+      gap: 1rem;
+
+      .heading {
+        font-size: 2rem;
+        font-family: "nurom";
+        background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+      }
+      .detail {
+        display: flex;
+        gap: 1.5rem;
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        p {
+          display: flex;
+          height: fit-content;
+          margin: 0;
+          color: #f831ec;
+          font-family: "sansation";
+        }
+        span {
+          background-color: white;
+          width: 1px;
+          height: 3rem;
+        }
+      }
+      .data {
+        background: url(../../assests/Home/sec3back.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 70% ;
+        margin-top: 5rem;
+        display: flex;
+        font-size: 2rem;
+        .content {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+          width: 60%;
+          font-family: "sansation";
+
+          .title {
+            color: #f831ec;
+          }
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            list-style-type: circle;
+            li {
+              &::marker {
+                color: #f831ec;
+                font-size: 35px;
+              }
+            }
           }
         }
       }

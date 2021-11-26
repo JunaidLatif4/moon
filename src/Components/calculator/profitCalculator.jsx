@@ -1211,34 +1211,36 @@ const ProfitCalculator = () => {
           {" "}
           <span style={{ color: "#e343d7" }}>STEP 3: </span>PROFIT FORECAST
         </div>
-        <table className={styles.table_main}>
-          <thead>
-            {" "}
-            <tr>
-              <th>ALL LEVELS</th>
-              <th>Y1</th>
-              <th>Y2</th>
-              <th>Y3</th>
-              <th>Y4</th>
-              <th>Y5</th>
-            </tr>
-          </thead>
-          <tbody id="levels-data"></tbody>
-        </table>
-        <table className={styles.table_main}>
-          <thead>
-            {" "}
-            <tr>
-              <th>Y6</th>
-              <th>Y7</th>
-              <th>Y8</th>
-              <th>Y9</th>
-              <th>Y10</th>
-              <th>TOTAL</th>
-            </tr>
-          </thead>
-          <tbody id="levels-data1"></tbody>
-        </table>
+        <div className="result-table-sec">
+          <table class="result-table">
+            <thead>
+              {" "}
+              <tr>
+                <th>ALL LEVELS</th>
+                <th>Y1</th>
+                <th>Y2</th>
+                <th>Y3</th>
+                <th>Y4</th>
+                <th>Y5</th>
+              </tr>
+            </thead>
+            <tbody id="levels-data"></tbody>
+          </table>
+
+          <table class="result-table">
+            <thead>
+              <tr>
+                <th>Y6</th>
+                <th>Y7</th>
+                <th>Y8</th>
+                <th>Y9</th>
+                <th>Y10</th>
+                <th>TOTAL</th>
+              </tr>
+            </thead>
+            <tbody id="levels-data1"></tbody>
+          </table>
+        </div>
         <div class="footer-result-sec">
           <div class="total-result-label">
             Total Earned Over <br /> 10 years:
