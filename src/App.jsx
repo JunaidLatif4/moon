@@ -13,17 +13,19 @@ import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
 
 import "./App.scss";
+import Home2 from "./Components/Home/Home2";
 
 const App = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/token" component={Token} />
         <Route path="/calculator" component={Calculator} />
+        <Route path="/home" component={Home2} />
       </Switch>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
