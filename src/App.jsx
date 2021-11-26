@@ -18,19 +18,12 @@ const App = () => {
   return (
     <>
       <Header />
-<<<<<<< HEAD
-        <Switch>
-          <Route exact path="/" component={Calculator} />
-          <Route path="/token" component={Token} />
-          <Route path="/comic" component={Comic} />
-        </Switch>
-=======
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={Calculator} />
         <Route path="/token" component={Token} />
+        <Route path="/comic" component={Comic} />
         <Route path="/calculator" component={Calculator} />
       </Switch>
->>>>>>> bb9a62839d0049ab90c7ea7c8eefc8714fee8d87
       <Footer />
     </>
   );
