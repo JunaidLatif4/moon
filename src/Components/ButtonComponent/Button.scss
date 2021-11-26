@@ -1,0 +1,39 @@
+.button_container {
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: "nurom";
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.7rem 1.2rem 0.3rem 1.2rem;
+    background-color: RGB(134, 60, 235);
+    border-radius: 50px;
+    border: none;
+    color: white;
+    position: relative;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 30px;
+      top: 0.07rem;
+      height: -webkit-fill-available;
+      opacity: 0;
+
+      transition: all 0.5s ease-in-out;
+    }
+
+    &:hover {
+      span {
+        opacity: 1;
+        right: 3px;
+      }
+    }
+  }
+}
