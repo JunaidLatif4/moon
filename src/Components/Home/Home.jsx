@@ -14,6 +14,7 @@ import Button from "../ButtonComponent/Button"
 import CardData from './sec11Data'
 
 import "./Home.scss"
+import Home2 from './Home2';
 
 const Home = () => {
     return (
@@ -168,6 +169,8 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
+
+                <Home2 />
 
                 <section className="section11_container">
                     <div className="box">
