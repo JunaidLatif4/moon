@@ -131,6 +131,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <Parallax
+                                style={{ overflow: "inharit !important" }}
                                 // strength={}
                                 renderLayer={(percentage) => (
                                     <div className="wallet" style={{ transform: `scale(${(1 * (percentage + .2)) > 1 ? 1 : 1 * (percentage + .2)})`, transition: "all .2s linear" }}>
