@@ -177,7 +177,7 @@
           height: 500px;
         }
         @media only screen and (max-width: "400px") {
-          height: 440px;
+          height: 420px;
         }
       }
     }
@@ -318,7 +318,6 @@
 
       .sec1__img {
         height: 290px;
-        width: 340px;
       }
     }
   }
@@ -403,8 +402,10 @@
     table {
       color: white;
       display: inline-block;
-
       overflow-x: auto;
+      tr{
+        background-color: transparent !important;
+      }
       tr th {
         padding: 5px 10rem;
         text-align: left;
@@ -415,6 +416,9 @@
         @media only screen and (max-width: 1050px) {
           padding: 5px 2rem;
           min-width: 100px;
+        }
+        @media only screen and (max-width: 500px) {
+          font-size: 9px;
         }
       }
       tr td {
@@ -428,6 +432,9 @@
         @media only screen and (max-width: 1050px) {
           padding: 0px 2rem;
           min-width: 100px;
+        }
+        @media only screen and (max-width: 500px) {
+          font-size: 11px;
         }
       }
       tr td ul {
