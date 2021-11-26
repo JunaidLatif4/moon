@@ -8,6 +8,7 @@ import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 import Calculator from "./Components/calculator/calculator";
 import Header from "./Components/Header/Header";
 import Token from "./Components/Token/Token";
+import Comic from "./Components/comic/Comic";
 import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
 import Evaluation from "./Components/EvaluationLab/Evaluation";

@@ -9,6 +9,9 @@ import monkey6 from "../../assests/Token/monkey6.png";
 import monkey7 from "../../assests/Token/monkey7.png";
 import monkey8 from "../../assests/Token/monkey8.png";
 
+import { IoIosArrowForward } from "react-icons/io"
+
+
 const Token = () => {
   return (
     <div className="token__container">
@@ -35,7 +38,7 @@ const Token = () => {
         </div>
       </div>
 
-      <div className="tok__sec2">
+   <div className="tok__sec2">
         <div>
           <div className="sec2__left">
             <div className="left__upper">
@@ -67,7 +70,7 @@ const Token = () => {
         <div className="sec2__right">
           <img src={monkey2} alt="" className="sec2__img" />
         </div>
-      </div>
+      </div> 
 
       <div className="tok__sec3">
         <div className="sec3__left">
@@ -103,8 +106,8 @@ const Token = () => {
           </div>
         </div>
       </div>
-
-      <div className="tok__sec4">
+      
+   <div className="tok__sec4">
         <div className="sec4__left">
           <div className="heading">ACQUIRE COMIC PAGES</div>
           <div className="para">
@@ -225,32 +228,30 @@ const Token = () => {
           
         </table>
         
-      </div>
+      </div> 
 
       <div className="tok__sec8">
-      <div className="sec8__right">
+        <div className="sec8__right">
           <img src={monkey7} alt="" className="sec8__img" />
         </div>
 
         <div className="sec8__left">
           <div className="heading">EARN EXTRA CASH ON YOUR WINS</div>
           <div className="right__para1">
-          Whenever you use the $TAK token while playing, you’ll earn extra on each winning bet, regardless of whether or not you own any of the Mooning Monkey Evolutions.
+            Whenever you use the $TAK token while playing, you’ll earn extra on
+            each winning bet, regardless of whether or not you own any of the
+            Mooning Monkey Evolutions.
           </div>
 
           <div className="sec8__list">
             <ul>
-              <li>
-               
-An extra 1% on each winning bet and up to 3%
-              </li>
+              <li>An extra 1% on each winning bet and up to 3%</li>
             </ul>
           </div>
         </div>
-       
       </div>
 
-      <div className="tok__sec7">
+  <div className="tok__sec7">
         <table>
           <tr>
             <th>LEVEL</th>
@@ -293,7 +294,7 @@ An extra 1% on each winning bet and up to 3%
         
       </div>
 
-      <div className="tok__sec9">
+       <div className="tok__sec9">
         <div className="sec9__left">
           <div className="heading">BANKROLL</div>
           <div className="para1">Bankrolling is a great way to earn some extra cash, with minimal risk!</div>
@@ -307,7 +308,7 @@ An extra 1% on each winning bet and up to 3%
         </div>
       </div>
 
-      <div className="tok__sec10">
+        <div className="tok__sec10">
         <div className="para1">
         In our game, whether they win or lose,<span>4% </span> out of the<span>5% </span>house hedge is redistributed to players in cashback, minimizing the chances of losing!
         </div>
@@ -320,7 +321,12 @@ An extra 1% on each winning bet and up to 3%
         <div className="para4">
         Visit our staking calculator for non NFT holders to see potential earnings
         </div>
-        <div className="btn">CHECK CALCULATORS</div>
+
+        <div className="button_container">
+                <button> CHECK CALCULATORS <span> <IoIosArrowForward /> </span> </button>
+            </div>
+
+        
         <div className="para6">
         $TAK is the utility token at the center of Mooning Monkey ecosystem.
         </div>
@@ -328,8 +334,6 @@ An extra 1% on each winning bet and up to 3%
         It is NOT investment advice and the $TAK token has NO economic value.
         </div>
       </div>
-      
-
     </div>
   );
 };
