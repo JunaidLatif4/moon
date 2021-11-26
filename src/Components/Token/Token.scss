@@ -3,6 +3,7 @@
   object-fit: cover;
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: "sansation";
   .token__header {
     display: flex;
     flex-direction: column;
@@ -12,6 +13,7 @@
     padding-top: 15rem;
     // max-width: 500px;
     .heading {
+      font-family: "nurom";
       font-size: 72px;
       font-weight: 600;
       color: #ffffff !important;
@@ -63,6 +65,7 @@
       }
     }
     .sec1__heading {
+      font-family: "nurom";
       font-size: 55px;
       font-weight: 600;
       margin-top: 3.5rem;
@@ -87,9 +90,9 @@
     justify-content: space-between;
     margin-top: 6rem;
     padding: 0 6rem;
-    align-items: center;
     @media only screen and (max-width: "1050px") {
       flex-direction: column;
+      align-items: center;
     }
     @media only screen and (max-width: "600px") {
       padding: 0 2rem;
@@ -101,6 +104,7 @@
       }
       .left__upper {
         .upper__heading {
+          font-family: "nurom";
           font-size: 46px;
           font-weight: 700;
           color: #ffffff !important;
@@ -156,11 +160,11 @@
   .tok__sec3 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: 6rem;
     padding: 0 6rem;
     @media only screen and (max-width: "1050px") {
       flex-direction: column;
+      align-items: center;
     }
     @media only screen and (max-width: "750px") {
       padding: 0 2rem;
@@ -183,6 +187,7 @@
     }
     .sec3__right {
       .right__heading {
+        font-family: "nurom";
         font-size: 46px;
         font-weight: 700;
         color: #ffffff !important;
@@ -214,6 +219,7 @@
 
         .list__left {
           .heading {
+            font-family: "nurom";
             color: #f831ec;
             font-weight: 600;
             font-size: 15px;
@@ -226,7 +232,7 @@
             list-style: none;
             margin-left: -15px;
             @media only screen and (max-width: "600px") {
-              margin-left: -50px;
+              margin-left: -30px;
             }
           }
 
@@ -238,6 +244,7 @@
         }
         .list__right {
           .heading {
+            font-family: "nurom";
             color: #f831ec;
             font-weight: 600;
             font-size: 15px;
@@ -272,11 +279,11 @@
   .tok__sec4 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: 6rem;
     padding: 0 6rem;
     @media only screen and (max-width: "1050px") {
       flex-direction: column;
+      align-items: center;
     }
     @media only screen and (max-width: "750px") {
       padding: 0 2rem;
@@ -284,6 +291,7 @@
     .sec4__left {
       // margin-right: 7rem;
       .heading {
+        font-family: "nurom";
         font-size: 46px;
         font-weight: 700;
         color: #ffffff !important;
@@ -324,11 +332,11 @@
   .tok__sec6 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: 6rem;
     padding: 0 6rem;
     @media only screen and (max-width: "1050px") {
       flex-direction: column;
+      align-items: center;
     }
     @media only screen and (max-width: "750px") {
       padding: 0 2rem;
@@ -339,6 +347,7 @@
         margin-right: 0rem;
       }
       .heading {
+        font-family: "nurom";
         font-size: 46px;
         font-weight: 700;
         color: #ffffff !important;
@@ -396,14 +405,13 @@
 
   .tok__sec7 {
     display: flex;
-
     padding: 5rem 0rem;
     justify-content: center;
     table {
       color: white;
       display: inline-block;
       overflow-x: auto;
-      tr{
+      tr {
         background-color: transparent !important;
       }
       tr th {
@@ -452,17 +460,18 @@
   .tok__sec8 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: 2rem;
     padding: 0 6rem;
     @media only screen and (max-width: "1050px") {
       flex-direction: column;
+      align-items: center;
     }
     @media only screen and (max-width: "750px") {
       padding: 0 2rem;
     }
     .sec8__left {
       .heading {
+        font-family: "nurom";
         font-size: 46px;
         font-weight: 700;
         color: #ffffff !important;
@@ -524,11 +533,12 @@
   .tok__sec9 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: 2rem;
     padding: 0 6rem;
+    padding-bottom: 3rem;
     @media only screen and (max-width: "1050px") {
       flex-direction: column;
+      align-items: center;
     }
     @media only screen and (max-width: "750px") {
       padding: 0 2rem;
@@ -540,6 +550,7 @@
         margin-bottom: 2rem;
       }
       .heading {
+        font-family: "nurom";
         font-size: 46px;
         font-weight: 700;
         color: #ffffff !important;
@@ -592,104 +603,118 @@
       }
     }
   }
-  .tok__sec10 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+}
+
+.tok__sec10 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 35px;
+  padding: 10rem 7rem;
+  background-image: url("../../assests/Token/h.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  @media only screen and (max-width: "1500px") {
+    font-size: 22px;
+  }
+  @media only screen and (max-width: "900px") {
+    padding: 10rem 2rem;
+  }
+  @media only screen and (max-width: "550px") {
+    font-size: 18px;
+  }
+
+  .para1 {
+    color: white;
+    margin-bottom: 2rem;
+
+    span {
+      color: #f831ec;
+    }
+  }
+  .para2 {
+    color: white;
+    margin-bottom: 2rem;
+
+    span {
+      color: #f831ec;
+    }
+  }
+  .para3 {
+    margin-bottom: 2rem;
+    color: #f831ec;
+  }
+  .para4 {
     font-size: 35px;
-    padding: 10rem 7rem;
+    color: white;
+    margin-bottom: 2rem;
     @media only screen and (max-width: "1500px") {
       font-size: 22px;
-    }
-    @media only screen and (max-width: "900px") {
-      padding: 10rem 2rem;
     }
     @media only screen and (max-width: "550px") {
       font-size: 18px;
     }
-
-    .para1 {
-      color: white;
-      margin-bottom: 2rem;
-
-      span {
-        color: #f831ec;
-      }
+  }
+  .button_container {
+    @media only screen and (max-width: "650px") {
+     width: 100%;
+    //  margin: auto;
     }
-    .para2 {
-      color: white;
-      margin-bottom: 2rem;
-
-      span {
-        color: #f831ec;
-      }
-    }
-    .para3 {
-      margin-bottom: 2rem;
-      color: #f831ec;
-    }
-    .para4 {
+    button {
+        font-family: "nurom";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      font-family: "nurom";
       font-size: 35px;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 0.3em 1em;
+      background-image: linear-gradient(180deg, #fa4cf0 0%, #5d15e3 100%);
+      background-color: #6923ea;
+      border-radius: 20px;
+      border: none;
       color: white;
-      margin-bottom: 2rem;
+      position: relative;
+      box-shadow: 1px 2px 160px 11px #631de7;
+      margin-bottom: 1rem;
       @media only screen and (max-width: "1500px") {
         font-size: 22px;
       }
-      @media only screen and (max-width: "550px") {
-        font-size: 18px;
+      @media only screen and (max-width: "650px") {
+     width: 100%;
+     font-size: 20px;
       }
-    }
-    .button_container {
-      button {
+
+      span {
         display: flex;
-        align-items: center;
         justify-content: center;
         align-items: center;
-        text-transform: uppercase;
-        font-family: "nurom";
-        font-size: 20px;
-        font-weight: bold;
-        cursor: pointer;
-        padding: 0.3em 1em;
-        background-image: linear-gradient(180deg, #fa4cf0 0%, #5d15e3 100%);
-        background-color: #6923ea;
-        border-radius: 20px;
-        border: none;
-        color: white;
-        position: relative;
-        box-shadow: 1px 2px 160px 11px #631de7;
-        margin-bottom: 1rem;
-        @media only screen and (max-width: "500px") {
-          font-size: 16px;
-        }
+        position: absolute;
+        right: 30px;
+        top: 0.07rem;
+        height: -webkit-fill-available;
+        opacity: 0;
 
+        transition: all 0.5s ease-in-out;
+      }
+
+      &:hover {
         span {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: absolute;
-          right: 30px;
-          top: 0.07rem;
-          height: -webkit-fill-available;
-          opacity: 0;
-
-          transition: all 0.5s ease-in-out;
-        }
-
-        &:hover {
-          span {
-            opacity: 1;
-            right: 3px;
-          }
+          opacity: 1;
+          right: 3px;
         }
       }
     }
+  }
 
-    .para6 {
-      color: #f831ec;
-      font-style: italic;
-    }
+  .para6 {
+    color: #f831ec;
+    font-style: italic;
   }
 }

@@ -1,0 +1,249 @@
+.nft__page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nft__page_header {
+  max-width: 900px;
+}
+.nft__page_heading {
+  background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+}
+.nft__page_desc {
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.nft__page_menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nft__page_menuitem {
+  margin: 30px;
+  color: #f832ec;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.nft__page_subheading {
+  color: #f832ec;
+  font-size: 30px;
+  font-weight: 500;
+  max-width: 640px;
+  text-align: center;
+}
+.nft__page_innerbox {
+  width: 100%;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+}
+.nftp__innerbox_content {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  width: 650px;
+  text-align: center;
+}
+.nftp__innerbox_dropdown {
+  border: 2px solid #f832ec;
+  box-shadow: 0 0 5px 5px #f832eb52;
+  border-radius: 8px;
+  padding: 0px 30px 0px 10px;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.nftp__innerbox_dropicon {
+  position: absolute;
+  right: 5px;
+  top: 14px;
+}
+.dropdown__items_wrap {
+  position: absolute;
+  height: 225px;
+  overflow: auto;
+  width: 70px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  right: 0px;
+  border: 1px solid #f832ec;
+  box-shadow: 0 0 5px 5px #f832eb52;
+}
+.dropdown__item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown__item:hover {
+  background-color: #f832ec;
+}
+.doted__box {
+  width: 335px;
+  height: 325px;
+  border-radius: 25px;
+  border: 2px dashed #f832ec;
+}
+.nftp__box_containers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 850px;
+  padding: 20px 0px;
+}
+.nftp__question_mark {
+}
+.nftp__bottom_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.nftp__box1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nftp__box_left {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+.nftp__box_right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.nftp__left_pheading {
+  background: linear-gradient(90deg, #793ff4 5%, #5dc8f6 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  width: 90%;
+  line-height: 40px;
+  padding: 10px 0px;
+}
+
+.nftp__left_sheading {
+  color: #f832ec;
+  font-size: 32px;
+  font-weight: 600;
+  width: 70%;
+  text-align: center;
+  line-height: 30px;
+  padding: 10px 0px;
+}
+.nftp__left_timer {
+  display: flex;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+.nftp__timer_daysbottom,
+.nftp__timer_hoursbottom,
+.nftp__timer_minsbottom,
+.nftp__timer_secondbottom {
+  font-size: 10px;
+  font-weight: normal;
+}
+.nftp__left_bottom {
+  color: #f832ec;
+}
+.nftp__left_bottom {
+  text-align: center;
+  padding: 10px 0px;
+}
+.nftp__bottom_text {
+  color: #f832ec;
+  width: 60%;
+  text-align: center;
+}
+.nftp__box2 {
+  width: 100%;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.nftp__box2_text {
+  color: #f832ec;
+  font-size: 30px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+}
+.active__menu_item {
+  color: #5dc8f6;
+}
+@media (max-width: 960px) {
+  .nft__page_menu {
+    flex-direction: column;
+    padding: 0px 5% !important;
+    margin: 0px !important;
+    margin-bottom: 25px !important;
+    width: 100%;
+    align-items: center;
+  }
+  .nft__page_desc {
+    font-size: 18px;
+  }
+  .nft__page_heading {
+    font-size: 30px;
+  }
+  .nft__page_menu * {
+    flex-direction: column;
+    padding: 0px !important;
+    margin: 0px !important;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid white;
+
+    box-sizing: border-box;
+    background-color: #ee3bee23;
+    margin-bottom: 50px;
+  }
+  .active__menu_item {
+    color: #5dc8f6;
+    background-color: #79abfb2b;
+  }
+  .nftp__box_containers {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .nftp__box_left {
+    width: 100%;
+  }
+  .nftp__box_right {
+    width: 100%;
+  }
+  .nftp__innerbox_content {
+    font-size: 25px;
+  }
+}
