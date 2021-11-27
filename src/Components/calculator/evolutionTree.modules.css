@@ -5,17 +5,19 @@
 .evolution_inner_text {
   font-family: "sansation";
   font-weight: 500;
-  line-height: 50px;
-  font-size: 23px;
+  line-height: 30px;
+  font-size: 24px;
   color: #ffffff;
   text-align: center;
 }
 .evolution_inner_heading {
-  font-family: "Nurom Bold";
+  font-family: "Nurom";
   font-weight: 500;
   font-size: 35px;
   line-height: 35px;
-  color: #f832ec;
+  background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
   padding-top: 50px;
 }
@@ -44,7 +46,7 @@
   padding: 0px !important;
 }
 .main-timeline {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nurom";
   padding: 30px 0;
   position: relative;
 }
@@ -135,12 +137,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 500;
-  font-family: "nurom bold";
+  font-family: "nurom";
   line-height: 35px;
   padding-top: 50px;
 }
 .Get_External_heading {
-  font-size: 35px;
+  font-size: 42px;
   background: -webkit-linear-gradient(left, #5dc7fe, #f831ec);
   background: -o-linear-gradient(right, red, yellow);
   background: -moz-linear-gradient(right, red, yellow);
@@ -148,8 +150,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 500;
-  font-family: "nurom bold";
-  line-height: 35px;
+  font-family: "nurom";
+  line-height: 42px;
   padding-top: 50px;
 }
 .question_mark-section {
@@ -222,7 +224,7 @@
   float: left;
 }
 .Alien_section .main-timeline {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nurom";
   padding: 30px 0;
   position: relative;
 }

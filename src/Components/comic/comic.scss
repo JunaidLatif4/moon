@@ -85,17 +85,19 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     .nft_part1_style {
-      width: 20.875%;
-      .image_style{
+      width: 250px;
+      margin-top: 10px;
+      .image_style {
         width: 100%;
       }
-      .image_shadow{
+      .image_shadow {
         box-shadow: 0px 2px 80px -16px #631de7;
       }
-      .image_shadow1{
-       box-shadow: 0px 2px 80px -16px #631de7;
+      .image_shadow1 {
+        box-shadow: 0px 2px 80px -16px #631de7;
       }
       .part1_footer {
         background-color: rgba(10, 10, 10, 0.8);
@@ -138,6 +140,7 @@
 
   .nft_section {
     padding: 100px 0px;
+    background-image: url("../../assests/comic/background.jpg");
     .heading_style {
       background: -webkit-linear-gradient(left, #5dc7fe, #f831ec);
       background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
@@ -162,25 +165,8 @@
 
   .release_section {
     padding-top: 100px;
-    .heading_style {
-      background: -webkit-linear-gradient(left, #5dc7fe, #f831ec);
-      background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-align: center;
-      font-size: 40px;
-      font-family: "nurom";
-      padding-bottom: 10px;
-      line-height: 1em;
-      font-weight: 500;
-    }
-    .release_paragraph {
-      width: 65%;
-      text-align: center;
-      font-size: 34px;
-      line-height: 50px !important;
-      font-family: "sansation";
-      color: #ffffff;
-    }
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
