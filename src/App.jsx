@@ -11,25 +11,21 @@ import Comic from "./Components/comic/Comic";
 import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
 import Evaluation from "./Components/EvaluationLab/Evaluation";
+import Attributes from "./Components/Attributes/Attributes";
+
 import "./App.scss";
-import Home2 from "./Components/Home/Home2";
-import Question from "./Components/Home/Question";
 
 const App = () => {
   return (
     <>
       {/* <Header /> */}
       <Switch>
+        <Route exact path="/" component={Home} />
         <Route exact path="/token" component={Token} />
         <Route exact path="/comic" component={Comic} />
         <Route exact path="/Evaluation" component={Evaluation} />
         <Route exact path="/calculator" component={Calculator} />
-        <Route exact path="/" component={Home} />
-        <Route path="/token" component={Token} />
-        <Route path="/Evaluation" component={Evaluation} />
-        <Route path="/calculator" component={Calculator} />
-        <Route path="/home" component={Home2} />
-        <Route path="/question" component={Question} />
+        <Route exact path="/attributes" component={Attributes} />
       </Switch>
       {/* <Footer /> */}
     </>

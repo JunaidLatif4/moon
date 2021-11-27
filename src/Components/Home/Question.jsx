@@ -32,7 +32,7 @@ const Question = () => {
   return (
     <>
         
-        <div className="question__container">
+        <div id="faq" className="question__container">
             <div className="left">
                 <div className="left__heading">
                     QUESTIONS?

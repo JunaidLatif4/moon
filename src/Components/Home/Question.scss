@@ -1,6 +1,11 @@
 .question__container {
-  background-color: black;
-  padding: 3rem 6rem;
+  background-color: #0a0a0ab5;
+  background-image: url(../../assests/Faq/faq.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  padding: 5rem 6rem;
   display: flex;
   gap: 5rem;
   @media only screen and (max-width:"1200px"){
