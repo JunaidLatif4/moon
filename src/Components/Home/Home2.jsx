@@ -16,7 +16,7 @@ const Home2 = () => {
   return (
     <>
       <div className="home2__container">
-        <div className="sect1">
+        <div id="membership" className="sect1">
           <div className="heading">MEMBERSHIP</div>
           <div className="para">
             On top of co-sharing astronomical profits from the game, here is

@@ -95,7 +95,7 @@ const Home = () => {
                             {/* <p style={{ color: '#5dcbf6' }}> GAME CONCEPT </p> */}
                             <p> GAME CONCEPT </p>
                             <span></span>
-                            <p className="p2" style={{color:"white"}}> BENEFITS OVERVIEW </p>
+                            <p className="p2" style={{ color: "white" }}> BENEFITS OVERVIEW </p>
                         </div>
 
                         <div className="data">
@@ -117,7 +117,7 @@ const Home = () => {
                     </div>
                 </section>
 
-                <section className="section4_container">
+                <section id="buy" className="section4_container">
                     <div className="box">
                         <div className="heading">
                             MINTING
@@ -173,7 +173,7 @@ const Home = () => {
 
                 <Home2 />
 
-                <section className="section11_container">
+                <section id="team" className="section11_container">
                     <div className="box">
                         <div className="heading">
                             DEGEN MONKEY LAUNCHERS

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import { AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-scroll"
 
 import Logo from "../../assests/NavBar/logo.png";
 import Send from "../../assests/NavBar/send.png";
@@ -28,15 +29,15 @@ const Header = () => {
         <div className="box">
           <nav>
             <NavLink to="/"> HOME </NavLink>
-            <NavLink to="/"> BUY NOW </NavLink>
-            <NavLink to="/"> TAK TOKEN </NavLink>
-            <div className="learn"> <a href=""> LEARN MORE </a>
+            <a href="/#buy"> BUY NOW </a>
+            <NavLink to="/token"> TAK TOKEN </NavLink>
+            <div className="learn"> <NavLink style={{ pointerEvents: "none" }} to="/"> LEARN MORE </NavLink>
               <div className="learn_drop">
-                <NavLink to="/"> ROADMAP </NavLink>
-                <NavLink to="/"> MEMBERSHIP </NavLink>
-                <NavLink to="/"> TEAM </NavLink>
-                <NavLink to="/"> FAQS </NavLink>
-                <NavLink to="/"> DOCS </NavLink>
+                <a href="/"> ROADMAP </a>
+                <a href="/#membership"> MEMBERSHIP </a>
+                <a href="/#team"> TEAM </a>
+                <a href="/#faq"> FAQS </a>
+                <a href="/"> DOCS </a>
               </div>
             </div>
           </nav>
@@ -50,9 +51,9 @@ const Header = () => {
           </div>
           <nav>
             <NavLink to="/Evaluation"> EVOLUTION LAB </NavLink>
-            <NavLink to="/"> COMICS </NavLink>
-            <NavLink to="/"> CALCULATOR </NavLink>
-            <NavLink to="/"> ATTRIBUTES </NavLink>
+            <NavLink to="/comic"> COMICS </NavLink>
+            <NavLink to="/calculator"> CALCULATOR </NavLink>
+            <NavLink to="/attributes"> ATTRIBUTES </NavLink>
           </nav>
         </div>
         <div className="mbl_box">
@@ -71,17 +72,17 @@ const Header = () => {
           <div className={`mbl_drop ${showDrop ? "show_drop" : null}`}>
             <div className="drop_box">
               <NavLink to="/"> HOME </NavLink>
-              <NavLink to="/"> BUY NOW </NavLink>
-              <NavLink to="/"> TAK TOKEN </NavLink>
-              <NavLink to="/"> LEARN MORE </NavLink>
+              <a href="/#buy"> BUY NOW </a>
+              <NavLink to="/token"> TAK TOKEN </NavLink>
+              <NavLink style={{ userSelect: "none" }} to="/"> LEARN MORE </NavLink>
               <NavLink to="/" className="sub"> ROADMAP </NavLink>
-              <NavLink to="/" className="sub"> MEMBERSHIP </NavLink>
-              <NavLink to="/" className="sub"> TEAM </NavLink>
-              <NavLink to="/" className="sub"> FAQS </NavLink>
+              <a href="/#membership" className="sub"> MEMBERSHIP </a>
+              <a href="/#team" className="sub"> TEAM </a>
+              <a href="/#faq" className="sub"> FAQS </a>
               <NavLink to="/Evaluation"> EVOLUTION LAB </NavLink>
-              <NavLink to="/Evaluation"> COMICS </NavLink>
-              <NavLink to="/Evaluation"> CALCULATOR </NavLink>
-              <NavLink to="/Evaluation"> ATTRIBUTES </NavLink>
+              <NavLink to="/comic"> COMICS </NavLink>
+              <NavLink to="/calculator"> CALCULATOR </NavLink>
+              <NavLink to="/attributes"> ATTRIBUTES </NavLink>
             </div>
           </div>
         </div>
