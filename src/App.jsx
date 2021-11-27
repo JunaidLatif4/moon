@@ -19,7 +19,7 @@ import Home2 from "./Components/Home/Home2";
 const App = () => {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/token" component={Token} />
@@ -27,7 +27,7 @@ const App = () => {
         <Route path="/calculator" component={Calculator} />
         <Route path="/home" component={Home2} />
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

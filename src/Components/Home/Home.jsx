@@ -92,9 +92,10 @@ const Home = () => {
                         >
                         </Parallax>
                         <div className="detail">
-                            <p style={{ color: '#5dcbf6' }}> GAME CONCEPT </p>
+                            {/* <p style={{ color: '#5dcbf6' }}> GAME CONCEPT </p> */}
+                            <p> GAME CONCEPT </p>
                             <span></span>
-                            <p className="p2"> BENEFITS OVERVIEW </p>
+                            <p className="p2" style={{color:"white"}}> BENEFITS OVERVIEW </p>
                         </div>
 
                         <div className="data">

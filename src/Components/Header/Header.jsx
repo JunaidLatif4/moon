@@ -31,7 +31,7 @@ const Header = () => {
                     <nav>
                         <NavLink to="/"> HOME </NavLink>
                         <NavLink to="/"> BUY NOW </NavLink>
-                        <NavLink to="/"> TAK TOKEM </NavLink>
+                        <NavLink to="/"> TAK TOKEN </NavLink>
                         <div className="learn"> <a href=""> LEARN MORE </a>
                             <div className="learn_drop">
                                 <NavLink to="/"> ROADMAP </NavLink>
@@ -81,6 +81,9 @@ const Header = () => {
                             <NavLink to="/" className="sub"> TEAM </NavLink>
                             <NavLink to="/" className="sub"> FAQS </NavLink>
                             <NavLink to="/Evaluation"> EVOLUTION LAB </NavLink>
+                            <NavLink to="/Evaluation"> COMICS </NavLink>
+                            <NavLink to="/Evaluation"> CALCULATOR </NavLink>
+                            <NavLink to="/Evaluation"> ATTRIBUTES </NavLink>
                         </div>
                     </div>
                 </div>
