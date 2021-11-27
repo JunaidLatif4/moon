@@ -104,7 +104,7 @@ const StackingCalculator = () => {
       },
       title: {
         display: true,
-        text: "Chart.js Horizontal Bar Chart",
+        text: "",
       },
     },
   };
@@ -112,20 +112,19 @@ const StackingCalculator = () => {
     <div>
       <div className="py-1">
         <p className={styles.pp}>
-          Use the Profit Calculator to determine the crazy lucrative rewards
-          you’ll be able to generate by holding “Mooning Monkeys” and other
-          evolution stages such as “Galactic Gorillas”, “Alien Gorillas” and
-          “Eternal Yetis”
+          NFT and non NFT holders are welcome to the staking rewards.
+          <br /> Enter your current TAK amount to see your potential rewards.
         </p>
         <div className={styles.sech}>
           {" "}
-          <span style={{ color: "#e343d7" }}>STEP 1: </span>BET SETTINGS
+          <span style={{ color: "#e343d7" }}>STEP 1: </span>Enter Your $TAK
+          Holding
         </div>
         <div className={styles.ms}>
           <Row className="d-flex justify-content-between">
             <Col>
               {" "}
-              <span className={styles.colr}> Daily Bets</span>
+              <span className={styles.colr}>Amount of $TAK</span>
             </Col>
             <Col lg={3}>
               <InputNumber

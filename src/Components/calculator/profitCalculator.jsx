@@ -82,7 +82,7 @@ const ProfitCalculator = () => {
       },
       title: {
         display: true,
-        text: "Chart.js Horizontal Bar Chart",
+        text: "Project Earning Per NFT",
       },
     },
   };
@@ -994,7 +994,7 @@ const ProfitCalculator = () => {
           <span style={{ color: "#e343d7" }}>STEP 1: </span>BET SETTINGS
         </div>
         <div className={styles.ms}>
-          <Row className="d-flex justify-content-between">
+          <Row className="d-flex justify-content-between align-items-center">
             <Col>
               {" "}
               <span className={styles.colr}> Daily Bets</span>
@@ -1023,7 +1023,9 @@ const ProfitCalculator = () => {
               />
             </Col>
           </Row>
-          <div className="w-100 d-flex justify-content-between py-3">
+          <div
+            className={`w-100 d-flex justify-content-between ${styles.py_3}`}
+          >
             <div className={styles.colrw}>75'000</div>
             <div className={styles.colrw}>1'000'000</div>
           </div>
@@ -1247,7 +1249,7 @@ const ProfitCalculator = () => {
           </div>
           <div class="total-result-text" id="total-earned"></div>
         </div>
-        <div>
+        <div className="mt-3">
           <Bar data={data} options={options} />
         </div>
       </div>

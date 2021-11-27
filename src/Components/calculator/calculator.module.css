@@ -11,6 +11,12 @@
   background-size: cover;
   padding-top: 100px;
 }
+
+.c_width {
+  max-width: 90%;
+  margin: auto;
+}
+
 .banner {
   line-height: 85px;
   font-size: 85px;
@@ -21,16 +27,7 @@
   font-weight: 600;
   padding-bottom: 10px;
 }
-.cal_headings {
-  font-size: 22px;
-  padding: 4px 30px;
-  vertical-align: middle;
-  line-height: 22px;
-  font-weight: 600;
-  color: white;
-  font-family: "sansation";
-  cursor: pointer;
-}
+
 .cardmain {
   padding: 24px 30px;
   border-radius: 20px 20px 20px 20px;
@@ -52,10 +49,10 @@
   color: #fff;
   font-family: "sansation";
   font-size: 24px;
-  line-height: 30px;
+  line-height: 50px;
   text-align: center;
   max-width: 90%;
-  margin: 0 auto;
+  margin: 15px auto 25px;
 }
 .sech {
   color: #fff;
@@ -96,6 +93,23 @@
   cursor: pointer;
   font-family: "sansation";
 }
+
+.cal_headings {
+  font-size: 22px;
+  padding: 4px 30px;
+  vertical-align: middle;
+  line-height: 22px;
+  font-weight: 600;
+  color: white;
+  font-family: "sansation";
+  cursor: pointer;
+}
+
+.py_3 {
+  padding: 0px !important;
+  margin-top: 10px;
+}
+
 /* .table_main {
   width: 100%;
   border: 1.5px solid #512a9f !important;
@@ -145,11 +159,107 @@ tr:nth-child(even) {
   font-weight: 500;
   text-align: center;
 }
+
+@media screen and (max-width: 1024px) {
+  .dn {
+    display: none;
+  }
+
+  .pcolor {
+    color: #e343d7;
+    font-size: 20px;
+    padding: 25px 10px 0px;
+    vertical-align: middle;
+    line-height: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "sansation";
+    text-align: center;
+  }
+
+  .cal_headings {
+    font-size: 20px;
+    padding: 25px 10px 0px;
+    line-height: 20px;
+  }
+
+  .pp {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0px auto 25px;
+  }
+
+  /* .cardmain {
+    padding: 24px 0px;
+   
+  } */
+
+  .inercard {
+    padding: 30px 0px;
+  }
+  .sech {
+    color: #fff;
+    font-size: 22px;
+    text-align: left;
+    margin: 20px 0;
+    font-weight: 700;
+  }
+
+  .colr {
+    font-size: 19px;
+    line-height: 19px;
+  }
+
+  .colrw {
+    font-size: 19px;
+    line-height: 19px;
+  }
+}
+
 @media (min-width: 981px) {
   .pdd {
     padding: 2% 0;
   }
 }
+
+@media (max-width: 768px) {
+  .pcolor {
+    font-size: 17px;
+    padding: 25px 0px 0px;
+    line-height: 17px;
+  }
+
+  .cal_headings {
+    font-size: 17px;
+    padding: 25px 0px 0px;
+    line-height: 17px;
+  }
+
+  .pp {
+    font-size: 22px;
+    line-height: 28px;
+    max-width: 95%;
+  }
+
+  .sech {
+    color: #fff;
+    font-size: 20px;
+    text-align: left;
+    margin: 20px 0;
+    font-weight: 700;
+  }
+
+  .colr {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .colrw {
+    font-size: 19px;
+    line-height: 19px;
+  }
+}
+
 @media (max-width: 600px) {
   .banner {
     font-size: 40px;
@@ -160,10 +270,10 @@ tr:nth-child(even) {
   .cal_h {
     justify-content: center;
   }
-  .cal_headings {
+  /* .cal_headings {
     text-align: center;
     height: 70px;
-  }
+  } */
   .cust {
     padding-top: 30px;
     font-size: 23px;

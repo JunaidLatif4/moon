@@ -775,7 +775,7 @@ const ComsicProfit = () => {
           <span style={{ color: "#e343d7" }}>STEP 2: </span>Profit Forcast
         </div>
         <div className="result-table-sec">
-          <table class="result-table">
+          <table class="result-table" style={{ marginBottom: "35px" }}>
             <thead>
               <tr>
                 <th>Data</th>

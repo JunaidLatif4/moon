@@ -94,11 +94,21 @@ const EvolutionCalculator = () => {
         </div>
 
         <div className="result-table-sec">
+          <div class="table-top-header-1">
+            <div class="tth"></div>
+            <div class="tth">
+              <div>Stay at</div>
+            </div>
+            <div class="tth">
+              <div>Level up to</div>
+            </div>
+          </div>
+
           <table class="result-table">
             <thead>
               <tr>
-                <th>Stages</th>
-                <th>Level 1</th>
+                <th style={{ width: "25%" }}>Stages</th>
+                <th style={{ width: "18%" }}>Level 1</th>
                 <th>Level 2</th>
                 <th>Level 3</th>
                 <th>Level 4</th>
