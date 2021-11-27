@@ -256,7 +256,9 @@ function Evaluation() {
                             </div>
                         }
 
-
+                        <div className="tree_container">
+                        <EvolutionTree/>
+                        </div>
 
 
 
