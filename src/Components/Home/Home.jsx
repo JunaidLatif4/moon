@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import moment from "moment";
 
 import { IoIosArrowForward } from "react-icons/io"
-import { Parallax, Background } from "react-parallax";
+import { Parallax } from "react-parallax";
 
 import Sec1 from "../../assests/Home/sec1.jpg"
 import Sec3 from "../../assests/Home/sec3.jpg"

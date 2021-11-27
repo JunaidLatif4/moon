@@ -1,0 +1,110 @@
+.attributes_container {
+  .box {
+    background-image: url(../../assests/Attributes/sce1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20rem 0;
+    padding-top: 25rem;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .heading {
+      font-family: "nurom";
+      font-size: 4rem;
+      text-align: center;
+      margin: 0 1rem;
+      background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      font-family: "nurom";
+      font-size: 1.5rem;
+      font-weight: bold;
+      background-image: linear-gradient(180deg, #fa4cf0 0%, #5d15e3 100%);
+      cursor: pointer;
+      padding: 0.7rem 1.5rem 0.3rem 1.5rem;
+      background-color: RGB(134, 60, 235);
+      border-radius: 10px;
+      border: none;
+      color: white;
+      position: relative;
+      box-shadow: 1px 2px 160px 11px #631de7;
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 30px;
+        top: 0.07rem;
+        height: -webkit-fill-available;
+        opacity: 0;
+
+        transition: all 0.5s ease-in-out;
+      }
+
+      &:hover {
+        span {
+          opacity: 1;
+          right: 2px;
+        }
+      }
+    }
+    @media only screen and (max-width: 950px) {
+      .heading {
+        font-size: 3rem;
+      }
+      button {
+        font-size: 1rem;
+      }
+    }
+    @media only screen and (max-width: 700px) {
+      .heading {
+        font-size: 2rem;
+      }
+      button {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .box2 {
+    background-image: url(../../assests/Attributes/sec2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20rem 0;
+    padding-top: 25rem;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    gap: 10rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .detail {
+      text-align: center;
+      margin: 0 1rem;
+      font-size: 2rem;
+    }
+
+    @media only screen and (max-width: 950px) {
+      gap: 5rem;
+      .detail {
+        font-size: 1rem;
+      }
+    }
+  }
+}
