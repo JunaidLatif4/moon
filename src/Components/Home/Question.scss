@@ -1,0 +1,176 @@
+.question__container {
+  background-color: #0a0a0ab5;
+  background-image: url(../../assests/Faq/faq.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  padding: 5rem 6rem;
+  display: flex;
+  gap: 5rem;
+  @media only screen and (max-width:"1200px"){
+   flex-direction: column;
+   gap: 0rem;
+}
+  @media only screen and (max-width:"1200px"){
+    padding: 3rem 3rem;
+}
+  @media only screen and (max-width:"550px"){
+    padding: 3rem 1rem;
+}
+  .left {
+    width: 100%;
+    .left__heading {
+      font-size: 70px;
+      background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: "nurom";
+      line-height: 1em;
+      @media only screen and (max-width:"1200px"){
+       text-align: center;
+       @media only screen and (max-width:"550px"){
+        font-size: 45px;
+     }
+    }
+    }
+    .para {
+      font-size: 22px;
+      color: white;
+      line-height: 1em;
+      font-weight: 600;
+      @media only screen and (max-width:"1200px"){
+        text-align: center;
+     }
+      @media only screen and (max-width:"550px"){
+        font-size: 18px;
+     }
+    }
+    .para2 {
+      font-size: 34px;
+      color: white;
+      line-height: 50px;
+      margin-top: 3rem;
+      @media only screen and (max-width:"1200px"){
+        text-align: center;
+     }
+     @media only screen and (max-width:"550px"){
+        font-size: 22px;
+     }
+    }
+    .social_box {
+      margin-top: 8px;
+      margin-bottom: 10px;
+      @media only screen and (max-width:"1200px"){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+      @media only screen and (max-width:"600px"){
+        margin-bottom: 2.5rem;
+     }
+      .img {
+        height: 28px;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .right {
+    // margin-left: 8rem;
+    width: 100%;
+  }
+
+  .accordian1 {
+    width: 100%;
+    border: 2px solid #631de7;
+    border-radius: 20px;
+    margin: 3rem 0;
+    padding: 0.8rem 1rem;
+    padding-bottom: 0.3rem;
+    @media only screen and (max-width:"700px"){
+        margin: 1rem 0;
+    }
+
+    .heading {
+      .close {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .text {
+          color: white;
+          font-size: 20px;
+          font-weight: 600;
+          @media only screen and (max-width:"430px"){
+            font-size: 16px;
+         }
+        }
+      }
+      .data {
+        margin-top: 15px;
+        font-size: 34px;
+        height: 0px;
+        overflow: hidden;
+        transition: all 0.7s ease-in-out;
+        color: white;
+        @media only screen and (max-width:"1500px"){
+            font-size: 27px;
+        }
+        @media only screen and (max-width:"1300px"){
+            font-size: 24px;
+        }
+        @media only screen and (max-width:"650px"){
+            font-size: 18px;
+        }
+        span {
+          color: #f831ec;
+        }
+        .para2 {
+          margin-top: 1.5rem;
+          @media only screen and (max-width:"1500px"){
+            font-size: 27px;
+        }
+        @media only screen and (max-width:"1300px"){
+            font-size: 24px;
+        }
+        @media only screen and (max-width:"650px"){
+            font-size: 18px;
+            line-height: 32px;
+        }
+        }
+        .para3 {
+          margin-top: 1.5rem;
+          @media only screen and (max-width:"1500px"){
+            font-size: 27px;
+        }
+        @media only screen and (max-width:"1300px"){
+            font-size: 24px;
+        }
+        @media only screen and (max-width:"650px"){
+            font-size: 18px;
+            line-height: 32px;
+        }
+        }
+      }
+      .show {
+        //    display: block;
+        height: 500px;
+        @media only screen and (max-width:"1200px"){
+            height: 300px;
+          }
+        @media only screen and (max-width:"550px"){
+            height: 500px;
+          }
+        @media only screen and (max-width:"450px"){
+            height: 400px;
+          }
+      }
+    }
+  }
+  #number3{
+    @media only screen and (max-width:"1200px"){
+       margin-top: 0rem !important;
+     }
+
+  }
+}

@@ -10,12 +10,12 @@ import Sec3F from "../../assests/Home/sec3front.png"
 import Sec4P from "../../assests/Home/sec4profile.png"
 import CardImg from "../../assests/Home/cardg.png"
 import BackBlur from "../../assests/Home/cardback.png"
-import Button from "../ButtonComponent/Button"
+import Question from "./Question"
+import Home2 from "./Home2"
 
 import CardData from './sec11Data'
 
 import "./Home.scss"
-import Home2 from './Home2';
 
 const Home = () => {
     const [currentTime, setCurrentTime] = useState(moment());
@@ -221,6 +221,8 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
+
+                <Question/>
             </div>
         </>
     )
