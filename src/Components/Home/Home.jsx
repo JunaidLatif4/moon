@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import moment from "moment";
 
 import { IoIosArrowForward } from "react-icons/io"
 import { Parallax, Background } from "react-parallax";
@@ -14,8 +15,21 @@ import Button from "../ButtonComponent/Button"
 import CardData from './sec11Data'
 
 import "./Home.scss"
+import Home2 from './Home2';
 
 const Home = () => {
+    const [currentTime, setCurrentTime] = useState(moment());
+    const targetTime = moment("2021-11-30 07:00");
+    const timeBetween = moment.duration(targetTime.diff(currentTime));
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentTime(moment());
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <>
             <div className="home_container">
@@ -91,9 +105,10 @@ const Home = () => {
                         >
                         </Parallax>
                         <div className="detail">
-                            <p style={{ color: '#5dcbf6' }}> GAME CONCEPT </p>
+                            {/* <p style={{ color: '#5dcbf6' }}> GAME CONCEPT </p> */}
+                            <p> GAME CONCEPT </p>
                             <span></span>
-                            <p className="p2"> BENEFITS OVERVIEW </p>
+                            <p className="p2" style={{ color: "white" }}> BENEFITS OVERVIEW </p>
                         </div>
 
                         <div className="data">
@@ -115,7 +130,7 @@ const Home = () => {
                     </div>
                 </section>
 
-                <section className="section4_container">
+                <section id="buy" className="section4_container">
                     <div className="box">
                         <div className="heading">
                             MINTING
@@ -128,8 +143,11 @@ const Home = () => {
                                 <p className="p2">
                                     SUIT UP AND GET READY!
                                 </p>
-                                <div className="time">
-
+                                <div className="nftp__left_timer">
+                                    <div className="nftp__timer_days"><div className="nftp__timer_daystop">{timeBetween.days()}</div><div className="nftp__timer_daysbottom">Day(s)</div></div>
+                                    <div className="nftp__timer_days"><div className="nftp__timer_hourstop">{timeBetween.hours()}</div><div className="nftp__timer_hoursbottom">Hour(s)</div></div>
+                                    <div className="nftp__timer_days"><div className="nftp__timer_minstop">{timeBetween.minutes()}</div><div className="nftp__timer_minsbottom">Minute(s)</div></div>
+                                    <div className="nftp__timer_days"><div className="nftp__timer_secondtop">{timeBetween.seconds()}</div><div className="nftp__timer_secondbottom">Second(s)</div></div>
                                 </div>
                             </div>
                             <Parallax
@@ -169,7 +187,9 @@ const Home = () => {
                     </div>
                 </section>
 
-                <section className="section11_container">
+                <Home2 />
+
+                <section id="team" className="section11_container">
                     <div className="box">
                         <div className="heading">
                             DEGEN MONKEY LAUNCHERS
