@@ -191,11 +191,11 @@ const Home2 = () => {
               <Parallax
                 renderLayer={(percentage) => (
                   <button
-                    style={{
-                      transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                        }) `,
-                      transition: "all .3s linear",
-                    }}
+                    // style={{
+                    //   transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                    //     }) `,
+                    //   transition: "all .3s linear",
+                    // }}
                   >
                     VISIT EVOLUTION LAB
                     <span>
@@ -208,9 +208,10 @@ const Home2 = () => {
           </div>
         </div>
 
-        <div className="heading">THE MOONING MONKEY COMIC SERIE</div>
 
         <div className="sect3">
+        <div className="heading">THE MOONING MONKEY COMIC SERIE</div>
+          <div className="sections">
           <div className="sect3__left">
             <div className="right__paras">
               <div className="para1">
@@ -231,11 +232,11 @@ const Home2 = () => {
               <Parallax
                 renderLayer={(percentage) => (
                   <button
-                    style={{
-                      transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                        }) `,
-                      transition: "all .3s linear",
-                    }}
+                    // style={{
+                    //   transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                    //     }) `,
+                    //   transition: "all .3s linear",
+                    // }}
                   >
                     CHECK OUT COMIC PAGE
                     <span>
@@ -262,6 +263,7 @@ const Home2 = () => {
                 )}
               ></Parallax>
             </div>
+          </div>
           </div>
         </div>
 
@@ -311,11 +313,11 @@ const Home2 = () => {
               <Parallax
                 renderLayer={(percentage) => (
                   <button
-                    style={{
-                      transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                        }) `,
-                      transition: "all .3s linear",
-                    }}
+                    // style={{
+                    //   transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                    //     }) `,
+                    //   transition: "all .3s linear",
+                    // }}
                   >
                     TOKEN UTILITY OVERVIEW
                     <span>
@@ -328,45 +330,29 @@ const Home2 = () => {
           </div>
         </div>
 
-        <div className="heading">INSANE SURPRISES</div>
 
         <div className="sect3">
+        <div className="heading">INSANE SURPRISES</div>
+          <div className="sections">
           <div className="sect3__left">
-
-            <Parallax
-              renderLayer={(percentage) => (
-                <div className="right__paras"
-                  style={{
-                    transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                      }) `,
-                    transition: "all .3s linear",
-                  }}
-                >
-                  <div className="para1">
-                    These surprises will be announced along with the pre and post roadmap launch of the game. These surprises range from airdrops, to winning prizes, to massive project developments.
-                  </div>
-                  <div className="para2">
-                    In order to have access to the surprises, all you need to do is own a <span>Mooning Monkey</span>, if you don’t already own one, click <span>HERE</span> to get your own <span>Mooning Monkey</span>.
-                  </div>
-                  <div className="para3">
-                    <span>P.S.</span> There won’t be another sequel. If you want to be a part of this journey, you need to start minting As <span>Soon As Possible</span>.
-                  </div>
-                </div>
-              )}
-            ></Parallax>
-
-
+            <div className="right__paras">
+              <div className="para1">
+              These surprises will be announced along with the pre and post roadmap launch of the game. These surprises range from airdrops, to winning prizes, to massive project developments.
+              </div>
+              <div className="para2">
+              In order to have access to the surprises, all you need to do is own a <span>Mooning Monkey</span>, if you don’t already own one, click <span>HERE</span> to get your own <span>Mooning Monkey</span> There won’t be another sequel. If you want to be a part of this journey
+              </div>
+            </div>
             <div className="right__btn">
               <Parallax
                 renderLayer={(percentage) => (
                   <button
-                    style={{
-                      transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                        }) `,
-                      transition: "all .3s linear",
-                    }}
-                  >
-                    CHECK OUT ROADMAP
+                    // style={{
+                    //   transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                    //     }) `,
+                    //   transition: "all .3s linear",
+                    // }}
+                  >CHECK OUT ROADMAP
                     <span>
                       <IoIosArrowForward />
                     </span>
@@ -392,7 +378,14 @@ const Home2 = () => {
               ></Parallax>
             </div>
           </div>
+          </div>
         </div>
+
+
+
+
+
+
       </div>
     </>
   );

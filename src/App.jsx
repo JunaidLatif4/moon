@@ -18,7 +18,7 @@ import Question from "./Components/Home/Question";
 const App = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Switch>
         <Route exact path="/token" component={Token} />
         <Route exact path="/comic" component={Comic} />
@@ -31,7 +31,7 @@ const App = () => {
         <Route path="/home" component={Home2} />
         <Route path="/question" component={Question} />
       </Switch>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
