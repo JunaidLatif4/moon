@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import { AiOutlineMenu } from "react-icons/ai";
-import { Link } from "react-scroll"
 
 import Logo from "../../assests/NavBar/logo.png";
 import Send from "../../assests/NavBar/send.png";
