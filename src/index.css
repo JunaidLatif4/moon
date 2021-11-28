@@ -6,6 +6,9 @@
   font-family: "nurom";
   src: local("fonts"), url(./fonts/nurom/Nurom-Bold.ttf) format("truetype");
 }
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;

@@ -473,7 +473,7 @@ const Token = () => {
           earnings
         </div>
 
-        <div className="button_container">
+        <div className="Token__btn">
           <Parallax
             renderLayer={(percentage) => (
               <button

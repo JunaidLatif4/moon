@@ -17,7 +17,7 @@ const Home2 = () => {
   return (
     <>
       <div className="home2__container">
-        <div className="sect1">
+        <div id="membership" className="sect1">
           <div className="heading">MEMBERSHIP</div>
           <div className="para">
             On top of co-sharing astronomical profits from the game, here is
@@ -192,11 +192,11 @@ const Home2 = () => {
               <Parallax
                 renderLayer={(percentage) => (
                   <button
-                    style={{
-                      transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                        }) `,
-                      transition: "all .3s linear",
-                    }}
+                  // style={{
+                  //   transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                  //     }) `,
+                  //   transition: "all .3s linear",
+                  // }}
                   >
                     VISIT EVOLUTION LAB
                     <span>
@@ -209,59 +209,61 @@ const Home2 = () => {
           </div>
         </div>
 
-        <div className="heading">THE MOONING MONKEY COMIC SERIE</div>
 
         <div className="sect3">
-          <div className="sect3__left">
-            <div className="right__paras">
-              <div className="para1">
-                The amazing and intriguing{" "}
-                <span>Mooning Monkey Space Odyssey</span> will be released into
-                4 comic books of 14 pages. If you want to receive a special
-                surprise, you just need to be one of the first 10 people to own
-                the full 14 pages of any chapter, trust us, you won’t be
-                disappointed.
+          <div className="heading">THE MOONING MONKEY COMIC SERIE</div>
+          <div className="sections">
+            <div className="sect3__left">
+              <div className="right__paras">
+                <div className="para1">
+                  The amazing and intriguing{" "}
+                  <span>Mooning Monkey Space Odyssey</span> will be released into
+                  4 comic books of 14 pages. If you want to receive a special
+                  surprise, you just need to be one of the first 10 people to own
+                  the full 14 pages of any chapter, trust us, you won’t be
+                  disappointed.
+                </div>
+                <div className="para2">
+                  Additionally, owning a full comic will unlock exclusive
+                  privileges in the future, and as much as we’d love to tell you
+                  what they are, we can’t reveal them just yet.
+                </div>
               </div>
-              <div className="para2">
-                Additionally, owning a full comic will unlock exclusive
-                privileges in the future, and as much as we’d love to tell you
-                what they are, we can’t reveal them just yet.
+              <div className="right__btn">
+                <Parallax
+                  renderLayer={(percentage) => (
+                    <button
+                    // style={{
+                    //   transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                    //     }) `,
+                    //   transition: "all .3s linear",
+                    // }}
+                    >
+                      CHECK OUT COMIC PAGE
+                      <span>
+                        <IoIosArrowForward />
+                      </span>
+                    </button>
+                  )}
+                ></Parallax>
               </div>
             </div>
-            <div className="right__btn">
-              <Parallax
-                renderLayer={(percentage) => (
-                  <button
-                    style={{
-                      transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                        }) `,
-                      transition: "all .3s linear",
-                    }}
-                  >
-                    CHECK OUT COMIC PAGE
-                    <span>
-                      <IoIosArrowForward />
-                    </span>
-                  </button>
-                )}
-              ></Parallax>
-            </div>
-          </div>
-          <div className="sect3__right">
-            <div className="img">
-              <Parallax
-                renderLayer={(percentage) => (
-                  <div
-                    style={{
-                      transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                        }) `,
-                      transition: "all .3s linear",
-                    }}
-                  >
-                    <img src={img6} alt="Error" className="left__img" />
-                  </div>
-                )}
-              ></Parallax>
+            <div className="sect3__right">
+              <div className="img">
+                <Parallax
+                  renderLayer={(percentage) => (
+                    <div
+                      style={{
+                        transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                          }) `,
+                        transition: "all .3s linear",
+                      }}
+                    >
+                      <img src={img6} alt="Error" className="left__img" />
+                    </div>
+                  )}
+                ></Parallax>
+              </div>
             </div>
           </div>
         </div>
@@ -312,11 +314,11 @@ const Home2 = () => {
               <Parallax
                 renderLayer={(percentage) => (
                   <button
-                    style={{
-                      transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                        }) `,
-                      transition: "all .3s linear",
-                    }}
+                  // style={{
+                  //   transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                  //     }) `,
+                  //   transition: "all .3s linear",
+                  // }}
                   >
                     TOKEN UTILITY OVERVIEW
                     <span>
@@ -329,72 +331,63 @@ const Home2 = () => {
           </div>
         </div>
 
-        <div className="heading">INSANE SURPRISES</div>
 
         <div className="sect3">
-          <div className="sect3__left">
-
-            <Parallax
-              renderLayer={(percentage) => (
-                <div className="right__paras"
-                  style={{
-                    transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                      }) `,
-                    transition: "all .3s linear",
-                  }}
-                >
-                  <div className="para1">
-                    These surprises will be announced along with the pre and post roadmap launch of the game. These surprises range from airdrops, to winning prizes, to massive project developments.
-                  </div>
-                  <div className="para2">
-                    In order to have access to the surprises, all you need to do is own a <span>Mooning Monkey</span>, if you don’t already own one, click <span>HERE</span> to get your own <span>Mooning Monkey</span>.
-                  </div>
-                  <div className="para3">
-                    <span>P.S.</span> There won’t be another sequel. If you want to be a part of this journey, you need to start minting As <span>Soon As Possible</span>.
-                  </div>
+          <div className="heading">INSANE SURPRISES</div>
+          <div className="sections">
+            <div className="sect3__left">
+              <div className="right__paras">
+                <div className="para1">
+                  These surprises will be announced along with the pre and post roadmap launch of the game. These surprises range from airdrops, to winning prizes, to massive project developments.
                 </div>
-              )}
-            ></Parallax>
-
-
-            <div className="right__btn">
-              <Parallax
-                renderLayer={(percentage) => (
-                  <button
-                    style={{
-                      transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                        }) `,
-                      transition: "all .3s linear",
-                    }}
-                  >
-                    CHECK OUT ROADMAP
-                    <span>
-                      <IoIosArrowForward />
-                    </span>
-                  </button>
-                )}
-              ></Parallax>
+                <div className="para2">
+                  In order to have access to the surprises, all you need to do is own a <span>Mooning Monkey</span>, if you don’t already own one, click <span>HERE</span> to get your own <span>Mooning Monkey</span> There won’t be another sequel. If you want to be a part of this journey
+                </div>
+              </div>
+              <div className="right__btn">
+                <Parallax
+                  renderLayer={(percentage) => (
+                    <button
+                    // style={{
+                    //   transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                    //     }) `,
+                    //   transition: "all .3s linear",
+                    // }}
+                    >CHECK OUT ROADMAP
+                      <span>
+                        <IoIosArrowForward />
+                      </span>
+                    </button>
+                  )}
+                ></Parallax>
+              </div>
             </div>
-          </div>
-          <div className="sect3__right">
-            <div className="img">
-              <Parallax
-                renderLayer={(percentage) => (
-                  <div
-                    style={{
-                      transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                        }) `,
-                      transition: "all .3s linear",
-                    }}
-                  >
-                    <img src={img8} alt="Error" className="left__img" />
-                  </div>
-                )}
-              ></Parallax>
+            <div className="sect3__right">
+              <div className="img">
+                <Parallax
+                  renderLayer={(percentage) => (
+                    <div
+                      style={{
+                        transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                          }) `,
+                        transition: "all .3s linear",
+                      }}
+                    >
+                      <img src={img8} alt="Error" className="left__img" />
+                    </div>
+                  )}
+                ></Parallax>
+              </div>
             </div>
           </div>
         </div>
         <RoadMap />
+
+
+
+
+
+
       </div>
     </>
   );

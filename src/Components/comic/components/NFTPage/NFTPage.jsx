@@ -99,7 +99,6 @@ const NFTPage = () => {
                             <div className="nftp__left_pheading">PUT YOUR HELMET ON.</div>
                             <div className="nftp__left_sheading">METEORIC SANSATIONS GUARANTEED!</div>
                             <div className="nftp__left_timer">
-
                                 <div className="nftp__timer_days"><div className="nftp__timer_daystop">{timeBetween.days()}</div><div className="nftp__timer_daysbottom">Day(s)</div></div>
                                 <div className="nftp__timer_days"><div className="nftp__timer_hourstop">{timeBetween.hours()}</div><div className="nftp__timer_hoursbottom">Hour(s)</div></div>
                                 <div className="nftp__timer_days"><div className="nftp__timer_minstop">{timeBetween.minutes()}</div><div className="nftp__timer_minsbottom">Minute(s)</div></div>

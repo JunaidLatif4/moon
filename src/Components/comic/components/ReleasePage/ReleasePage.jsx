@@ -3,7 +3,6 @@ import GradiantBtn from '../GradiantBtn/GradiantBtn';
 import LightBox from '../LightBox/LightBox';
 import "./ReleasePage.css"
 import ComingSoon from "../../../../assests/comic/coming-soon.PNG"
-import HTMLFlipBook from 'react-pageflip';
 import File from "../../../../assests/comic/file.pdf"
 import { Document, Page } from 'react-pdf';
 
