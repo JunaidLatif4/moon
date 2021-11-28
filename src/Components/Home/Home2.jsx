@@ -11,6 +11,7 @@ import img7 from "../../assests/Home2/img7.png";
 import img8 from "../../assests/Home2/img8.png";
 import { Parallax } from "react-parallax";
 import { IoIosArrowForward } from "react-icons/io";
+import RoadMap from "./components/RoadMap/RoadMap";
 
 const Home2 = () => {
   return (
@@ -31,8 +32,8 @@ const Home2 = () => {
                     <div
                       style={{
                         transform: `scale(${1 * (percentage + 0.2) > 1
-                            ? 1
-                            : 1 * (percentage + 0.2)
+                          ? 1
+                          : 1 * (percentage + 0.2)
                           }) `,
                         transition: "all .3s linear",
                       }}
@@ -65,8 +66,8 @@ const Home2 = () => {
                       <div
                         style={{
                           transform: `scale(${1 * (percentage + 0.2) > 1
-                              ? 1
-                              : 1 * (percentage + 0.2)
+                            ? 1
+                            : 1 * (percentage + 0.2)
                             }) `,
                           transition: "all .3s linear",
                         }}
@@ -94,8 +95,8 @@ const Home2 = () => {
                       <div
                         style={{
                           transform: `scale(${1 * (percentage + 0.2) > 1
-                              ? 1
-                              : 1 * (percentage + 0.2)
+                            ? 1
+                            : 1 * (percentage + 0.2)
                             }) `,
                           transition: "all .3s linear",
                         }}
@@ -124,8 +125,8 @@ const Home2 = () => {
                       <div
                         style={{
                           transform: `scale(${1 * (percentage + 0.2) > 1
-                              ? 1
-                              : 1 * (percentage + 0.2)
+                            ? 1
+                            : 1 * (percentage + 0.2)
                             }) `,
                           transition: "all .3s linear",
                         }}
@@ -393,6 +394,7 @@ const Home2 = () => {
             </div>
           </div>
         </div>
+        <RoadMap />
       </div>
     </>
   );

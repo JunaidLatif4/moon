@@ -4,9 +4,16 @@ import LightBox from '../LightBox/LightBox';
 import "./ReleasePage.css"
 import ComingSoon from "../../../../assests/comic/coming-soon.PNG"
 import HTMLFlipBook from 'react-pageflip';
+import File from "../../../../assests/comic/file.pdf"
+import { Document, Page } from 'react-pdf';
 
 const ReleasePage = () => {
     const [activeBox2, setActiveBox2] = useState("1");
+    const [pageNumber, setPageNumber] = useState(1);
+    const [numPages, setNumPages] = useState(null);
+    function onDocumentLoadSuccess({ numPages }) {
+        setNumPages(numPages);
+    }
     return (
         <div className="release__page">
             <div className="release__page_header">
@@ -20,13 +27,21 @@ const ReleasePage = () => {
                 </div>
             </div>
             {activeBox2 == "1" &&
-                <div className="page__release_box2">
+                <div className="page__release_box2" style={{ color: "white" }}>
                     {/* <HTMLFlipBook width={300} height={500}>
                         <div className="demoPage"><img src={ComingSoon} /></div>
                         <div className="demoPage"><img src={ComingSoon} /></div>
                         <div className="demoPage"><img src={ComingSoon} /></div>
                         <div className="demoPage"><img src={ComingSoon} /></div>
                     </HTMLFlipBook> */}
+                    <Document
+                        file={File}
+                        onLoadSuccess={onDocumentLoadSuccess}
+                    >
+                        <Page pageNumber={pageNumber} />
+                    </Document>
+                    <p>Page {pageNumber} of {numPages}</p>
+                    <a href={File} style={{ color: "white" }}>Download File</a>
                 </div>
             }
             {activeBox2 !== "1" && <LightBox>
