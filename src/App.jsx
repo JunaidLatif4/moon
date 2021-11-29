@@ -17,21 +17,21 @@ import Attributes from "./Components/Attributes/Attributes";
 import "./App.scss";
 
 const App = () => {
-      return (
-            <>
-                  {/* <Header /> */}
-                  <Switch>
-                        <Route exact path="/" component={Home} />
-                        <Route exact path="/home" component={Home2} />
-                        <Route exact path="/token" component={Token} />
-                        <Route exact path="/comic" component={Comic} />
-                        <Route exact path="/Evaluation" component={Evaluation} />
-                        <Route exact path="/calculator" component={Calculator} />
-                        <Route exact path="/attributes" component={Attributes} />
-                  </Switch>
-                  {/* <Footer /> */}
-            </>
-      );
+  return (
+    <>
+      <Header />
+      <Switch>
+        <Route exact path="/home" component={Home} />
+        {/* <Route exact path="/home" component={Home2} /> */}
+        <Route exact path="/token" component={Token} />
+        <Route exact path="/comic" component={Comic} />
+        <Route exact path="/Evaluation" component={Evaluation} />
+        <Route exact path="/calculator" component={Calculator} />
+        <Route exact path="/attributes" component={Attributes} />
+      </Switch>
+      <Footer />
+    </>
+  );
 };
 
 export default App;

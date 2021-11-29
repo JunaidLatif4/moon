@@ -6,6 +6,7 @@
 .roadmap__main {
   background-image: url("../../../../assests//roadmap/background.jpg");
   background-size: 100vw;
+  padding-top: 7rem;
 }
 .roadmap__h2 {
   background: -webkit-linear-gradient(left, #5dc7fe, #f831ec);
@@ -131,14 +132,15 @@
     flex-direction: column;
   }
   .roadmap__item_percentage {
-    padding: 0px 110px;
+    /* padding: 0px 110px; */
+    padding: 10px 15%;
   }
   .roadmap__item_text {
     font-size: 24px;
     padding: 10px 15%;
   }
   .roadmap__item_image {
-    padding: 5px 110px;
+    padding: 5px 15%;
   }
 }
 
