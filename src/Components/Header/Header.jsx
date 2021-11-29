@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-
+import { HashLink } from "react-router-hash-link";
 import { AiOutlineMenu } from "react-icons/ai";
 
 import Logo from "../../assests/NavBar/logo.png";
@@ -24,19 +24,29 @@ const Header = () => {
 
   return (
     <>
-      <div className={`header_container ${changeNavbar ? "scroll_header" : null}`}>
+      <div
+        className={`header_container ${changeNavbar ? "scroll_header" : null}`}
+      >
         <div className="box">
           <nav>
-            <NavLink to="/"> HOME </NavLink>
-            <a href="/#buy"> BUY NOW </a>
+            <NavLink to="/HOME"> HOME </NavLink>
+            <HashLink to="/home#buy"> BUY NOW </HashLink>
             <NavLink to="/token"> TAK TOKEN </NavLink>
-            <div className="learn"> <NavLink style={{ pointerEvents: "none" }} to="/"> LEARN MORE </NavLink>
+            <div className="learn">
+              {" "}
+              <NavLink style={{ pointerEvents: "none" }} to="/">
+                {" "}
+                LEARN MORE{" "}
+              </NavLink>
               <div className="learn_drop">
-                <a href="/"> ROADMAP </a>
-                <a href="/#membership"> MEMBERSHIP </a>
-                <a href="/#team"> TEAM </a>
-                <a href="/#faq"> FAQS </a>
-                <a href="/"> DOCS </a>
+                <HashLink to="/home#roadmap"> ROADMAP</HashLink>
+                <HashLink to="/home#membership"> MEMBERSHIP </HashLink>
+                <HashLink to="/home#team"> TEAM</HashLink>
+                <HashLink to="/home#faq"> FAQS </HashLink>
+                <a href="https://mooningmonkeyofficial.gitbook.io/mooning-monkey/">
+                  {" "}
+                  DOCS{" "}
+                </a>
               </div>
             </div>
           </nav>
@@ -73,11 +83,26 @@ const Header = () => {
               <NavLink to="/"> HOME </NavLink>
               <a href="/#buy"> BUY NOW </a>
               <NavLink to="/token"> TAK TOKEN </NavLink>
-              <NavLink style={{ userSelect: "none" }} to="/"> LEARN MORE </NavLink>
-              <NavLink to="/" className="sub"> ROADMAP </NavLink>
-              <a href="/#membership" className="sub"> MEMBERSHIP </a>
-              <a href="/#team" className="sub"> TEAM </a>
-              <a href="/#faq" className="sub"> FAQS </a>
+              <NavLink style={{ userSelect: "none" }} to="/">
+                {" "}
+                LEARN MORE{" "}
+              </NavLink>
+              <NavLink to="/" className="sub">
+                {" "}
+                ROADMAP{" "}
+              </NavLink>
+              <a href="/#membership" className="sub">
+                {" "}
+                MEMBERSHIP{" "}
+              </a>
+              <a href="/#team" className="sub">
+                {" "}
+                TEAM{" "}
+              </a>
+              <a href="/#faq" className="sub">
+                {" "}
+                FAQS{" "}
+              </a>
               <NavLink to="/Evaluation"> EVOLUTION LAB </NavLink>
               <NavLink to="/comic"> COMICS </NavLink>
               <NavLink to="/calculator"> CALCULATOR </NavLink>

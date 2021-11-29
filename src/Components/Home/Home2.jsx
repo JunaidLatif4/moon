@@ -19,10 +19,23 @@ const Home2 = () => {
       <div className="home2__container">
         <div id="membership" className="sect1">
           <div className="heading">MEMBERSHIP</div>
-          <div className="para">
-            On top of co-sharing astronomical profits from the game, here is
-            what else awaits Mooning Monkey NFT holders….
-          </div>
+          <Parallax
+            // strength={}
+            renderLayer={(percentage) => (
+              <div
+                className="para"
+                style={{
+                  transform: `scale(${
+                    1 * (percentage + 0.7) > 1 ? 1 : 1 * (percentage + 0.7)
+                  })`,
+                  transition: "all .2s linear",
+                }}
+              >
+                On top of co-sharing astronomical profits from the game, here is
+                what else awaits Mooning Monkey NFT holders….
+              </div>
+            )}
+          ></Parallax>
 
           <div className="grid">
             <div className="box">
@@ -31,10 +44,11 @@ const Home2 = () => {
                   renderLayer={(percentage) => (
                     <div
                       style={{
-                        transform: `scale(${1 * (percentage + 0.2) > 1
-                          ? 1
-                          : 1 * (percentage + 0.2)
-                          }) `,
+                        transform: `scale(${
+                          1 * (percentage + 0.3) > 1
+                            ? 1
+                            : 1 * (percentage + 0.3)
+                        }) `,
                         transition: "all .3s linear",
                       }}
                     >
@@ -65,10 +79,11 @@ const Home2 = () => {
                     renderLayer={(percentage) => (
                       <div
                         style={{
-                          transform: `scale(${1 * (percentage + 0.2) > 1
-                            ? 1
-                            : 1 * (percentage + 0.2)
-                            }) `,
+                          transform: `scale(${
+                            1 * (percentage + 0.3) > 1
+                              ? 1
+                              : 1 * (percentage + 0.3)
+                          }) `,
                           transition: "all .3s linear",
                         }}
                       >
@@ -94,10 +109,11 @@ const Home2 = () => {
                     renderLayer={(percentage) => (
                       <div
                         style={{
-                          transform: `scale(${1 * (percentage + 0.2) > 1
-                            ? 1
-                            : 1 * (percentage + 0.2)
-                            }) `,
+                          transform: `scale(${
+                            1 * (percentage + 0.3) > 1
+                              ? 1
+                              : 1 * (percentage + 0.3)
+                          }) `,
                           transition: "all .3s linear",
                         }}
                       >
@@ -124,10 +140,11 @@ const Home2 = () => {
                     renderLayer={(percentage) => (
                       <div
                         style={{
-                          transform: `scale(${1 * (percentage + 0.2) > 1
-                            ? 1
-                            : 1 * (percentage + 0.2)
-                            }) `,
+                          transform: `scale(${
+                            1 * (percentage + 0.3) > 1
+                              ? 1
+                              : 1 * (percentage + 0.3)
+                          }) `,
                           transition: "all .3s linear",
                         }}
                       >
@@ -161,8 +178,9 @@ const Home2 = () => {
                 <div
                   className="right__paras"
                   style={{
-                    transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                      }) `,
+                    transform: `scale(${
+                      1 * (percentage + 0.3) > 1 ? 1 : 1 * (percentage + 0.3)
+                    }) `,
                     transition: "all .3s linear",
                   }}
                 >
@@ -192,11 +210,12 @@ const Home2 = () => {
               <Parallax
                 renderLayer={(percentage) => (
                   <button
-                  // style={{
-                  //   transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                  //     }) `,
-                  //   transition: "all .3s linear",
-                  // }}
+                    style={{
+                      transform: `scale(${
+                        1 * (percentage + 0.8) > 1 ? 1 : 1 * (percentage + 0.8)
+                      }) `,
+                      transition: "all .3s linear",
+                    }}
                   >
                     VISIT EVOLUTION LAB
                     <span>
@@ -209,7 +228,6 @@ const Home2 = () => {
           </div>
         </div>
 
-
         <div className="sect3">
           <div className="heading">THE MOONING MONKEY COMIC SERIE</div>
           <div className="sections">
@@ -217,11 +235,11 @@ const Home2 = () => {
               <div className="right__paras">
                 <div className="para1">
                   The amazing and intriguing{" "}
-                  <span>Mooning Monkey Space Odyssey</span> will be released into
-                  4 comic books of 14 pages. If you want to receive a special
-                  surprise, you just need to be one of the first 10 people to own
-                  the full 14 pages of any chapter, trust us, you won’t be
-                  disappointed.
+                  <span>Mooning Monkey Space Odyssey</span> will be released
+                  into 4 comic books of 14 pages. If you want to receive a
+                  special surprise, you just need to be one of the first 10
+                  people to own the full 14 pages of any chapter, trust us, you
+                  won’t be disappointed.
                 </div>
                 <div className="para2">
                   Additionally, owning a full comic will unlock exclusive
@@ -233,11 +251,14 @@ const Home2 = () => {
                 <Parallax
                   renderLayer={(percentage) => (
                     <button
-                    // style={{
-                    //   transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                    //     }) `,
-                    //   transition: "all .3s linear",
-                    // }}
+                      style={{
+                        transform: `scale(${
+                          1 * (percentage + 0.8) > 1
+                            ? 1
+                            : 1 * (percentage + 0.8)
+                        }) `,
+                        transition: "all .3s linear",
+                      }}
                     >
                       CHECK OUT COMIC PAGE
                       <span>
@@ -254,8 +275,11 @@ const Home2 = () => {
                   renderLayer={(percentage) => (
                     <div
                       style={{
-                        transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                          }) `,
+                        transform: `scale(${
+                          1 * (percentage + 0.3) > 1
+                            ? 1
+                            : 1 * (percentage + 0.3)
+                        }) `,
                         transition: "all .3s linear",
                       }}
                     >
@@ -276,8 +300,9 @@ const Home2 = () => {
                 renderLayer={(percentage) => (
                   <div
                     style={{
-                      transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                        }) `,
+                      transform: `scale(${
+                        1 * (percentage + 0.3) > 1 ? 1 : 1 * (percentage + 0.3)
+                      }) `,
                       transition: "all .3s linear",
                     }}
                   >
@@ -293,19 +318,26 @@ const Home2 = () => {
                 <div
                   className="right__paras"
                   style={{
-                    transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                      }) `,
+                    transform: `scale(${
+                      1 * (percentage + 0.3) > 1 ? 1 : 1 * (percentage + 0.3)
+                    }) `,
                     transition: "all .3s linear",
                   }}
                 >
                   <div className="para1">
-                    <span>The Mooning Monkey Mission</span> goes far beyond the simple NFT collectible sphere.
+                    <span>The Mooning Monkey Mission</span> goes far beyond the
+                    simple NFT collectible sphere.
                   </div>
                   <div className="para2">
-                    We are building a galactical ecosystem that will handsomely reward <span>ALL</span> participants. By simply holding any of the evolution <span>NFT’s</span>, you’ll receive daily <span>Takion Tokens ($TAK)</span>
+                    We are building a galactical ecosystem that will handsomely
+                    reward <span>ALL</span> participants. By simply holding any
+                    of the evolution <span>NFT’s</span>, you’ll receive daily{" "}
+                    <span>Takion Tokens ($TAK)</span>
                   </div>
                   <div className="para3">
-                    You’ll be able to Yield, stake, evolve earn extra rewards and much more… All of which will <span>EARN YOU MONEY</span>, passively, without requiring any extra effort.
+                    You’ll be able to Yield, stake, evolve earn extra rewards
+                    and much more… All of which will <span>EARN YOU MONEY</span>
+                    , passively, without requiring any extra effort.
                   </div>
                 </div>
               )}
@@ -314,11 +346,12 @@ const Home2 = () => {
               <Parallax
                 renderLayer={(percentage) => (
                   <button
-                  // style={{
-                  //   transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                  //     }) `,
-                  //   transition: "all .3s linear",
-                  // }}
+                    style={{
+                      transform: `scale(${
+                        1 * (percentage + 0.8) > 1 ? 1 : 1 * (percentage + 0.8)
+                      }) `,
+                      transition: "all .3s linear",
+                    }}
                   >
                     TOKEN UTILITY OVERVIEW
                     <span>
@@ -331,29 +364,38 @@ const Home2 = () => {
           </div>
         </div>
 
-
         <div className="sect3">
           <div className="heading">INSANE SURPRISES</div>
           <div className="sections">
             <div className="sect3__left">
               <div className="right__paras">
                 <div className="para1">
-                  These surprises will be announced along with the pre and post roadmap launch of the game. These surprises range from airdrops, to winning prizes, to massive project developments.
+                  These surprises will be announced along with the pre and post
+                  roadmap launch of the game. These surprises range from
+                  airdrops, to winning prizes, to massive project developments.
                 </div>
                 <div className="para2">
-                  In order to have access to the surprises, all you need to do is own a <span>Mooning Monkey</span>, if you don’t already own one, click <span>HERE</span> to get your own <span>Mooning Monkey</span> There won’t be another sequel. If you want to be a part of this journey
+                  In order to have access to the surprises, all you need to do
+                  is own a <span>Mooning Monkey</span>, if you don’t already own
+                  one, click <span>HERE</span> to get your own{" "}
+                  <span>Mooning Monkey</span> There won’t be another sequel. If
+                  you want to be a part of this journey
                 </div>
               </div>
               <div className="right__btn">
                 <Parallax
                   renderLayer={(percentage) => (
                     <button
-                    // style={{
-                    //   transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                    //     }) `,
-                    //   transition: "all .3s linear",
-                    // }}
-                    >CHECK OUT ROADMAP
+                      style={{
+                        transform: `scale(${
+                          1 * (percentage + 0.8) > 1
+                            ? 1
+                            : 1 * (percentage + 0.8)
+                        }) `,
+                        transition: "all .3s linear",
+                      }}
+                    >
+                      CHECK OUT ROADMAP
                       <span>
                         <IoIosArrowForward />
                       </span>
@@ -368,8 +410,11 @@ const Home2 = () => {
                   renderLayer={(percentage) => (
                     <div
                       style={{
-                        transform: `scale(${1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                          }) `,
+                        transform: `scale(${
+                          1 * (percentage + 0.8) > 1
+                            ? 1
+                            : 1 * (percentage + 0.8)
+                        }) `,
                         transition: "all .3s linear",
                       }}
                     >
@@ -382,12 +427,6 @@ const Home2 = () => {
           </div>
         </div>
         <RoadMap />
-
-
-
-
-
-
       </div>
     </>
   );
