@@ -24,12 +24,20 @@ const Attributes = () => {
     return (
         <>
             <div className="attributes_container">
-                <div className="box">
+
+                <div className="box" >
                     <div className="heading">
                         Mooning Monkey Attributes
                     </div>
-                    <button> collection attributes  <span> <IoIosArrowForward /> </span> </button>
+                    <Parallax
+                        // strength={}
+                        renderLayer={(percentage) => (
+                            <button style={{ transform: `scale(${(1 * (percentage + .2)) > 1 ? 1 : 1 * (percentage + .2)})`, transition: "all .2s linear" }}> collection attributes  <span> <IoIosArrowForward /> </span> </button>
+                        )}
+                    >
+                    </Parallax>
                 </div>
+
                 <div className="box2">
                     <Parallax
                         // strength={}

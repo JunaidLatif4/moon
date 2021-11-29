@@ -82,11 +82,55 @@
 .Monkey_bottom_border {
   background-color: #f832ec;
   height: 4px;
-  width: 85.4%;
+  width: 84.8%;
   position: relative;
   margin-top: 28px;
 
   /* transform: translateX(50%); */
+}
+@media screen and (min-width: 1960px) and (max-width: 2680px) {
+  .Monkey_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    width: 84.5%;
+    position: relative;
+    margin-top: 28px;
+
+    /* transform: translateX(50%); */
+  }
+}
+@media screen and (min-width: 1350px) and (max-width: 1450px) {
+  .Monkey_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    width: 85%;
+    position: relative;
+    margin-top: 28px;
+
+    /* transform: translateX(50%); */
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1349px) {
+  .Monkey_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    width: 85.5%;
+    position: relative;
+    margin-top: 28px;
+
+    /* transform: translateX(50%); */
+  }
+}
+@media screen and (max-width: 959px) {
+  .Monkey_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    width: 86.2%;
+    position: relative;
+    margin-top: 28px;
+
+    /* transform: translateX(50%); */
+  }
 }
 .blue_Question_secton_bottom_border {
   background-color: #f832ec;
@@ -211,16 +255,18 @@
   transform: translateX(-50%) translateY(-50%);
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 49%;
   z-index: -1;
 }
 .Question_secton_bottom_border {
   background-color: #f832ec;
   height: 4px;
-  min-width: 27%;
-
-  margin-top: 28px;
+  min-width: 15%;
+  margin-right: 5px;
+  position: absolute;
+  margin-top: 26px;
 }
+
 .Alien_section {
   max-width: 350px;
   margin: 0 auto;
@@ -284,7 +330,8 @@
 .Question2_secton_bottom_border {
   background-color: #f832ec;
   height: 4px;
-  min-width: 14%;
+  width: 165px;
+  position: absolute;
 
   margin-top: -10px;
 }
@@ -324,136 +371,619 @@
     position: relative;
     margin-top: 57px;
   }
+}
+@media screen and (max-width: 480px) {
+  .Question2_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    width: 50%;
+    position: absolute;
+
+    margin-top: -10px;
+  }
+}
+
+@media screen and (min-width: 2570px) and (max-width: 2630px) {
   .Question_secton_bottom_border {
     background-color: #f832ec;
     height: 4px;
-    min-width: 50%;
-
-    margin-top: 53px;
+    min-width: 15.5%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
   }
 }
-@media screen and (min-width: 1200px) and (max-width: 1399px) {
+@media screen and (min-width: 2470px) and (max-width: 2569px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 16%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 2400px) and (max-width: 2490px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 16.5%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 2300px) and (max-width: 2410px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 17%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 2300px) and (max-width: 2340px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 17.5%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 2100px) and (max-width: 2299px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 18%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 2220px) and (max-width: 2299px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 18%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 2200px) and (max-width: 2219px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 18.5%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 2100px) and (max-width: 2199px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 19%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 2050px) and (max-width: 2099px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 19.8%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 2000px) and (max-width: 2049px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 20%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 2000px) and (max-width: 2049px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 20%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1910px) and (max-width: 1999px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 21%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1840px) and (max-width: 1909px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 22%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1800px) and (max-width: 1839px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 22.5%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1720px) and (max-width: 1799px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 23.3%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1700px) and (max-width: 1719px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 23.9%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1610px) and (max-width: 1699px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 24.5%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1600px) and (max-width: 1609px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 25.7%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1554px) and (max-width: 1599px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 26%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 1553px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 27%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1450px) and (max-width: 1499px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 28%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1410px) and (max-width: 1449px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 29%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1409px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 29.5%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1360px) and (max-width: 1399px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 30%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1320px) and (max-width: 1359px) {
   .Question_secton_bottom_border {
     background-color: #f832ec;
     height: 4px;
     min-width: 31%;
-
-    margin-top: 28px;
-  }
-  .Question2_secton_bottom_border {
-    background-color: #f832ec;
-    height: 4px;
-    min-width: 16%;
-
-    margin-top: -10px;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media screen and (min-width: 1300px) and (max-width: 1319px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 31.5%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1270px) and (max-width: 1299px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 32.5%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1250px) and (max-width: 1269px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 33%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1220px) and (max-width: 1249px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 34%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1219px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 34.5%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1160px) and (max-width: 1199px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 35.5%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1140px) and (max-width: 1159px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 36.5%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1125px) and (max-width: 1139px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 37%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1100px) and (max-width: 1124px) {
   .Question_secton_bottom_border {
     background-color: #f832ec;
     height: 4px;
     min-width: 38%;
-
-    margin-top: 28px;
-  }
-  .Question2_secton_bottom_border {
-    background-color: #f832ec;
-    height: 4px;
-    min-width: 20%;
-
-    margin-top: -10px;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 1070px) and (max-width: 1099px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 39%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1050px) and (max-width: 1069px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 40%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1030px) and (max-width: 1049px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 41%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1029px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 42%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 999px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 43%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 950px) and (max-width: 979px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 44.4%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 935px) and (max-width: 949px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 45%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 915px) and (max-width: 934px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 46%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 26px;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 914px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 47.5%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 880px) and (max-width: 899px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 48.5%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 850px) and (max-width: 879px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 50%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 840px) and (max-width: 849px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 50.9%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 839px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 53%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 785px) and (max-width: 799px) {
   .Question_secton_bottom_border {
     background-color: #f832ec;
     height: 4px;
     min-width: 55%;
-
-    margin-top: 28px;
-  }
-  .Question2_secton_bottom_border {
-    background-color: #f832ec;
-    height: 4px;
-    min-width: 28%;
-
-    margin-top: -10px;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 25px;
   }
 }
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  .Question2_secton_bottom_border {
+@media screen and (min-width: 769px) and (max-width: 784px) {
+  .Question_secton_bottom_border {
     background-color: #f832ec;
     height: 4px;
-    min-width: 42%;
-
-    margin-top: -10px;
+    min-width: 56%;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 25px;
   }
 }
-@media screen and (min-width: 558px) and (max-width: 576px) {
-  .Question2_secton_bottom_border {
+@media screen and (min-width: 740px) and (max-width: 768px) {
+  .Question_secton_bottom_border {
     background-color: #f832ec;
     height: 4px;
-    min-width: 38%;
-
-    margin-top: -10px;
+    min-width: 44%;
+    margin-left: 3px;
+    /* position: absolute; */
+    margin-top: 55px;
+  }
+  .quetion_mark_heading {
+    margin-top: 40px;
   }
 }
-@media screen and (min-width: 550px) and (max-width: 558px) {
-  .Question2_secton_bottom_border {
+@media screen and (min-width: 725px) and (max-width: 739px) {
+  .Question_secton_bottom_border {
     background-color: #f832ec;
     height: 4px;
-    min-width: 40%;
-
-    margin-top: -10px;
+    min-width: 45%;
+    margin-left: 5px;
+    /* position: absolute; */
+    margin-top: 55px;
+  }
+  .quetion_mark_heading {
+    margin-top: 40px;
   }
 }
-@media screen and (min-width: 525px) and (max-width: 553px) {
-  .Question2_secton_bottom_border {
+@media screen and (min-width: 700px) and (max-width: 724px) {
+  .Question_secton_bottom_border {
     background-color: #f832ec;
     height: 4px;
-    min-width: 42%;
-
-    margin-top: -10px;
+    min-width: 46.8%;
+    margin-left: 5px;
+    /* position: absolute; */
+    margin-top: 55px;
+  }
+  .quetion_mark_heading {
+    margin-top: 40px;
   }
 }
-@media screen and (min-width: 514px) and (max-width: 524px) {
-  .Question2_secton_bottom_border {
+@media screen and (min-width: 650px) and (max-width: 699px) {
+  .Question_secton_bottom_border {
     background-color: #f832ec;
     height: 4px;
-    min-width: 43%;
-
-    margin-top: -10px;
+    min-width: 48%;
+    margin-left: 5px;
+    /* position: absolute; */
+    margin-top: 55px;
+  }
+  .quetion_mark_heading {
+    margin-top: 40px;
   }
 }
-@media screen and (min-width: 498px) and (max-width: 513px) {
-  .Question2_secton_bottom_border {
+@media screen and (min-width: 665px) and (max-width: 685px) {
+  .Question_secton_bottom_border {
     background-color: #f832ec;
     height: 4px;
-    width: 45%;
-
-    margin-top: -10px;
+    min-width: 49%;
+    margin-left: 5px;
+    /* position: absolute; */
+    margin-top: 55px;
+  }
+  .quetion_mark_heading {
+    margin-top: 40px;
   }
 }
-@media screen and (min-width: 475px) and (max-width: 498px) {
-  .Question2_secton_bottom_border {
-    background-color: #f832ec;
-    height: 4px;
-    min-width: 47%;
-
-    margin-top: -10px;
-  }
-}
-@media screen and (max-width: 474px) {
-  .Question2_secton_bottom_border {
+@media screen and (min-width: 650px) and (max-width: 664px) {
+  .Question_secton_bottom_border {
     background-color: #f832ec;
     height: 4px;
     min-width: 50%;
-
-    margin-top: -10px;
+    margin-left: 5px;
+    /* position: absolute; */
+    margin-top: 55px;
   }
-
-  .blue_question_img {
-    margin-top: -33px;
-    width: 90%;
+  .quetion_mark_heading {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 649px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 51%;
+    margin-left: 5px;
+    /* position: absolute; */
+    margin-top: 55px;
+  }
+  .quetion_mark_heading {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 599px) {
+  .Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    min-width: 51%;
+    margin-left: 5px;
+    /* position: absolute; */
+    margin-top: 55px;
+  }
+  .quetion_mark_heading {
+    margin-top: 40px;
   }
 }

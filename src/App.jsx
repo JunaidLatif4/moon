@@ -19,7 +19,7 @@ import "./App.scss";
 const App = () => {
       return (
             <>
-                  {/* <Header /> */}
+                  <Header />
                   <Switch>
                         <Route exact path="/" component={Home} />
                         <Route exact path="/home" component={Home2} />
@@ -29,7 +29,7 @@ const App = () => {
                         <Route exact path="/calculator" component={Calculator} />
                         <Route exact path="/attributes" component={Attributes} />
                   </Switch>
-                  {/* <Footer /> */}
+                  <Footer />
             </>
       );
 };
