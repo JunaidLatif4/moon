@@ -49,6 +49,7 @@
   color: #ffffff !important;
   font-size: 24px;
   width: 70%;
+  text-align: center;
   margin: auto;
   margin-top: 30px;
 }
@@ -1280,4 +1281,24 @@
   box-sizing: border-box;
   /* box-shadow: 0 0 10px #c7c4c4; */
   padding: 30px;
+}
+.evolution_container {
+  .evolution_heading {
+    font-family: "Nurom";
+
+    font-size: 50px;
+    line-height: 35px;
+    background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .Evolution_text {
+    font-family: "sansation";
+    font-size: 24px;
+    line-height: 35px;
+    color: white;
+    text-align: center;
+  }
 }

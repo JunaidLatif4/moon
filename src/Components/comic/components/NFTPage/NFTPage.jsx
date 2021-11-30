@@ -82,7 +82,7 @@ const NFTPage = () => {
                     </div>
                     <div className="nft__page_innerbox">
                         <LightBox>
-                            <div className="nftp__innerbox_content">Page &nbsp;<span className="nftp__innerbox_dropdown" onClick={() => setDropdown(!dropdown)}>
+                            <div className="nftp__innerbox_content">Select Page To Buy:Page &nbsp;<span className="nftp__innerbox_dropdown" onClick={() => setDropdown(!dropdown)}>
                                 {dropdown && <div className="dropdown__items_wrap">
                                     {dropItems.map((item, index) => {
                                         return (<div className="dropdown__item" style={{ background: item === activeDropdown ? "#f832ec" : "black" }} onClick={(e) => setActiveDropdown(item)}>
@@ -90,7 +90,7 @@ const NFTPage = () => {
                                         </div>)
                                     })}
                                 </div>}
-                                {activeDropdown}<img src={ArrowDown} className="nftp__innerbox_dropicon" /> </span>&nbsp; of Part 1 </div>
+                                {activeDropdown}<img src={ArrowDown} className="nftp__innerbox_dropicon" /> </span>&nbsp; of Part {activeDropdown} </div>
                         </LightBox>
                     </div>
 

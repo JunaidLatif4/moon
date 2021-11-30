@@ -8,6 +8,7 @@ import { IoIosArrowForward } from "react-icons/io"
 import "./Evaluation.scss"
 import EvolutionTree from '../calculator/evolutionTree'
 import { Parallax } from "react-parallax";
+import Table from "../calculator/table"
 
 function Evaluation() {
     const [active, setActive] = useState("2")
@@ -262,9 +263,44 @@ function Evaluation() {
 
                             </div>
                         }
+                        {/* <div className="container mt-5 evolution_container">
+                            <div className="d-flex justify-content-center">
+                                <h2 className="evolution_heading">Evolution Tree</h2>
+                            </div>
+                            <div className="d-flex justify-content-center mt-3">
+                                <h5 className="Evolution_text">
+                                    In order to achive evolution,earn and spot among the 500 prestigious
+                                    <span className="gal">Eternal Yeti</span>holder's circle ,and receive the highest possible amount of passive rewards, you'll need 24 "<span className="gal">Mooning Monkeys</span>"
+                                </h5>
+                            </div>
+                            <div className="d-flex justify-content-center mt-5">
+                                <h5 className="Evolution_text">
+                                    Bellow,you can see <span className="gal">The Evolution</span>, a visual that shows you <span className="gal">EXACTLY</span>
+                                    how evolution process works:
+                                </h5>
+                            </div>
+                        </div> */}
 
                         <div className="tree_container">
+                            <div className="container  evolution_container">
+                                <div className="d-flex justify-content-center">
+                                    <h2 className="evolution_heading">Evolution Tree</h2>
+                                </div>
+                                <div className="d-flex justify-content-center mt-2">
+                                    <h5 className="Evolution_text">
+                                        In order to achive evolution,earn and spot among the 500 prestigious
+                                        <span className="gal"> Eternal Yeti </span>holder's circle ,and receive the highest possible amount of passive rewards, you'll need 24 "<span className="gal">Mooning Monkeys</span>"
+                                    </h5>
+                                </div>
+                                <div className="d-flex justify-content-center mt-2">
+                                    <h5 className="Evolution_text">
+                                        Bellow,you can see <span className="gal">The Evolution</span>, a visual that shows you <span className="gal">EXACTLY </span>
+                                        how evolution process works:
+                                    </h5>
+                                </div>
+                            </div>
                             <EvolutionTree name="Question_secton_bottom_border" />
+                            <Table title="EVOLUTION EARNING" text="50% Of All Game Profit Will Be Redistributed Mooning Monkeyes NFT Holders" text2="The Image Below Show You The Benefits OF Evolving Your Mooning Monkeys:" />
                         </div>
 
 

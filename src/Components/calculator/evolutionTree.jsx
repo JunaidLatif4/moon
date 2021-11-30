@@ -32,10 +32,11 @@ const EvolutionTree = (props) => {
   return (
     <>
       <p className="evolution_inner_text">
-        Use the Evolution Tree tab if you want a quick understanding of how many
+        {props.evolutionText}
+        {/* Use the Evolution Tree tab if you want a quick understanding of how many
         “Mooning Monkeys” you’ll need in order to go through all of the
         evolution stages and reach the extremely rare and desired stage of
-        Eternal Yeti
+        Eternal Yeti */}
       </p>
       <h2 className="evolution_inner_heading">Buy 24 Mooning Monkeys</h2>
       <div className="row">
@@ -527,25 +528,8 @@ const EvolutionTree = (props) => {
           <img src={BlueQuestion} className="blue_question_img" />
         </div>
       </div>
-      ]
-      {/* <div className="row">
-                <div className="blue_question_section">
-                    <div className="col-2 ">
-                        <div className="main-timeline">
-                            <div className="timeline">
-                                <div className="timeline-content">
-                                    <div className="timeline-year">
-                                        <span> <img src={BlueQuestion} className="monkey_img" /></span>
-                                    </div>
-                                </div>
-                            </div>
 
-                        </div>
 
-                    </div>
-                </div>
-
-            </div> */}
       <h2 className="Get_External_heading">Get 1 Eternal Yeti</h2>
     </>
   );
