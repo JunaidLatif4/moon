@@ -157,9 +157,9 @@
 .nftp__left_timer {
   display: flex;
   color: white;
-  font-size: 93px;
+  font-size: 80px;
   font-weight: bold;
-  width: 60%;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0px;

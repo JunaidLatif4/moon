@@ -29,8 +29,8 @@ const Header = () => {
       >
         <div className="box">
           <nav>
-            <NavLink to="/HOME"> HOME </NavLink>
-            <HashLink to="/home#buy"> BUY NOW </HashLink>
+            <NavLink to="/"> HOME </NavLink>
+            <HashLink to="/#buy"> BUY NOW </HashLink>
             <NavLink to="/token"> TAK TOKEN </NavLink>
             <div className="learn">
               {" "}
@@ -39,11 +39,14 @@ const Header = () => {
                 LEARN MORE{" "}
               </NavLink>
               <div className="learn_drop">
-                <HashLink to="/home#roadmap"> ROADMAP</HashLink>
-                <HashLink to="/home#membership"> MEMBERSHIP </HashLink>
-                <HashLink to="/home#team"> TEAM</HashLink>
-                <HashLink to="/home#faq"> FAQS </HashLink>
-                <a href="https://mooningmonkeyofficial.gitbook.io/mooning-monkey/">
+                <HashLink to="/#roadmap"> ROADMAP</HashLink>
+                <HashLink to="/#membership"> MEMBERSHIP </HashLink>
+                <HashLink to="/#team"> TEAM</HashLink>
+                <HashLink to="/#faq"> FAQS </HashLink>
+                <a
+                  href="https://mooningmonkeyofficial.gitbook.io/mooning-monkey/"
+                  target="_blank"
+                >
                   {" "}
                   DOCS{" "}
                 </a>
@@ -102,6 +105,14 @@ const Header = () => {
               <a href="/#faq" className="sub">
                 {" "}
                 FAQS{" "}
+              </a>
+              <a
+                className="sub"
+                href="https://mooningmonkeyofficial.gitbook.io/mooning-monkey/"
+                target="_blank"
+              >
+                {" "}
+                DOCS{" "}
               </a>
               <NavLink to="/Evaluation"> EVOLUTION LAB </NavLink>
               <NavLink to="/comic"> COMICS </NavLink>

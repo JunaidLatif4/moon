@@ -30,7 +30,7 @@ const App = () => {
       </a>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/home" component={Home2} />
+        {/* <Route exact path="/home" component={Home} /> */}
         <Route exact path="/token" component={Token} />
         <Route exact path="/comic" component={Comic} />
         <Route exact path="/Evaluation" component={Evaluation} />
