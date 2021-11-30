@@ -385,6 +385,9 @@ a.whitelist-side {
   justify-content: space-between;
   align-items: center;
   padding: 10px 0px;
+  .mt100 {
+    margin-top: -200%;
+  }
 }
 @media screen and (max-width: 1024px) {
   .cal__btn__wrapper1,
@@ -513,6 +516,7 @@ a.whitelist-side {
   // -moz-box-shadow: 3px 3px 8px 5px rgba(237, 228, 228, 0.75);
   text-shadow: 0px -1px 20px #ffffff;
 }
+
 @media (max-width: 600px) {
   .dn {
     display: none;

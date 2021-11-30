@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from "react";
 import moment from "moment";
 
-import { IoIosArrowForward } from "react-icons/io"
+import { IoIosArrowForward } from "react-icons/io";
 import { Parallax } from "react-parallax";
 
-import "./Attributes.scss"
+import "./Attributes.scss";
 
 const Attributes = () => {
 
@@ -22,7 +22,7 @@ const Attributes = () => {
 
 
     return (
-        <>
+        <div>
             <div className="attributes_container">
 
                 <div className="box" >
@@ -55,9 +55,11 @@ const Attributes = () => {
                         <div className="nftp__timer_days time_bg_box"><div className="nftp__timer_secondtop">{timeBetween.seconds()}</div><div className="nftp__timer_secondbottom">Second(s)</div></div>
                     </div>
                 </div>
-            </div>
-        </>
-    )
-}
 
-export default Attributes
+            </div>
+        </div>
+
+    );
+};
+
+export default Attributes;
