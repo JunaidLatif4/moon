@@ -157,7 +157,7 @@
 .nftp__left_timer {
   display: flex;
   color: white;
-  font-size: 30px;
+  font-size: 93px;
   font-weight: bold;
   width: 60%;
   justify-content: space-between;
@@ -168,7 +168,7 @@
 .nftp__timer_hoursbottom,
 .nftp__timer_minsbottom,
 .nftp__timer_secondbottom {
-  font-size: 10px;
+  font-size: 14px;
   font-weight: normal;
 }
 .nftp__left_bottom {
@@ -245,5 +245,13 @@
   }
   .nftp__innerbox_content {
     font-size: 25px;
+  }
+}
+@media (max-width: 600px) {
+  .nftp__left_timer {
+    font-size: 40px;
+  }
+  .nftp__innerbox_content {
+    width: 100% !important;
   }
 }

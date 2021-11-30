@@ -28,7 +28,7 @@ import Question2 from "../../assests/calculator/monkey-images/question2.png";
 import BlueQuestion from "../../assests/calculator/monkey-images/blue-question.png";
 import { position } from "dom-helpers";
 
-const EvolutionTree = () => {
+const EvolutionTree = (props) => {
   return (
     <>
       <p className="evolution_inner_text">
@@ -385,6 +385,7 @@ const EvolutionTree = () => {
         Evolve them into 6 Galactic Gorillas
       </h2>
       {/* ...........Question Mark Section.............. */}
+
       <div className="row mt-5">
         <div className="question_mark-section">
           <div className="col-2 ">
@@ -473,9 +474,12 @@ const EvolutionTree = () => {
           </div>
         </div>
       </div>
-      <div className="d-flex justify-content-center">
-        <div className="Question_secton_bottom_border"></div>
+
+      <div className="d-flex justify-content-center justify-content-center" style={{ position: "relative" }}>
+        <div className={props.name}></div>
       </div>
+
+
       <h2 className="quetion_mark_heading">
         Evolve them into 2 Alien Gorillas
       </h2>
@@ -511,14 +515,17 @@ const EvolutionTree = () => {
           </div>
         </div>
       </div>
-      <div className="d-flex justify-content-center">
-        <div className="Question2_secton_bottom_border"></div>
-      </div>
-      <div className="d-flex justify-content-center">
-        <div className="blue_Question_secton_bottom_border"></div>
-      </div>
-      <div>
-        <img src={BlueQuestion} className="blue_question_img" />
+      <div style={{ position: "relative" }}>
+        <div className="d-flex justify-content-center" >
+          <div className="Question2_secton_bottom_border" ></div>
+        </div>
+
+        <div className="d-flex justify-content-center">
+          <div className="blue_Question_secton_bottom_border"></div>
+        </div>
+        <div>
+          <img src={BlueQuestion} className="blue_question_img" />
+        </div>
       </div>
       ]
       {/* <div className="row">

@@ -7,6 +7,7 @@ import sidearrow from "../../assests/Lab/sidearrow.png"
 import { IoIosArrowForward } from "react-icons/io"
 import "./Evaluation.scss"
 import EvolutionTree from '../calculator/evolutionTree'
+import { Parallax } from "react-parallax";
 
 function Evaluation() {
     const [active, setActive] = useState("2")
@@ -27,38 +28,44 @@ function Evaluation() {
 
                     {/* cards */}
 
-                    <section className="card_main_section2">
-                        <div className="cards_twos">
+                    <Parallax
+                        // strength={}
+                        renderLayer={(percentage) => (
+                            <section className="card_main_section2" style={{ transform: `scale(${(1 * (percentage + .4)) > 1 ? 1 : 1 * (percentage + .4)})`, transition: "all .2s linear" }}>
+                                <div className="cards_twos">
 
-                            <div className="card_one_section2">
-                                <h4 className="h4_section2">Stage 1</h4>
-                                <img className="monkey_section2" src={monkey} />
+                                    <div className="card_one_section2">
+                                        <h4 className="h4_section2">Stage 1</h4>
+                                        <img className="monkey_section2" src={monkey} />
 
-                                <h4 className="h44_section2">Mooning Monkey</h4>
+                                        <h4 className="h44_section2">Mooning Monkey</h4>
 
 
-                            </div>
-                            <div className="card_one_section2">
-                                <h4 className="h4_section2">Stage 2</h4>
-                                <img className="monkey_section2" src={question} />
-                                <h4 className="h44_section2">Galactic Gorilla</h4>
+                                    </div>
+                                    <div className="card_one_section2">
+                                        <h4 className="h4_section2">Stage 2</h4>
+                                        <img className="monkey_section2" src={question} />
+                                        <h4 className="h44_section2">Galactic Gorilla</h4>
 
-                            </div>
-                            <div className="card_one_section2">
-                                <h4 className="h4_section2">Stage 3</h4>
-                                <img className="monkey_section2" src={question} />
-                                <h4 className="h44_section2">Alien Gorilla</h4>
+                                    </div>
+                                    <div className="card_one_section2">
+                                        <h4 className="h4_section2">Stage 3</h4>
+                                        <img className="monkey_section2" src={question} />
+                                        <h4 className="h44_section2">Alien Gorilla</h4>
 
-                            </div>
-                            <div className="card_one_section2">
-                                <h4 className="h4_section2">Stage 4</h4>
-                                <img className="monkey_section2" src={question} />
-                                <h4 className="h44_section2">Eternal Yeti</h4>
+                                    </div>
+                                    <div className="card_one_section2">
+                                        <h4 className="h4_section2">Stage 4</h4>
+                                        <img className="monkey_section2" src={question} />
+                                        <h4 className="h44_section2">Eternal Yeti</h4>
 
-                            </div>
-                        </div>
+                                    </div>
+                                </div>
 
-                    </section>
+                            </section>
+                        )}
+                    >
+                    </Parallax>
 
                 </div>
 
@@ -257,7 +264,7 @@ function Evaluation() {
                         }
 
                         <div className="tree_container">
-                        <EvolutionTree/>
+                            <EvolutionTree name="Question_secton_bottom_border" />
                         </div>
 
 
