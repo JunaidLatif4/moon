@@ -266,6 +266,34 @@
   position: absolute;
   margin-top: 26px;
 }
+.calculator_Question_secton_bottom_border {
+  background-color: #f832ec;
+  height: 4px;
+  width: 315px;
+  margin-right: 5px;
+  position: absolute;
+  margin-top: 26px;
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .calculator_Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    width: 237px;
+    margin-left: 3px;
+    position: absolute;
+    margin-top: 54px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .calculator_Question_secton_bottom_border {
+    background-color: #f832ec;
+    height: 4px;
+    width: 50% !important;
+    margin-left: 3px;
+    position: absolute;
+    margin-top: 54px;
+  }
+}
 
 .Alien_section {
   max-width: 350px;

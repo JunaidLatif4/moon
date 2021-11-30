@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from "react";
 import moment from "moment";
 
-import { IoIosArrowForward } from "react-icons/io"
+import { IoIosArrowForward } from "react-icons/io";
 import { Parallax } from "react-parallax";
 
-import "./Attributes.scss"
+import "./Attributes.scss";
 
 const Attributes = () => {
 
@@ -22,7 +22,7 @@ const Attributes = () => {
 
 
     return (
-        <>
+        <div>
             <div className="attributes_container">
 
                 <div className="box" >
@@ -32,7 +32,7 @@ const Attributes = () => {
                     <Parallax
                         // strength={}
                         renderLayer={(percentage) => (
-                            <button style={{ transform: `scale(${(1 * (percentage + .2)) > 1 ? 1 : 1 * (percentage + .2)})`, transition: "all .2s linear" }}> collection attributes  <span> <IoIosArrowForward /> </span> </button>
+                            <button style={{ transform: `scale(${(1 * (percentage + .3)) > 1 ? 1 : 1 * (percentage + .3)})`, transition: "all .2s linear" }}> collection attributes  <span> <IoIosArrowForward /> </span> </button>
                         )}
                     >
                     </Parallax>
@@ -42,22 +42,24 @@ const Attributes = () => {
                     <Parallax
                         // strength={}
                         renderLayer={(percentage) => (
-                            <div className="detail" style={{ transform: `scale(${(1 * (percentage + .2)) > 1 ? 1 : 1 * (percentage + .2)})`, transition: "all .2s linear" }}>
+                            <div className="detail" style={{ transform: `scale(${(1 * (percentage + .4)) > 1 ? 1 : 1 * (percentage + .4)})`, transition: "all .2s linear" }}>
                                 ALL MOONING MONKEY ATTRIBUTES WILL BE REVEALED RIGHT AFTER THE SALE…
                             </div>
                         )}
                     >
                     </Parallax>
-                    <div className="nftp__left_timer">
-                        <div className="nftp__timer_days"><div className="nftp__timer_daystop">{timeBetween.days()}</div><div className="nftp__timer_daysbottom">Day(s)</div></div>
-                        <div className="nftp__timer_days"><div className="nftp__timer_hourstop">{timeBetween.hours()}</div><div className="nftp__timer_hoursbottom">Hour(s)</div></div>
-                        <div className="nftp__timer_days"><div className="nftp__timer_minstop">{timeBetween.minutes()}</div><div className="nftp__timer_minsbottom">Minute(s)</div></div>
-                        <div className="nftp__timer_days"><div className="nftp__timer_secondtop">{timeBetween.seconds()}</div><div className="nftp__timer_secondbottom">Second(s)</div></div>
+                    <div className="attribute_nftp__left_timer">
+                        <div className="nftp__timer_days time_bg_box"><div className="nftp__timer_daystop">{timeBetween.days()}</div><div className="nftp__timer_daysbottom">Day(s)</div></div>
+                        <div className="nftp__timer_days time_bg_box"><div className="nftp__timer_hourstop">{timeBetween.hours()}</div><div className="nftp__timer_hoursbottom">Hour(s)</div></div>
+                        <div className="nftp__timer_days time_bg_box"><div className="nftp__timer_minstop">{timeBetween.minutes()}</div><div className="nftp__timer_minsbottom">Minute(s)</div></div>
+                        <div className="nftp__timer_days time_bg_box"><div className="nftp__timer_secondtop">{timeBetween.seconds()}</div><div className="nftp__timer_secondbottom">Second(s)</div></div>
                     </div>
                 </div>
-            </div>
-        </>
-    )
-}
 
-export default Attributes
+            </div>
+        </div>
+
+    );
+};
+
+export default Attributes;

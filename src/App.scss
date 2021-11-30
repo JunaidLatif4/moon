@@ -502,6 +502,19 @@ a.whitelist-side {
   padding: 5px 15px;
   font-size: 18px;
 }
+.attribute_nftp__left_timer {
+  display: flex;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  .mt100 {
+    margin-top: -200%;
+  }
+}
 @media screen and (max-width: 1024px) {
   .cal__btn__wrapper1,
   .cal__btn__wrapper2 {
@@ -607,7 +620,29 @@ a.whitelist-side {
   .cal__btn__wrapper1 {
     padding: 0px;
   }
+  .attribute_nftp__left_timer {
+    display: flex;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+  }
 }
+.time_bg_box {
+  padding: 20px;
+  border-radius: 20%;
+  // background-color: #adaab3;
+  background: transparent;
+  border: 1px solid #6923ea;
+  // box-shadow: 3px 3px 8px 5px rgba(237, 228, 228, 0.75);
+  // -webkit-box-shadow: 3px 3px 8px 5px rgba(237, 228, 228, 0.75);
+  // -moz-box-shadow: 3px 3px 8px 5px rgba(237, 228, 228, 0.75);
+  text-shadow: 0px -1px 20px #ffffff;
+}
+
 @media (max-width: 600px) {
   .dn {
     display: none;

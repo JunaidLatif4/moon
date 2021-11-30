@@ -111,7 +111,7 @@ const Question = () => {
         </div>
 
         <div className="right">
-          <div className="accordian1">
+          <div className="accordian1 .mtr">
             <div onClick={handleOpen3} className="heading">
               <div className="close">
                 <div

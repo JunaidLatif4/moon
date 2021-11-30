@@ -29,8 +29,8 @@ const Header = () => {
       >
         <div className="box">
           <nav>
-            <NavLink to="/home"> HOME </NavLink>
-            <HashLink to="/home#buy"> BUY NOW </HashLink>
+            <NavLink to="/"> HOME </NavLink>
+            <HashLink to="/#buy"> BUY NOW </HashLink>
             <NavLink to="/token"> TAK TOKEN </NavLink>
             <div className="learn">
               {" "}
@@ -39,10 +39,10 @@ const Header = () => {
                 LEARN MORE{" "}
               </NavLink>
               <div className="learn_drop">
-                <HashLink to="/home#roadmap"> ROADMAP</HashLink>
-                <HashLink to="/home#membership"> MEMBERSHIP </HashLink>
-                <HashLink to="/home#team"> TEAM</HashLink>
-                <HashLink to="/home#faq"> FAQS </HashLink>
+                <HashLink to="/#roadmap"> ROADMAP</HashLink>
+                <HashLink to="/#membership"> MEMBERSHIP </HashLink>
+                <HashLink to="/#team"> TEAM</HashLink>
+                <HashLink to="/#faq"> FAQS </HashLink>
                 <a
                   href="https://mooningmonkeyofficial.gitbook.io/mooning-monkey/"
                   target="_blank"
@@ -83,11 +83,11 @@ const Header = () => {
           </div>
           <div className={`mbl_drop ${showDrop ? "show_drop" : null}`}>
             <div className="drop_box">
-              <NavLink to="/home" onClick={() => setShowDrop(false)}>
+              <NavLink to="/" onClick={() => setShowDrop(false)}>
                 {" "}
                 HOME{" "}
               </NavLink>
-              <HashLink to="/home#buy" onClick={() => setShowDrop(false)}>
+              <HashLink to="/#buy" onClick={() => setShowDrop(false)}>
                 {" "}
                 BUY NOW{" "}
               </HashLink>
@@ -104,7 +104,7 @@ const Header = () => {
                 LEARN MORE{" "}
               </NavLink>
               <HashLink
-                to="/home#roadmap"
+                to="/#roadmap"
                 className="sub"
                 onClick={() => setShowDrop(false)}
               >
@@ -112,7 +112,7 @@ const Header = () => {
                 ROADMAP{" "}
               </HashLink>
               <HashLink
-                to="/home#membership"
+                to="/#membership"
                 className="sub"
                 onClick={() => setShowDrop(false)}
               >
@@ -120,7 +120,7 @@ const Header = () => {
                 MEMBERSHIP{" "}
               </HashLink>
               <HashLink
-                to="/home#team"
+                to="/#team"
                 className="sub"
                 onClick={() => setShowDrop(false)}
               >
@@ -128,7 +128,7 @@ const Header = () => {
                 TEAM{" "}
               </HashLink>
               <HashLink
-                to="/home#faq"
+                to="/#faq"
                 className="sub"
                 onClick={() => setShowDrop(false)}
               >

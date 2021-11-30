@@ -76,7 +76,8 @@ const ProfitCalculator = () => {
       },
     },
     responsive: true,
-
+    maintainAspectRatio: true,
+    aspectRatio: 2,
     plugins: {
       legend: {
         position: "bottom",

@@ -3,7 +3,7 @@
     background-image: url(../../assests/Attributes/sce1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20rem 0;
+    // padding: 20rem 0;
     padding-top: 25rem;
     color: white;
     margin: 0 auto;
@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 
     .heading {
       font-family: "nurom";
@@ -83,15 +84,16 @@
     background-image: url(../../assests/Attributes/sec2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20rem 0;
-    padding-top: 25rem;
+    // padding: 20rem 0;
+    // padding-top: 25rem;
     color: white;
     margin: 0 auto;
     display: flex;
     text-align: center;
     gap: 10rem;
+    height: 100vh;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
 
     .detail {

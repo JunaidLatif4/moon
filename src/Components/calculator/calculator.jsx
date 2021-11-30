@@ -9,6 +9,7 @@ import ProfitCalculator from "./profitCalculator";
 import EvolutionTree from "./evolutionTree";
 import ComsicProfit from "./comsicProfit";
 import "../Home/Home.scss";
+import Table from "../calculator/table"
 const Calculator = () => {
   window.scrollTo(0, 0);
 
@@ -188,7 +189,10 @@ const Calculator = () => {
                   case "2":
                     return <EvolutionCalculator />;
                   case "3":
-                    return <EvolutionTree />;
+                    return <EvolutionTree name="calculator_Question_secton_bottom_border" evolutionText="  Use the Evolution Tree tab if you want a quick understanding of how many
+                    “Mooning Monkeys” you’ll need in order to go through all of the
+                    evolution stages and reach the extremely rare and desired stage of
+                    Eternal Yeti" />;
                   case "4":
                     return <StackingCalculator />;
                   case "5":
@@ -197,7 +201,8 @@ const Calculator = () => {
               })()}
             </div>
           </div>
-          <div class="pd__reward">
+          <Table title="REWARD DISTRIBUTION MODE" text5="# Rewards and Bonus starts from phase 2 when the Mooning Monkey crash game launches. Revenue represents the proportionate % of revenue from the bank roll for the Mooning Monkey house. 70% of the revenue (where there is profit) will be distributed across the NFT holders as rewards and bonus" />
+          {/* <div class="pd__reward">
             <div className={styles.cust}>REWARD DISTRIBUTION MODEL</div>
             <div className="result-table-sec">
               <table class="result-table" style={{ marginBottom: "20px" }}>
@@ -253,7 +258,7 @@ const Calculator = () => {
                 the NFT holders as rewards and bonus
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

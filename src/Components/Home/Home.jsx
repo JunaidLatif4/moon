@@ -26,9 +26,8 @@ import "./Home.scss";
 const Home = () => {
   const [cancel, setCancel] = useState(true);
   const [read, setRead] = useState(false);
-
-  const [currentTime, setCurrentTime] = useState(moment().utc());
-  const targetTime = moment.utc("2021-12-16 07:00 ");
+  const [currentTime, setCurrentTime] = useState(moment());
+  const targetTime = moment.utc("2021-12-16 07:00 pm");
   const timeBetween = moment.duration(targetTime.diff(currentTime));
 
   useEffect(() => {
@@ -297,21 +296,30 @@ const Home = () => {
                 <div className="nftp__left_timer">
                   <div className="nftp__timer_days">
                     <div className="nftp__timer_daystop">
-                      {timeBetween.days()}:
+                      {timeBetween.days()}
                     </div>
                     <div className="nftp__timer_daysbottom">Day(s)</div>
                   </div>
                   <div className="nftp__timer_days">
+                    <div className="nftp__timer_hourstop mt100">:</div>
+                  </div>
+                  <div className="nftp__timer_days">
                     <div className="nftp__timer_hourstop">
-                      {timeBetween.hours()}:
+                      {timeBetween.hours()}
                     </div>
                     <div className="nftp__timer_hoursbottom">Hour(s)</div>
                   </div>
                   <div className="nftp__timer_days">
+                    <div className="nftp__timer_hourstop mt100">:</div>
+                  </div>
+                  <div className="nftp__timer_days">
                     <div className="nftp__timer_minstop">
-                      {timeBetween.minutes()}:
+                      {timeBetween.minutes()}
                     </div>
                     <div className="nftp__timer_minsbottom">Minute(s)</div>
+                  </div>
+                  <div className="nftp__timer_days">
+                    <div className="nftp__timer_hourstop mt100">:</div>
                   </div>
                   <div className="nftp__timer_days">
                     <div className="nftp__timer_secondtop">
