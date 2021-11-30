@@ -136,9 +136,9 @@ const Question = () => {
                   before the launch.
                 </div>
                 <div className="para2">
-                  You’ll be able to start minting as as soon as 30 November at
-                  the price of <span>600 USD</span> in <span>SOL</span> value
-                  per Mooning Monkey.
+                  You’ll be able to start minting as as soon as 16 December,
+                  2021 at the price of <span>600 USD</span> in <span>SOL</span>{" "}
+                  value per Mooning Monkey.
                 </div>
                 <div className="para3">
                   The final amount in SOL will be updated 12h before the sale to{" "}

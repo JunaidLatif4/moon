@@ -128,6 +128,7 @@
         }
         .para2 {
           margin-top: 1.5rem;
+          padding-bottom: 10px;
           @media only screen and (max-width: "1500px") {
             font-size: 27px;
           }
@@ -155,9 +156,9 @@
       }
       .show {
         //    display: block;
-        height: 500px;
+        height: max-content;
         @media only screen and (max-width: "1200px") {
-          height: 300px;
+          height: max-content;
         }
         @media only screen and (max-width: "550px") {
           height: 500px;

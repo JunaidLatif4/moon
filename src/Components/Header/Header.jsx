@@ -29,7 +29,7 @@ const Header = () => {
       >
         <div className="box">
           <nav>
-            <NavLink to="/HOME"> HOME </NavLink>
+            <NavLink to="/home"> HOME </NavLink>
             <HashLink to="/home#buy"> BUY NOW </HashLink>
             <NavLink to="/token"> TAK TOKEN </NavLink>
             <div className="learn">
@@ -43,7 +43,10 @@ const Header = () => {
                 <HashLink to="/home#membership"> MEMBERSHIP </HashLink>
                 <HashLink to="/home#team"> TEAM</HashLink>
                 <HashLink to="/home#faq"> FAQS </HashLink>
-                <a href="https://mooningmonkeyofficial.gitbook.io/mooning-monkey/">
+                <a
+                  href="https://mooningmonkeyofficial.gitbook.io/mooning-monkey/"
+                  target="_blank"
+                >
                   {" "}
                   DOCS{" "}
                 </a>
@@ -80,33 +83,83 @@ const Header = () => {
           </div>
           <div className={`mbl_drop ${showDrop ? "show_drop" : null}`}>
             <div className="drop_box">
-              <NavLink to="/"> HOME </NavLink>
-              <a href="/#buy"> BUY NOW </a>
-              <NavLink to="/token"> TAK TOKEN </NavLink>
-              <NavLink style={{ userSelect: "none" }} to="/">
+              <NavLink to="/home" onClick={() => setShowDrop(false)}>
+                {" "}
+                HOME{" "}
+              </NavLink>
+              <HashLink to="/home#buy" onClick={() => setShowDrop(false)}>
+                {" "}
+                BUY NOW{" "}
+              </HashLink>
+              <NavLink to="/token" onClick={() => setShowDrop(false)}>
+                {" "}
+                TAK TOKEN{" "}
+              </NavLink>
+              <NavLink
+                style={{ userSelect: "none" }}
+                to="/"
+                onClick={() => setShowDrop(false)}
+              >
                 {" "}
                 LEARN MORE{" "}
               </NavLink>
-              <NavLink to="/" className="sub">
+              <HashLink
+                to="/home#roadmap"
+                className="sub"
+                onClick={() => setShowDrop(false)}
+              >
                 {" "}
                 ROADMAP{" "}
-              </NavLink>
-              <a href="/#membership" className="sub">
+              </HashLink>
+              <HashLink
+                to="/home#membership"
+                className="sub"
+                onClick={() => setShowDrop(false)}
+              >
                 {" "}
                 MEMBERSHIP{" "}
-              </a>
-              <a href="/#team" className="sub">
+              </HashLink>
+              <HashLink
+                to="/home#team"
+                className="sub"
+                onClick={() => setShowDrop(false)}
+              >
                 {" "}
                 TEAM{" "}
-              </a>
-              <a href="/#faq" className="sub">
+              </HashLink>
+              <HashLink
+                to="/home#faq"
+                className="sub"
+                onClick={() => setShowDrop(false)}
+              >
                 {" "}
                 FAQS{" "}
+              </HashLink>
+              <a
+                className="sub"
+                href="https://mooningmonkeyofficial.gitbook.io/mooning-monkey/"
+                target="_blank"
+                onClick={() => setShowDrop(false)}
+              >
+                {" "}
+                DOCS{" "}
               </a>
-              <NavLink to="/Evaluation"> EVOLUTION LAB </NavLink>
-              <NavLink to="/comic"> COMICS </NavLink>
-              <NavLink to="/calculator"> CALCULATOR </NavLink>
-              <NavLink to="/attributes"> ATTRIBUTES </NavLink>
+              <NavLink to="/Evaluation" onClick={() => setShowDrop(false)}>
+                {" "}
+                EVOLUTION LAB{" "}
+              </NavLink>
+              <NavLink to="/comic" onClick={() => setShowDrop(false)}>
+                {" "}
+                COMICS{" "}
+              </NavLink>
+              <NavLink to="/calculator" onClick={() => setShowDrop(false)}>
+                {" "}
+                CALCULATOR{" "}
+              </NavLink>
+              <NavLink to="/attributes" onClick={() => setShowDrop(false)}>
+                {" "}
+                ATTRIBUTES{" "}
+              </NavLink>
             </div>
           </div>
         </div>

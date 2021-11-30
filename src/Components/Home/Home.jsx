@@ -9,6 +9,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { IoIosArrowForward } from "react-icons/io";
 import { Parallax } from "react-parallax";
 
+import video from "../../assests/video/mooningMonkey.mp4";
 import Sec1 from "../../assests/Home/sec1.jpg";
 import Sec3 from "../../assests/Home/sec3.jpg";
 import Sec3F from "../../assests/Home/sec3front.png";
@@ -24,8 +25,10 @@ import "./Home.scss";
 
 const Home = () => {
   const [cancel, setCancel] = useState(true);
-  const [currentTime, setCurrentTime] = useState(moment());
-  const targetTime = moment("2021-11-30 07:00");
+  const [read, setRead] = useState(false);
+
+  const [currentTime, setCurrentTime] = useState(moment().utc());
+  const targetTime = moment.utc("2021-12-16 07:00 ");
   const timeBetween = moment.duration(targetTime.diff(currentTime));
 
   useEffect(() => {
@@ -44,12 +47,13 @@ const Home = () => {
             <div className="inner">
               <iframe
                 loading="lazy"
-                src="https://mooningmonkey.com/wp-content/uploads/2021/11/Mooning%20Monkey%20-%20Spaceship%20Reveal%20-%20Final.mp4?autoplay=1&amp;mute=1"
+                src={video}
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen=""
               ></iframe>
+              {/* <video controls autostart autoPlay src={video} type="video/mp4" /> */}
             </div>
 
             <div
@@ -63,6 +67,38 @@ const Home = () => {
           </div>
         </div>
       ) : null}
+
+      {read == true ? (
+        <div className="team-modal-wrapper">
+          <div className="wrapper">
+            <div className="title">Marketing Team</div>
+
+            <div className="inner">
+              <span>
+                This experienced team of mooning monkeys have spent endless
+                hours studying how to get other mooning monkeys excited, how to
+                clearly deliver a message, how to gather a crowd, and how to
+                make sure people are watching.
+              </span>
+              <span>
+                They know every pub, bar, and restaurant in the crypto town, as
+                well as the best way to interest its residents in their product,
+                assuring a successful launch to our mission.
+              </span>
+            </div>
+
+            <div
+              className="cross"
+              onClick={() => {
+                setRead(false);
+              }}
+            >
+              <CloseIcon />
+            </div>
+          </div>
+        </div>
+      ) : null}
+
       <div className="home_container">
         <section className="section1_container">
           <img src={Sec1} alt="ERROR" className="back" />
@@ -250,7 +286,10 @@ const Home = () => {
 
         <section id="buy" className="section4_container">
           <div className="box">
-            <div className="heading">MINTING</div>
+            <div className="heading">
+              <div className="title">MINTING</div>
+              <div className="sub-date">16 DECEMBER 2021 AT 7PM UTC</div>
+            </div>
             <div className="data">
               <div className="content">
                 <p className="p1">TAKE OFF IS IMMINENT.</p>
@@ -258,19 +297,19 @@ const Home = () => {
                 <div className="nftp__left_timer">
                   <div className="nftp__timer_days">
                     <div className="nftp__timer_daystop">
-                      {timeBetween.days()}
+                      {timeBetween.days()}:
                     </div>
                     <div className="nftp__timer_daysbottom">Day(s)</div>
                   </div>
                   <div className="nftp__timer_days">
                     <div className="nftp__timer_hourstop">
-                      {timeBetween.hours()}
+                      {timeBetween.hours()}:
                     </div>
                     <div className="nftp__timer_hoursbottom">Hour(s)</div>
                   </div>
                   <div className="nftp__timer_days">
                     <div className="nftp__timer_minstop">
-                      {timeBetween.minutes()}
+                      {timeBetween.minutes()}:
                     </div>
                     <div className="nftp__timer_minsbottom">Minute(s)</div>
                   </div>
@@ -281,7 +320,13 @@ const Home = () => {
                     <div className="nftp__timer_secondbottom">Second(s)</div>
                   </div>
                 </div>
+
+                <div className="p3">
+                  A maximum of ONLY 12 Mooning Monkeys can be purchased per
+                  wallet or the equivalent in SOL the day of the Minting Event.
+                </div>
               </div>
+
               <Parallax
                 style={{ overflow: "inharit !important" }}
                 // strength={}
@@ -352,7 +397,15 @@ const Home = () => {
                       <div className="data">
                         <div className="title">{data.heading}</div>
                         <div className="detail">
-                          {data.detail} <span> Read more </span>
+                          {data.detail}{" "}
+                          <span
+                            onClick={() => {
+                              setRead(true);
+                            }}
+                          >
+                            {" "}
+                            Read more{" "}
+                          </span>
                         </div>
                       </div>
                     </div>

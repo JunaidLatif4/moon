@@ -15,6 +15,7 @@ import Evaluation from "./Components/EvaluationLab/Evaluation";
 import Attributes from "./Components/Attributes/Attributes";
 import pdf from "./assests/comic/file.pdf";
 import "./App.scss";
+import AttributePage from "./Components/Attribute Page/AttributePage";
 
 const App = () => {
   return (
@@ -29,12 +30,14 @@ const App = () => {
         WHITELIST
       </a>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/home" component={Home2} />
+        <Route exact path="/home" component={Home} />
+        {/* <Route exact path="/home" component={Home2} /> */}
         <Route exact path="/token" component={Token} />
         <Route exact path="/comic" component={Comic} />
         <Route exact path="/Evaluation" component={Evaluation} />
         <Route exact path="/calculator" component={Calculator} />
+        {/* <Route exact path="/attributes" component={AttributePage} /> */}
+
         <Route exact path="/attributes" component={Attributes} />
       </Switch>
       {/* <div

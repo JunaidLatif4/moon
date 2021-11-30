@@ -13,6 +13,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { Parallax } from "react-parallax";
 
 const Token = () => {
+  window.scrollTo(0, 0);
   return (
     <>
       <div className="token__container">

@@ -10,6 +10,8 @@ import EvolutionTree from "./evolutionTree";
 import ComsicProfit from "./comsicProfit";
 import "../Home/Home.scss";
 const Calculator = () => {
+  window.scrollTo(0, 0);
+
   const [state, setState] = useState("1");
   return (
     <div>

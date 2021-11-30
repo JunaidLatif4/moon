@@ -76,6 +76,7 @@ const ProfitCalculator = () => {
       },
     },
     responsive: true,
+
     plugins: {
       legend: {
         position: "bottom",
@@ -1008,6 +1009,7 @@ const ProfitCalculator = () => {
                 onChange={(val) => {
                   setBets(val);
                 }}
+                className="inputNumber"
               />
             </Col>
           </Row>
@@ -1250,7 +1252,7 @@ const ProfitCalculator = () => {
           <div class="total-result-text" id="total-earned"></div>
         </div>
         <div className="mt-3">
-          <Bar data={data} options={options} />
+          <Bar data={data} options={options} className="chart-mobile" />
         </div>
       </div>
     </div>
