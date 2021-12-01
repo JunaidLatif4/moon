@@ -176,7 +176,7 @@ function Evaluation() {
                       <img className="border_img ones" src={border} />
                       <img className="border_img ones" src={border} />
                       <img className="sidearrow ones_ar" src={sidearrow} />
-                      <div>
+                      <div className="ib_marLeft">
                         {" "}
                         <img className="ques_image" src={question} />
                         <div className="button_container">
@@ -258,9 +258,9 @@ function Evaluation() {
                     <img className="border_img1 doted" src={border} />
                     <img className="border_img1 doted" src={border} />
                     <img className="sidearrow1 doted" src={sidearrow} />
-                    <div>
+                    <div className="ib_marLeft">
                       <img className="ques_image3" src={question} />
-                      <div className="button_container">
+                      <div className="button_container buttonss_container">
                         <button>
                           {" "}
                           Evolve{" "}
