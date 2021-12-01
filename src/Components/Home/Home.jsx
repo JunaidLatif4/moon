@@ -288,6 +288,11 @@ const Home = () => {
             <div className="heading">
               <div className="title">MINTING</div>
               <div className="sub-date">16 DECEMBER 2021 AT 7PM UTC</div>
+              <div className="detail">
+                The final amount in SOL will be updated 12 hours before the
+                miniting event and will correspond to XXX USD per Mooning
+                Monkey.
+              </div>
             </div>
             <div className="data">
               <div className="content">
@@ -348,7 +353,10 @@ const Home = () => {
                       transition: "all .2s linear",
                     }}
                   >
-                    <div className="title"> COUNT YOUR COUNTS </div>
+                    <div className="title">
+                      {" "}
+                      DESIRED AMOUNT OF MOONING MONKEYS{" "}
+                    </div>
                     <div className="detail">
                       {" "}
                       Enter the amount of Mooning Monkeys You would like to
@@ -359,20 +367,20 @@ const Home = () => {
                       <div className="price">
                         <div className="p1">Price per Monkey</div>
                         <div className="p2">
-                          <span> 2.99 </span> SOL each
+                          <span> X.99 </span> SOL each
                         </div>
                         <div className="p3">12,000 amount remaining</div>
                       </div>
                     </div>
                     <div className="input">
                       <input type="text" defaultValue="10" />{" "}
-                      <span> 129 SOL max </span>
+                      <span> XX SOL max </span>
                     </div>
                     <div className="total">
                       <div className="p1"> Total </div>
                       <div className="p2">
                         {" "}
-                        <span> 29.9 </span> SOL{" "}
+                        <span> XX.9 </span> SOL{" "}
                       </div>
                     </div>
                     <button>

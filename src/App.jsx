@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -16,8 +16,17 @@ import Attributes from "./Components/Attributes/Attributes";
 import pdf from "./assests/comic/file.pdf";
 import "./App.scss";
 import AttributePage from "./Components/Attribute Page/AttributePage";
-
+import { RiArrowUpSLine } from "react-icons/ri";
+import $ from "jquery";
 const App = () => {
+  // $(window).scroll(function () {
+  //   if ($(this).scrollTop() > 600) {
+  //     $(".et_pb_scroll_top").fadeIn();
+  //   } else {
+  //     $(".et_pb_scroll_top").fadeOut();
+  //   }
+  // });
+
   return (
     <>
       <Header />
@@ -29,6 +38,16 @@ const App = () => {
       >
         WHITELIST
       </a>
+      <span
+        class="et_pb_scroll_top et-pb-icon et-visible"
+        style={{ display: "inline" }}
+        onClick={() => {
+          window.scrollTo(0, 0);
+          console.log("to");
+        }}
+      >
+        <RiArrowUpSLine />
+      </span>
       <Switch>
         <Route exact path="/" component={Home} />
         {/* <Route exact path="/home" component={Home} /> */}

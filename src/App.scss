@@ -49,7 +49,27 @@
     }
   }
 }
-
+.et_pb_scroll_top {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  position: fixed;
+  z-index: 99999;
+  bottom: 125px;
+  right: 0;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 5px;
+  color: #fff;
+  line-height: 8px;
+}
 .team-modal-wrapper {
   position: fixed;
   z-index: 100;

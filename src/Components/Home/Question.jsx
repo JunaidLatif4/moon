@@ -137,12 +137,12 @@ const Question = () => {
                 </div>
                 <div className="para2">
                   You’ll be able to start minting as as soon as 16.12.21 at the
-                  price of <span>600 USD</span> in <span>SOL</span> value per
+                  price of <span>XXX USD</span> in <span>SOL</span> value per
                   Mooning Monkey.
                 </div>
                 <div className="para3">
                   The final amount in SOL will be updated 12h before the sale to{" "}
-                  <span>600 USD </span> per Mooning Monkey.
+                  <span>XXX USD </span> per Mooning Monkey.
                 </div>
               </div>
             </div>

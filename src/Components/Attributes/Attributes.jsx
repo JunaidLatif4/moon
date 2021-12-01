@@ -7,13 +7,12 @@ import { Parallax } from "react-parallax";
 import "./Attributes.scss";
 
 const Attributes = () => {
-  window.scrollTo(0, 0);
-
   const [currentTime, setCurrentTime] = useState(moment());
   const targetTime = moment.utc("2021-12-16 07:00 pm");
   const timeBetween = moment.duration(targetTime.diff(currentTime));
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const interval = setInterval(() => {
       setCurrentTime(moment());
     }, 1000);
