@@ -1,6 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-
+// import { NavLink } from "react-router-dom";
+import { HashLink as NavLink } from "react-router-hash-link";
 import Logo from "../../assests/Footer/logo.png";
 import Black from "../../assests/Footer/black.svg";
 import Dis from "../../assests/Footer/dis.png";
@@ -18,9 +18,26 @@ const Footer = () => {
           <div className="stamp_box">
             <img src={Logo} alt="ERROR" className="logo" />
             <div className="social_box">
-              <img src={Send} alt="" />
-              <img src={Dis} alt="" />
-              <img src={Twitter} alt="" />
+              <a
+                href="https://t.me/MooningMonkeyOfficial"
+                target="blank"
+                rel="noopener"
+              >
+                {" "}
+                <img src={Send} alt="" />
+              </a>
+
+              <a
+                href="https://discord.gg/mooningmonkeyofficial"
+                target="blank"
+                rel="noopener"
+              >
+                <img src={Dis} alt="" />
+              </a>
+              <a href="https://twitter.com/MooningMonkeys">
+                {" "}
+                <img src={Twitter} alt="" />
+              </a>
             </div>
           </div>
           <div className="content">

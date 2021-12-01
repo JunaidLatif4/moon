@@ -12,6 +12,7 @@ import img8 from "../../assests/Home2/img8.png";
 import { Parallax } from "react-parallax";
 import { IoIosArrowForward } from "react-icons/io";
 import RoadMap from "./components/RoadMap/RoadMap";
+import { HashLink } from "react-router-hash-link";
 
 const Home2 = () => {
   return (
@@ -209,19 +210,23 @@ const Home2 = () => {
             <div className="right__btn">
               <Parallax
                 renderLayer={(percentage) => (
-                  <button
-                    style={{
-                      transform: `scale(${
-                        1 * (percentage + 0.8) > 1 ? 1 : 1 * (percentage + 0.8)
-                      }) `,
-                      transition: "all .3s linear",
-                    }}
-                  >
-                    VISIT EVOLUTION LAB
-                    <span>
-                      <IoIosArrowForward />
-                    </span>
-                  </button>
+                  <HashLink to="/Evaluation">
+                    <button
+                      style={{
+                        transform: `scale(${
+                          1 * (percentage + 0.8) > 1
+                            ? 1
+                            : 1 * (percentage + 0.8)
+                        }) `,
+                        transition: "all .3s linear",
+                      }}
+                    >
+                      VISIT EVOLUTION LAB
+                      <span>
+                        <IoIosArrowForward />
+                      </span>
+                    </button>
+                  </HashLink>
                 )}
               ></Parallax>
             </div>
@@ -250,21 +255,23 @@ const Home2 = () => {
               <div className="right__btn">
                 <Parallax
                   renderLayer={(percentage) => (
-                    <button
-                      style={{
-                        transform: `scale(${
-                          1 * (percentage + 0.8) > 1
-                            ? 1
-                            : 1 * (percentage + 0.8)
-                        }) `,
-                        transition: "all .3s linear",
-                      }}
-                    >
-                      CHECK OUT COMIC PAGE
-                      <span>
-                        <IoIosArrowForward />
-                      </span>
-                    </button>
+                    <HashLink to="/comic">
+                      <button
+                        style={{
+                          transform: `scale(${
+                            1 * (percentage + 0.8) > 1
+                              ? 1
+                              : 1 * (percentage + 0.8)
+                          }) `,
+                          transition: "all .3s linear",
+                        }}
+                      >
+                        CHECK OUT COMIC PAGE
+                        <span>
+                          <IoIosArrowForward />
+                        </span>
+                      </button>
+                    </HashLink>
                   )}
                 ></Parallax>
               </div>
@@ -345,19 +352,23 @@ const Home2 = () => {
             <div className="right__btn">
               <Parallax
                 renderLayer={(percentage) => (
-                  <button
-                    style={{
-                      transform: `scale(${
-                        1 * (percentage + 0.8) > 1 ? 1 : 1 * (percentage + 0.8)
-                      }) `,
-                      transition: "all .3s linear",
-                    }}
-                  >
-                    TOKEN UTILITY OVERVIEW
-                    <span>
-                      <IoIosArrowForward />
-                    </span>
-                  </button>
+                  <HashLink to="/token">
+                    <button
+                      style={{
+                        transform: `scale(${
+                          1 * (percentage + 0.8) > 1
+                            ? 1
+                            : 1 * (percentage + 0.8)
+                        }) `,
+                        transition: "all .3s linear",
+                      }}
+                    >
+                      TOKEN UTILITY OVERVIEW
+                      <span>
+                        <IoIosArrowForward />
+                      </span>
+                    </button>
+                  </HashLink>
                 )}
               ></Parallax>
             </div>
@@ -385,21 +396,23 @@ const Home2 = () => {
               <div className="right__btn">
                 <Parallax
                   renderLayer={(percentage) => (
-                    <button
-                      style={{
-                        transform: `scale(${
-                          1 * (percentage + 0.8) > 1
-                            ? 1
-                            : 1 * (percentage + 0.8)
-                        }) `,
-                        transition: "all .3s linear",
-                      }}
-                    >
-                      CHECK OUT ROADMAP
-                      <span>
-                        <IoIosArrowForward />
-                      </span>
-                    </button>
+                    <HashLink to="/#roadmap">
+                      <button
+                        style={{
+                          transform: `scale(${
+                            1 * (percentage + 0.8) > 1
+                              ? 1
+                              : 1 * (percentage + 0.8)
+                          }) `,
+                          transition: "all .3s linear",
+                        }}
+                      >
+                        CHECK OUT ROADMAP
+                        <span>
+                          <IoIosArrowForward />
+                        </span>
+                      </button>
+                    </HashLink>
                   )}
                 ></Parallax>
               </div>

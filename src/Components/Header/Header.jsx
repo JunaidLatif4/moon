@@ -54,11 +54,30 @@ const Header = () => {
             </div>
           </nav>
           <div className="img_box">
-            <img src={Logo} alt="ERROR" className="logo" />
+            <HashLink to="/">
+              <img src={Logo} alt="ERROR" className="logo" />
+            </HashLink>
             <div className="social_box">
-              <img src={Send} alt="ERROR" />
-              <img src={Dis} alt="ERROR" />
-              <img src={Twitter} alt="ERROR" />
+              <a
+                href="https://t.me/MooningMonkeyOfficial"
+                target="blank"
+                rel="noopener"
+              >
+                {" "}
+                <img src={Send} alt="" />
+              </a>
+
+              <a
+                href="https://discord.gg/mooningmonkeyofficial"
+                target="blank"
+                rel="noopener"
+              >
+                <img src={Dis} alt="" />
+              </a>
+              <a href="https://twitter.com/MooningMonkeys">
+                {" "}
+                <img src={Twitter} alt="" />
+              </a>
             </div>
           </div>
           <nav>

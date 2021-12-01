@@ -8,17 +8,18 @@ import Modal from "@mui/material/Modal";
 import CloseIcon from "@mui/icons-material/Close";
 import { IoIosArrowForward } from "react-icons/io";
 import { Parallax } from "react-parallax";
-
+import { HashLink as NavLink } from "react-router-hash-link";
 import video from "../../assests/video/mooningMonkey.mp4";
 import Sec1 from "../../assests/Home/sec1.jpg";
 import Sec3 from "../../assests/Home/sec3.jpg";
 import Sec3F from "../../assests/Home/sec3front.png";
+import Sec4F from "../../assests/Home/sec4front.png";
 import Sec4P from "../../assests/Home/sec4profile.png";
 import CardImg from "../../assests/Home/cardg.png";
 import BackBlur from "../../assests/Home/cardback.png";
 import Question from "./Question";
 import Home2 from "./Home2";
-
+import pdf from "../../assests/Home/MM FINAL 1 PAGER.pdf";
 import CardData from "./sec11Data";
 
 import "./Home.scss";
@@ -29,7 +30,8 @@ const Home = () => {
   const [currentTime, setCurrentTime] = useState(moment());
   const targetTime = moment.utc("2021-12-16 07:00 pm");
   const timeBetween = moment.duration(targetTime.diff(currentTime));
-
+  const [game, setGame] = useState("1");
+  const [game1, setGame1] = useState("1");
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTime(moment());
@@ -123,46 +125,64 @@ const Home = () => {
             <span> Stylish, Rare, And Utility-Packed NFT’s </span>.
           </div>
           <div className="btn_box">
-            <button style={{ backgroundColor: "#f832ec" }}>
-              {" "}
-              join telegram{" "}
-              <span>
+            <a
+              href="https://t.me/MooningMonkeyOfficial"
+              target="blank"
+              rel="noopener"
+            >
+              <button style={{ backgroundColor: "#f832ec" }}>
                 {" "}
-                <IoIosArrowForward />{" "}
-              </span>{" "}
-            </button>
-            <button style={{ backgroundColor: "#f832ec" }}>
-              {" "}
-              join discord{" "}
-              <span>
+                join telegram{" "}
+                <span>
+                  {" "}
+                  <IoIosArrowForward />{" "}
+                </span>{" "}
+              </button>
+            </a>
+            <a
+              href="https://discord.gg/mooningmonkeyofficial"
+              target="blank"
+              rel="noopener"
+            >
+              <button style={{ backgroundColor: "#f832ec" }}>
                 {" "}
-                <IoIosArrowForward />{" "}
-              </span>{" "}
-            </button>
-            <button>
-              {" "}
-              buy now{" "}
-              <span>
+                join discord{" "}
+                <span>
+                  {" "}
+                  <IoIosArrowForward />{" "}
+                </span>{" "}
+              </button>
+            </a>
+            <NavLink to="/#buy">
+              <button>
                 {" "}
-                <IoIosArrowForward />{" "}
-              </span>{" "}
-            </button>
-            <button>
-              {" "}
-              one pager{" "}
-              <span>
+                buy now{" "}
+                <span>
+                  {" "}
+                  <IoIosArrowForward />{" "}
+                </span>{" "}
+              </button>
+            </NavLink>
+            <a href={pdf} target="_blank">
+              <button>
                 {" "}
-                <IoIosArrowForward />{" "}
-              </span>{" "}
-            </button>
-            <button>
-              {" "}
-              profit calculator{" "}
-              <span>
+                one pager{" "}
+                <span>
+                  {" "}
+                  <IoIosArrowForward />{" "}
+                </span>{" "}
+              </button>
+            </a>
+            <NavLink to="/calculator">
+              <button>
                 {" "}
-                <IoIosArrowForward />{" "}
-              </span>{" "}
-            </button>
+                profit calculator{" "}
+                <span>
+                  {" "}
+                  <IoIosArrowForward />{" "}
+                </span>{" "}
+              </button>
+            </NavLink>
           </div>
         </section>
 
@@ -235,9 +255,27 @@ const Home = () => {
             ></Parallax>
             <div className="detail">
               {/* <p style={{ color: '#5dcbf6' }}> GAME CONCEPT </p> */}
-              <p> GAME CONCEPT </p>
+              <p
+                onClick={() => {
+                  setGame("1");
+                }}
+                style={
+                  game == "1" ? { color: "#5dcbf6" } : { color: "#f831ec" }
+                }
+              >
+                {" "}
+                GAME CONCEPT{" "}
+              </p>
               <span></span>
-              <p className="p2" style={{ color: "white" }}>
+              <p
+                className="p2"
+                style={
+                  game == "2" ? { color: "#5dcbf6" } : { color: "#f831ec" }
+                }
+                onClick={() => {
+                  setGame("2");
+                }}
+              >
                 {" "}
                 BENEFITS OVERVIEW{" "}
               </p>
@@ -245,39 +283,80 @@ const Home = () => {
 
             <div className="data">
               <div className="content">
-                <div className="title">
-                  What’s The Mooning Monkey Crash Game?
-                </div>
-                <ul>
-                  <li>
+                {game == "1" ? (
+                  <>
+                    <div className="title">
+                      What’s The Mooning Monkey Crash Game?
+                    </div>
+                    <ul>
+                      <li>
+                        {" "}
+                        Mooning Monkey is an exciting, online, multiplayer
+                        gambling game that will provide you with endless hours
+                        of thrilling fun, while also giving you the opportunity
+                        to win MILLIONS.{" "}
+                      </li>
+                      <li>
+                        {" "}
+                        The gameplay consists of an increasing curve that an
+                        crash at any time, keeping everyone at the edges of
+                        their seats, trying to figure out when they should cash
+                        out.{" "}
+                      </li>
+                      <li>
+                        {" "}
+                        While we are preparing the game launch, have fun playing
+                        with our profit calculator{" "}
+                      </li>
+                    </ul>{" "}
+                  </>
+                ) : (
+                  <>
                     {" "}
-                    Mooning Monkey is an exciting, online, multiplayer gambling
-                    game that will provide you with endless hours of thrilling
-                    fun, while also giving you the opportunity to win MILLIONS.{" "}
-                  </li>
-                  <li>
-                    {" "}
-                    The gameplay consists of an increasing curve that an crash
-                    at any time, keeping everyone at the edges of their seats,
-                    trying to figure out when they should cash out.{" "}
-                  </li>
-                  <li>
-                    {" "}
-                    While we are preparing the game launch, have fun playing
-                    with our profit calculator{" "}
-                  </li>
-                </ul>
-                <img src={Sec3F} alt="ERROR" className="sec3f" />
+                    <div className="title">
+                      Make Money While Comfortably Sitting In Your Bed, Relaxing
+                      On The Beach, Or Having Your Own Adventures…
+                    </div>
+                    <ul>
+                      <li>
+                        {" "}
+                        50% Of The Total Game Profit Will Be Shared With
+                        Co-Owners Such As Yourself EVERY MONDAY{" "}
+                      </li>
+                      <li>
+                        {" "}
+                        You Will Get Extra Bonuses Based On Your Mooning
+                        Monkey’s Evolution Stage, Earn More Money, Access More
+                        Information, And Get Exclusive Access To The Mooning
+                        Monkey’s Secrets
+                      </li>
+                      <li>
+                        {" "}
+                        Bankroll Participation Option Available To Increase
+                        Community Engagement, Mooning Monkey Holder Profits, And
+                        Bankroll Participant’s Profits
+                      </li>
+                      <li>
+                        {" "}
+                        Gain Exclusive Access To A Referral Program That Sells
+                        Itself And Allows You To Earn Even MORE Money
+                      </li>
+                    </ul>
+                  </>
+                )}
+                <img src={Sec4F} alt="ERROR" className="sec3f" />
               </div>
               <div className="btn_box">
-                <button>
-                  {" "}
-                  profit calculator{" "}
-                  <span>
+                <NavLink to="/calculator">
+                  <button>
                     {" "}
-                    <IoIosArrowForward />{" "}
-                  </span>{" "}
-                </button>
+                    profit calculator{" "}
+                    <span>
+                      {" "}
+                      <IoIosArrowForward />{" "}
+                    </span>{" "}
+                  </button>
+                </NavLink>
               </div>
             </div>
           </div>
@@ -294,106 +373,199 @@ const Home = () => {
                 Monkey.
               </div>
             </div>
+            <div className="detail1">
+              {/* <p style={{ color: '#5dcbf6' }}> GAME CONCEPT </p> */}
+              <p
+                onClick={() => {
+                  setGame1("1");
+                }}
+                style={
+                  game1 == "1" ? { color: "#5dcbf6" } : { color: "#f831ec" }
+                }
+              >
+                {" "}
+                BUY MOONING MONKEYS
+              </p>
+              <span></span>
+              <p
+                className="p2"
+                style={
+                  game1 == "2" ? { color: "#5dcbf6" } : { color: "#f831ec" }
+                }
+                onClick={() => {
+                  setGame1("2");
+                }}
+              >
+                {" "}
+                GET PHANTOM WALLET
+              </p>
+            </div>
             <div className="data">
-              <div className="content">
-                <p className="p1">TAKE OFF IS IMMINENT.</p>
-                <p className="p2">SUIT UP AND GET READY!</p>
-                <div className="nftp__left_timer">
-                  <div className="nftp__timer_days">
-                    <div className="nftp__timer_daystop">
-                      {timeBetween.days()}
-                    </div>
-                    <div className="nftp__timer_daysbottom">Day(s)</div>
-                  </div>
-                  <div className="nftp__timer_days">
-                    <div className="nftp__timer_hourstop mt100">:</div>
-                  </div>
-                  <div className="nftp__timer_days">
-                    <div className="nftp__timer_hourstop">
-                      {timeBetween.hours()}
-                    </div>
-                    <div className="nftp__timer_hoursbottom">Hour(s)</div>
-                  </div>
-                  <div className="nftp__timer_days">
-                    <div className="nftp__timer_hourstop mt100">:</div>
-                  </div>
-                  <div className="nftp__timer_days">
-                    <div className="nftp__timer_minstop">
-                      {timeBetween.minutes()}
-                    </div>
-                    <div className="nftp__timer_minsbottom">Minute(s)</div>
-                  </div>
-                  <div className="nftp__timer_days">
-                    <div className="nftp__timer_hourstop mt100">:</div>
-                  </div>
-                  <div className="nftp__timer_days">
-                    <div className="nftp__timer_secondtop">
-                      {timeBetween.seconds()}
-                    </div>
-                    <div className="nftp__timer_secondbottom">Second(s)</div>
-                  </div>
-                </div>
-
-                <div className="p3">
-                  A maximum of ONLY 12 Mooning Monkeys can be purchased per
-                  wallet or the equivalent in SOL the day of the Minting Event.
-                </div>
-              </div>
-
-              <Parallax
-                style={{ overflow: "inharit !important" }}
-                // strength={}
-                renderLayer={(percentage) => (
-                  <div
-                    className="wallet"
-                    style={{
-                      transform: `scale(${
-                        1 * (percentage + 0.4) > 1 ? 1 : 1 * (percentage + 0.4)
-                      })`,
-                      transition: "all .2s linear",
-                    }}
-                  >
-                    <div className="title">
-                      {" "}
-                      DESIRED AMOUNT OF MOONING MONKEYS{" "}
-                    </div>
-                    <div className="detail">
-                      {" "}
-                      Enter the amount of Mooning Monkeys You would like to
-                      purchase{" "}
-                    </div>
-                    <div className="profile">
-                      <img src={Sec4P} alt="ERROR" />
-                      <div className="price">
-                        <div className="p1">Price per Monkey</div>
-                        <div className="p2">
-                          <span> X.99 </span> SOL each
+              {game1 == "1" ? (
+                <>
+                  <div className="content">
+                    <p className="p1">TAKE OFF IS IMMINENT.</p>
+                    <p className="p2">SUIT UP AND GET READY!</p>
+                    <div className="nftp__left_timer">
+                      <div className="nftp__timer_days">
+                        <div className="nftp__timer_daystop">
+                          {timeBetween.days()}
                         </div>
-                        <div className="p3">12,000 amount remaining</div>
+                        <div className="nftp__timer_daysbottom">Day(s)</div>
+                      </div>
+                      <div className="nftp__timer_days">
+                        <div className="nftp__timer_hourstop mt100">:</div>
+                      </div>
+                      <div className="nftp__timer_days">
+                        <div className="nftp__timer_hourstop">
+                          {timeBetween.hours()}
+                        </div>
+                        <div className="nftp__timer_hoursbottom">Hour(s)</div>
+                      </div>
+                      <div className="nftp__timer_days">
+                        <div className="nftp__timer_hourstop mt100">:</div>
+                      </div>
+                      <div className="nftp__timer_days">
+                        <div className="nftp__timer_minstop">
+                          {timeBetween.minutes()}
+                        </div>
+                        <div className="nftp__timer_minsbottom">Minute(s)</div>
+                      </div>
+                      <div className="nftp__timer_days">
+                        <div className="nftp__timer_hourstop mt100">:</div>
+                      </div>
+                      <div className="nftp__timer_days">
+                        <div className="nftp__timer_secondtop">
+                          {timeBetween.seconds()}
+                        </div>
+                        <div className="nftp__timer_secondbottom">
+                          Second(s)
+                        </div>
                       </div>
                     </div>
-                    <div className="input">
-                      <input type="text" defaultValue="10" />{" "}
-                      <span> XX SOL max </span>
+
+                    <div className="p3">
+                      A maximum of ONLY 12 Mooning Monkeys can be purchased per
+                      wallet or the equivalent in SOL the day of the Minting
+                      Event.
                     </div>
-                    <div className="total">
-                      <div className="p1"> Total </div>
-                      <div className="p2">
-                        {" "}
-                        <span> XX.9 </span> SOL{" "}
-                      </div>
-                    </div>
-                    <button>
-                      {" "}
-                      connect to wallet{" "}
-                      <span>
-                        {" "}
-                        <IoIosArrowForward />{" "}
-                      </span>{" "}
-                    </button>
                   </div>
-                )}
-              ></Parallax>
+
+                  <Parallax
+                    style={{ overflow: "inharit !important" }}
+                    // strength={}
+                    renderLayer={(percentage) => (
+                      <div
+                        className="wallet"
+                        style={{
+                          transform: `scale(${
+                            1 * (percentage + 0.4) > 1
+                              ? 1
+                              : 1 * (percentage + 0.4)
+                          })`,
+                          transition: "all .2s linear",
+                        }}
+                      >
+                        <div className="title">
+                          {" "}
+                          DESIRED AMOUNT OF MOONING MONKEYS{" "}
+                        </div>
+                        <div className="detail">
+                          {" "}
+                          Enter the amount of Mooning Monkeys You would like to
+                          purchase{" "}
+                        </div>
+                        <div className="profile">
+                          <img src={Sec4P} alt="ERROR" />
+                          <div className="price">
+                            <div className="p1">Price per Monkey</div>
+                            <div className="p2">
+                              <span> X.99 </span> SOL each
+                            </div>
+                            <div className="p3">12,000 amount remaining</div>
+                          </div>
+                        </div>
+                        <div className="input">
+                          <input type="text" defaultValue="10" />{" "}
+                          <span> XX SOL max </span>
+                        </div>
+                        <div className="total">
+                          <div className="p1"> Total </div>
+                          <div className="p2">
+                            {" "}
+                            <span> XX.9 </span> SOL{" "}
+                          </div>
+                        </div>
+                        <button>
+                          {" "}
+                          connect to wallet{" "}
+                          <span>
+                            {" "}
+                            <IoIosArrowForward />{" "}
+                          </span>{" "}
+                        </button>
+                      </div>
+                    )}
+                  ></Parallax>
+                </>
+              ) : (
+                <div style={{ padding: "30px" }}>
+                  <div class="datap1">
+                    In order to participate in the Mooning Monkey Minting Event,
+                    you’ll need to install the Phantom Wallet. Please follow the
+                    following instructions and/or the suggested video tutorial:
+                  </div>
+                  <Parallax
+                    // strength={}
+                    renderLayer={(percentage) => (
+                      <div
+                        className="datap2"
+                        style={{
+                          transform: `scale(${
+                            1 * (percentage + 0.5) > 1
+                              ? 1
+                              : 1 * (percentage + 0.5)
+                          })`,
+                          transition: "all .2s linear",
+                        }}
+                      >
+                        <ol style={{ paddingLeft: "32px" }}>
+                          <li>
+                            Visit:{" "}
+                            <a
+                              style={{ color: "#f831ec" }}
+                              href="https://phantom.app/"
+                              target="_blank"
+                            >
+                              https://phantom.app/
+                            </a>
+                          </li>
+                          <li>Click “add to Chrome”</li>
+                          <li>Follow Phantom guided instruction steps.</li>
+                          <li>
+                            Send SOL to your newly created Phantom Wallet to
+                            purchase the desired amount of Mooning Monkeys you
+                            wish to acquire.
+                          </li>
+                        </ol>
+                        <ul>
+                          <li>
+                            For a simple well explained video tutorial please
+                            click{" "}
+                            <a
+                              style={{ color: "#f831ec" }}
+                              href="https://www.youtube.com/watch?v=4vzgPiLrpAE"
+                              target="_blank"
+                            >
+                              HERE
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    )}
+                  ></Parallax>
+                </div>
+              )}
             </div>
           </div>
         </section>

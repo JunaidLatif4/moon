@@ -37,9 +37,26 @@ const Question = () => {
           <div className="para2">Our reach us on social media:</div>
           <div className="icons">
             <div className="social_box">
-              <img src={Send} alt="" className="img" />
-              <img src={Dis} alt="" className="img" />
-              <img src={Twitter} alt="" className="img" />
+              <a
+                href="https://t.me/MooningMonkeyOfficial"
+                target="blank"
+                rel="noopener"
+              >
+                {" "}
+                <img src={Send} alt="" className="img" />
+              </a>
+              <a
+                href="https://discord.gg/mooningmonkeyofficial"
+                target="blank"
+                rel="noopener"
+              >
+                {" "}
+                <img src={Dis} alt="" className="img" />
+              </a>
+              <a href="https://twitter.com/MooningMonkeys">
+                {" "}
+                <img src={Twitter} alt="" className="img" />
+              </a>
             </div>
           </div>
 
