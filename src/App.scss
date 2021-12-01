@@ -75,7 +75,9 @@
       padding: 15px 0px;
       font-size: 40px;
       text-align: center;
-      color: #f832ec;
+      background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .inner {
@@ -511,10 +513,11 @@ a.whitelist-side {
   justify-content: space-between;
   align-items: center;
   padding: 10px 0px;
-  .mt100 {
-    margin-top: -200%;
-  }
 }
+.mt100 {
+  margin-top: -200%;
+}
+
 @media screen and (max-width: 1024px) {
   .cal__btn__wrapper1,
   .cal__btn__wrapper2 {

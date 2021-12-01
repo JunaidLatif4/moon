@@ -99,7 +99,7 @@ const Home = () => {
       ) : null}
 
       <div className="home_container">
-        <section className="section1_container">
+        <section className="section1_container" id="home">
           <img src={Sec1} alt="ERROR" className="back" />
           <div className="heading">
             ONBOARD THE GREATEST <br /> SPACE MISSION OF ALL TIME!

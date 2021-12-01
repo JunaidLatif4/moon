@@ -10,7 +10,10 @@ import ComicModal from "./components/ComicModal/ComicModal";
 import { Parallax } from "react-parallax";
 
 const Comic = () => {
+  window.scrollTo(0, 0);
+
   const [comicModal, setComicModal] = useState(true);
+
   return (
     <>
       <div className="comic__container">
