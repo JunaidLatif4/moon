@@ -27,7 +27,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 .monkey_col_wrapper {
   position: relative;
@@ -191,7 +191,7 @@
   font-weight: 500;
   font-family: "nurom";
   line-height: 35px;
-  padding-top: 50px;
+  padding-top: 70px;
 }
 .Get_External_heading {
   font-size: 42px;

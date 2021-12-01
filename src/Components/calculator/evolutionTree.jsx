@@ -476,10 +476,12 @@ const EvolutionTree = (props) => {
         </div>
       </div>
 
-      <div className="d-flex justify-content-center justify-content-center" style={{ position: "relative" }}>
+      <div
+        className="d-flex justify-content-center justify-content-center"
+        style={{ position: "relative" }}
+      >
         <div className={props.name}></div>
       </div>
-
 
       <h2 className="quetion_mark_heading">
         Evolve them into 2 Alien Gorillas
@@ -517,8 +519,8 @@ const EvolutionTree = (props) => {
         </div>
       </div>
       <div style={{ position: "relative" }}>
-        <div className="d-flex justify-content-center" >
-          <div className="Question2_secton_bottom_border" ></div>
+        <div className="d-flex justify-content-center">
+          <div className="Question2_secton_bottom_border"></div>
         </div>
 
         <div className="d-flex justify-content-center">
@@ -528,7 +530,6 @@ const EvolutionTree = (props) => {
           <img src={BlueQuestion} className="blue_question_img" />
         </div>
       </div>
-
 
       <h2 className="Get_External_heading">Get 1 Eternal Yeti</h2>
     </>

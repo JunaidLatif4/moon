@@ -42,9 +42,9 @@
         align-items: center;
         // justify-content: center;
         margin: 2rem 1rem;
-        @media only screen and (max-width: 800px) {
-          margin: 1rem 1rem;
-        }
+        // @media only screen and (max-width: 800px) {
+        //   margin: 1rem 1rem;
+        // }
         .img {
           .box__img {
             height: 350px;
@@ -67,11 +67,11 @@
           color: white;
           text-align: center;
           line-height: 50px;
-          @media only screen and (max-width: 800px) {
-            padding: 0 1rem;
-            font-size: 20px;
-            line-height: 30px;
-          }
+          // @media only screen and (max-width: 800px) {
+          //   padding: 0 1rem;
+          //   font-size: 20px;
+          //   line-height: 30px;
+          // }
           span {
             color: #f831ec;
           }
@@ -80,12 +80,81 @@
           font-size: 26px;
           color: white;
           text-align: center;
-          @media only screen and (max-width: 800px) {
-            padding: 0 1rem;
-            font-size: 20px;
-          }
+          // @media only screen and (max-width: 800px) {
+          //   padding: 0 1rem;
+          //   font-size: 20px;
+          // }
           span {
             color: #f831ec;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 1728px) {
+      .grid {
+        .box {
+          width: 20%;
+
+          .img {
+            .box__img {
+              max-width: 100%;
+              width: 100%;
+              height: auto;
+            }
+          }
+          .box__heading {
+            font-size: 28px;
+            line-height: 1em;
+          }
+          .para1 {
+            width: 100%;
+            font-size: 20px;
+            line-height: 30px;
+          }
+          .para2 {
+            font-size: 20px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 991px) {
+      .grid {
+        justify-content: space-between;
+        .box {
+          width: 46%;
+
+          .img {
+            .box__img {
+              height: 300px;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 766px) {
+      .grid {
+        margin-top: 2rem;
+        justify-content: center;
+        .box {
+          width: 100%;
+
+          margin: 2rem 1rem;
+
+          .img {
+            .box__img {
+              max-width: 100%;
+              width: 100%;
+              height: auto;
+            }
+          }
+
+          .para1,
+          .para2 {
+            width: 90%;
           }
         }
       }
