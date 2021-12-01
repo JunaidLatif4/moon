@@ -236,6 +236,7 @@ const NFTPage = () => {
                 <PriceBox />
               </div>
             </div>
+
             <div className="nftp__bottom_wrapper">
               {/* <GradiantBtn text="PROFILE CALCULATOR" /> */}
               <div className="nftp__bottom_text">
@@ -251,7 +252,7 @@ const NFTPage = () => {
               This part is not yet available, in the meantime, feel free to
               check out other gadgets such as our profit calculator:
             </div>
-            <GradiantBtn text="PROFILE CALCULATOR" />
+            <GradiantBtn text="PROFIT CALCULATOR" />
           </div>
         )}
       </LightBox>
