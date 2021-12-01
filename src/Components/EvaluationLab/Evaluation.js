@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import monkey from "../../assests/Lab/monky1.png";
 import question from "../../assests/Lab/question.png";
@@ -11,8 +11,9 @@ import { Parallax } from "react-parallax";
 import Table from "../calculator/table";
 
 function Evaluation() {
-  window.scrollTo(0, 0);
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [active, setActive] = useState("2");
   return (
     <>
@@ -259,7 +260,7 @@ function Evaluation() {
                     <img className="sidearrow1 doted" src={sidearrow} />
                     <div>
                       <img className="ques_image3" src={question} />
-                      <div className="buttonss_container">
+                      <div className="button_container">
                         <button>
                           {" "}
                           Evolve{" "}
@@ -343,9 +344,9 @@ function Evaluation() {
                     <img className="sidearrow1 arr" src={sidearrow} />
                     <img className="sidearrow1 arrs" src={sidearrow} />
 
-                    <div>
+                    <div className="ib_marLeft">
                       <img className="ques_image1" src={question} />
-                      <div className="buttonsss_container">
+                      <div className="button_container">
                         <button>
                           {" "}
                           Evolve{" "}
@@ -393,7 +394,7 @@ function Evaluation() {
                     "
                   </h5>
                 </div>
-                <div className="d-flex justify-content-center mt-2">
+                <div className="d-flex justify-content-center mt-5">
                   <h5 className="Evolution_text">
                     Bellow,you can see{" "}
                     <span className="gal">The Evolution</span>, a visual that
@@ -407,6 +408,7 @@ function Evaluation() {
                 title="EVOLUTION EARNING"
                 text="50% Of All Game Profit Will Be Redistributed Mooning Monkeyes NFT Holders"
                 text2="The Image Below Show You The Benefits OF Evolving Your Mooning Monkeys:"
+                padd={true}
               />
             </div>
 
