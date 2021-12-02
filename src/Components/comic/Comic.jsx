@@ -17,7 +17,7 @@ const Comic = () => {
   return (
     <>
       <div className="comic__container">
-        {/* {comicModal && <ComicModal onClose={() => setComicModal(false)} />} */}
+        {comicModal && <ComicModal onClose={() => setComicModal(false)} />}
         <div className="comic_section">
           <h2 className="heading_style">ONE COMIC,</h2>
           <h2 className="heading_style">ONE EPIC SPACE ODISSEY</h2>
