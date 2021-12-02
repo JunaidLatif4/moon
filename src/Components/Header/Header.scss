@@ -54,6 +54,7 @@
         }
       }
     }
+
     .img_box {
       position: relative;
       display: flex;
@@ -70,6 +71,7 @@
       .social_box {
         position: absolute;
         top: 95px;
+        left: -23px;
         display: flex;
         gap: 0.4rem;
         img {
@@ -80,6 +82,10 @@
 
     @media only screen and (max-width: 1200px) {
       width: 95%;
+
+      nav {
+        gap: 1.5rem;
+      }
     }
     @media only screen and (max-width: 1050px) {
       nav {
