@@ -379,6 +379,12 @@ function Evaluation() {
                             </div>
                         </div> */}
 
+            <div className="new-text-add">
+              Make sure to fight to get the most rare Mooning Monkeys as the
+              traits rarity level of your evolved NFT’s will be matched with
+              thos efrom your previous evolution stage
+            </div>
+
             <div className="tree_container">
               <div className="container  evolution_container">
                 <div className="d-flex justify-content-center">

@@ -51,20 +51,20 @@ const ProfitCalculator = () => {
       {
         label: "Rewards",
         data: total[0],
-        borderColor: "rgb(255, 99, 132)",
-        backgroundColor: "rgba(255, 99, 132, 0.5)",
+        borderColor: "rgb(94,0,194)",
+        backgroundColor: "rgb(94,0,194)",
       },
       {
         label: "bonus",
         data: total[1],
-        borderColor: "rgb(53, 162, 235)",
-        backgroundColor: "rgba(53, 162, 235, 0.5)",
+        borderColor: "rgb(207,0,214)",
+        backgroundColor: "rgb(207,0,214)",
       },
       {
         label: "Total",
         data: total[2],
-        borderColor: "rgb(253, 162, 235)",
-        backgroundColor: "rgba(53, 12, 235, 0.5)",
+        borderColor: "rgb(66,227,255)",
+        backgroundColor: "rgb(66,227,255)",
       },
     ],
   };
@@ -1246,6 +1246,13 @@ const ProfitCalculator = () => {
             <tbody id="levels-data1"></tbody>
           </table>
         </div>
+
+        <div className={styles.newtextAdd1}>
+          ** Projections are based on data available for a similar gaming
+          platform. A conservative estimate of 10% (of the other platform) has
+          been considered for Mooning Monkey projections.
+        </div>
+
         <div class="footer-result-sec">
           <div class="total-result-label">
             Total Earned Over <br /> 10 years:
