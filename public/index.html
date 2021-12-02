@@ -70,7 +70,7 @@
       rel="stylesheet"
     />
     <title>Mooning Monkey NFT | NFT Monkey Art | NFT Monkey Collection</title>
-    <script src="js/jquery.min.js"></script>
+
     <script
       type="text/javascript"
       src="http://code.jquery.com/jquery-latest.min.js"
@@ -87,6 +87,20 @@
           } else {
             $(".et_pb_scroll_top").fadeOut();
           }
+        });
+      });
+    </script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script> -->
+
+    <link rel="stylesheet" type="text/css" href="./css/flipbook.style.css" />
+
+    <script src="./js/flipbook.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#contain").flipBook({
+          pdfUrl: "file.pdf",
+          backgroundColor: "#000000",
         });
       });
     </script>

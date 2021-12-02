@@ -87,11 +87,15 @@ const ReleasePage = () => {
                     </Document>
                     <p>Page {pageNumber} of {numPages}</p>
                     <a href={File} style={{ color: "white" }}>Download File</a> */}
-            <iframe
+            {/* <iframe
               src={File}
               allowfullscreen
               style={{ width: "100%", height: "60vh" }}
-            ></iframe>
+            ></iframe> */}
+            <div
+              id="contain"
+              style={{ minHeight: "657px", position: "relative" }}
+            ></div>
           </div>
         </LightBox>
       )}
