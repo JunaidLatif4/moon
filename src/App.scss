@@ -1,3 +1,21 @@
+.skin-color-bg {
+  background-color: #e730eb !important;
+}
+.flipbook-color-light {
+  color: #fff !important;
+}
+.morelink {
+  background-image: url("./assests/comic/downarrow.png");
+  background-repeat: no-repeat;
+  padding: 11px;
+  font-size: 0;
+  margin: 0 auto;
+  text-align: center;
+  background-position: bottom;
+  position: relative;
+  background-color: #020119ba;
+  bottom: 40px;
+}
 .first-video {
   position: fixed;
   z-index: 100;

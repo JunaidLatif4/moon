@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import GradiantBtn from "../GradiantBtn/GradiantBtn";
 import LightBox from "../LightBox/LightBox";
 import "./ReleasePage.css";
@@ -10,6 +10,10 @@ const ReleasePage = () => {
   const [activeBox2, setActiveBox2] = useState("1");
   const [pageNumber, setPageNumber] = useState(1);
   const [numPages, setNumPages] = useState(null);
+
+  useEffect(() => {
+    document.getElementById("kk").click();
+  }, [activeBox2]);
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
   }

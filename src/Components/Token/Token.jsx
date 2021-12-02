@@ -11,6 +11,7 @@ import monkey8 from "../../assests/Token/monkey8.png";
 
 import { IoIosArrowForward } from "react-icons/io";
 import { Parallax } from "react-parallax";
+import { HashLink } from "react-router-hash-link";
 
 const Token = () => {
   window.scrollTo(0, 0);
@@ -477,19 +478,21 @@ const Token = () => {
         <div className="Token__btn">
           <Parallax
             renderLayer={(percentage) => (
-              <button
-                style={{
-                  transform: `scale(${
-                    1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
-                  }) `,
-                  transition: "all .3s linear",
-                }}
-              >
-                CHECK CALCULATORS
-                <span>
-                  <IoIosArrowForward />
-                </span>
-              </button>
+              <HashLink to="/calculator">
+                <button
+                  style={{
+                    transform: `scale(${
+                      1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                    }) `,
+                    transition: "all .3s linear",
+                  }}
+                >
+                  CHECK CALCULATORS
+                  <span>
+                    <IoIosArrowForward />
+                  </span>
+                </button>
+              </HashLink>
             )}
           ></Parallax>
         </div>
