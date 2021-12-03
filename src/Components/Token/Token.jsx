@@ -24,7 +24,7 @@ const Token = () => {
             <span>TAK token</span> is at the center of the{" "}
             <span>Mooning Monkey ecosystem</span> whether you are looking to
             Yield, evolve your NFT, get additional staking rewards, extra
-            cashback or winning bonuses while playing playing the{" "}
+            cashback or winning bonuses while playing the{" "}
             <span>Mooning Monkey Crash game</span>.
           </p>
         </div>
@@ -35,7 +35,7 @@ const Token = () => {
               <div
                 style={{
                   transform: `scale(${
-                    1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                    1 * (percentage + 0.5) > 1 ? 1 : 1 * (percentage + 0.5)
                   }) `,
                   transition: "all .3s linear",
                 }}
@@ -165,7 +165,7 @@ const Token = () => {
                 <div
                   style={{
                     transform: `scale(${
-                      1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                      1 * (percentage + 0.4) > 1 ? 1 : 1 * (percentage + 0.4)
                     }) `,
                     transition: "all .3s linear",
                   }}
@@ -443,7 +443,7 @@ const Token = () => {
                 <div
                   style={{
                     transform: `scale(${
-                      1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                      1 * (percentage + 0.4) > 1 ? 1 : 1 * (percentage + 0.4)
                     }) `,
                     transition: "all .3s linear",
                   }}
@@ -455,6 +455,7 @@ const Token = () => {
           </div>
         </div>
       </div>
+
       <div className="tok__sec10">
         <div className="para1">
           In our game, whether they win or lose,<span>4% </span> out of the
@@ -480,7 +481,7 @@ const Token = () => {
               <button
                 style={{
                   transform: `scale(${
-                    1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
+                    1 * (percentage + 0.4) > 1 ? 1 : 1 * (percentage + 0.4)
                   }) `,
                   transition: "all .3s linear",
                 }}
