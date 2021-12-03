@@ -55,9 +55,9 @@ const App = () => {
         <Route exact path="/comic" component={Comic} />
         <Route exact path="/Evaluation" component={Evaluation} />
         <Route exact path="/calculator" component={Calculator} />
-        {/* <Route exact path="/attributes" component={AttributePage} /> */}
+        <Route exact path="/attributes" component={AttributePage} />
 
-        <Route exact path="/attributes" component={Attributes} />
+        {/* <Route exact path="/attributes" component={Attributes} /> */}
       </Switch>
       {/* <div
         class="flip-book-container"
