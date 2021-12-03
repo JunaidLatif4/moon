@@ -31,8 +31,9 @@
       line-height: 5rem;
       word-spacing: 1rem;
     }
+
     .detail {
-      width: 1350px;
+      max-width: 1350px;
       margin: 0 auto;
       text-align: center;
       font-size: 2rem;
@@ -43,8 +44,9 @@
         color: #f831ec;
       }
     }
+
     .btn_box {
-      width: 1300px;
+      max-width: 1100px;
       margin: 0 auto;
       display: flex;
       gap: 1rem;
@@ -90,96 +92,70 @@
       }
     }
 
-    @media only screen and (max-width: 1660px) {
+    @media only screen and (max-width: 1699px) {
       padding-top: 15rem;
-      // padding-bottom: 1rem;
+
       .heading {
-        font-size: 3rem;
-        line-height: 3rem;
+        font-size: 67px;
+        line-height: 67px;
       }
       .detail {
-        font-size: 1.5rem;
+        font-size: 24px;
+        line-height: 30px;
+        max-width: 1100px;
+      }
+      .btn_box {
         width: 1100px;
-      }
-      .btn_box {
-        width: 1150px;
         button {
-          font-size: 1.2rem;
+          font-size: 20px;
+          line-height: 30px;
         }
       }
     }
-    @media only screen and (max-width: 1150px) {
+
+    @media only screen and (max-width: 1200px) {
+      padding: 15rem 40px 10rem;
       gap: 1rem;
-      .heading {
-        font-size: 2.7rem;
-        line-height: 3rem;
-      }
+
       .detail {
-        font-size: 1.3rem;
-        width: -webkit-fill-available;
-        padding: 0 2rem;
+        max-width: 95%;
       }
+
       .btn_box {
-        width: -webkit-fill-available;
-        button {
-          font-size: 1rem;
-        }
-      }
-    }
-    @media only screen and (max-width: 900px) {
-      padding-top: 10rem;
-      gap: 1rem;
-      .heading {
-        font-size: 2.5rem;
-        line-height: 2.5rem;
-        word-spacing: normal;
-      }
-      .detail {
-        font-size: 1.2rem;
-        padding: 0 2rem;
-      }
-      .btn_box {
+        max-width: 95%;
         flex-direction: column;
-        padding: 2rem;
+
         button {
           width: 100%;
-          font-size: 1.5rem;
+          margin: 10px auto 0;
         }
       }
     }
-    @media only screen and (max-width: 700px) {
-      padding-top: 10rem;
+
+    @media only screen and (max-width: 991px) {
+      padding: 15rem 0px;
+      gap: 1rem;
+
       .heading {
-        font-size: 2rem;
-        line-height: 2rem;
+        font-size: 40px;
+        line-height: 40px;
       }
+
       .detail {
-        font-size: 1rem;
-        line-height: 1.5rem;
+        max-width: 95%;
+        font-size: 24px;
+        line-height: 30px;
       }
+
       .btn_box {
+        max-width: 95%;
         flex-direction: column;
-        padding: 2rem;
+
         button {
-          font-size: 1.1rem;
-        }
-      }
-    }
-    @media only screen and (max-width: 550px) {
-      .heading {
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-        word-spacing: unset;
-      }
-      .detail {
-        font-size: 1rem;
-        line-height: unset;
-        padding: 0 1rem;
-      }
-      .btn_box {
-        padding: 1rem;
-        button {
-          font-size: 1rem;
+          width: 100%;
+          margin: 10px auto 0;
+          font-size: 24px;
+          line-height: 30px;
         }
       }
     }
@@ -190,7 +166,7 @@
     padding: 5rem 0;
     .box {
       background-color: black;
-      width: 85%;
+      max-width: 85%;
       margin: 0 auto;
       display: flex;
       gap: 8rem;
@@ -234,12 +210,13 @@
           }
         }
       }
-      @media only screen and (max-width: 1600px) {
-        gap: 6rem;
+
+      @media only screen and (max-width: 1699px) {
+        max-width: 1100px;
+        gap: 3rem;
         .data {
           gap: 1.2rem;
           .heading {
-            // font-size: 3.2rem;
           }
           .detail {
             font-size: 24px;
@@ -247,60 +224,23 @@
           }
         }
       }
+
       @media only screen and (max-width: 1200px) {
-        gap: 4rem;
-
-        // .card {
-        //   width: 130%;
-        // }
-
-        .data {
-          gap: 1rem;
-          .heading {
-            // font-size: 3rem;
-          }
-          .detail {
-            font-size: 20px;
-            line-height: 30px;
-          }
-        }
+        max-width: 90%;
       }
-      @media only screen and (max-width: 1000px) {
+
+      @media only screen and (max-width: 991px) {
         flex-direction: column;
 
         .data {
           gap: 0.5rem;
           .heading {
-            // font-size: 2rem;
+            font-size: 40px;
+            line-height: 40px;
           }
           .detail {
             font-size: 20px;
             line-height: 30px;
-          }
-        }
-      }
-      @media only screen and (max-width: 900px) {
-        flex-direction: column;
-        .data {
-          gap: 1.5rem;
-          .heading {
-            font-size: 35px;
-            line-height: 35px;
-          }
-          .detail {
-            font-size: 20px;
-            line-height: 30px;
-          }
-        }
-      }
-      @media only screen and (max-width: 900px) {
-        .data {
-          gap: 1rem;
-          .heading {
-            font-size: 2rem;
-          }
-          .detail {
-            font-size: 1rem;
           }
         }
       }
@@ -321,7 +261,7 @@
     }
 
     .box {
-      width: 85%;
+      max-width: 85%;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -362,6 +302,7 @@
           cursor: pointer;
         }
       }
+
       .data {
         background: url(../../assests/Home/sec3back.png);
         background-repeat: no-repeat;
@@ -451,92 +392,84 @@
       }
     }
 
-    @media only screen and (max-width: 1500px) {
+    @media only screen and (max-width: 1699px) {
       .box {
+        max-width: 1100px;
+
+        .heading {
+          font-size: 40px;
+          line-height: 40px;
+        }
+
+        .detail {
+          p {
+            font-size: 22px;
+            line-height: 30px;
+            font-weight: 600;
+          }
+        }
+
         .data {
           background-size: 100%;
           font-size: 1.5rem;
           .content {
-            width: 700px;
+            font-size: 24px;
+            line-height: 30px;
+            width: 550px;
           }
           .btn_box {
             button {
-              font-size: 2rem;
+              font-size: 24px;
+              line-height: 30px;
             }
+          }
+        }
+
+        .data1 {
+          background-size: 50% !important;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 1200px) {
+      .box {
+        max-width: 90%;
+      }
+    }
+
+    @media only screen and (max-width: 991px) {
+      .box {
+        .heading {
+          font-size: 40px;
+          line-height: 40px;
+        }
+        .detail {
+          p {
+            font-size: 20px;
+            line-height: 30px;
+          }
+        }
+        .data {
+          font-size: 20px;
+          line-height: 30px;
+          .content {
+            ul {
+              font-size: 20px;
+              line-height: 30px;
+            }
+            // .sec3f {
+            //   display: block;
+            // }
           }
         }
       }
     }
-    @media only screen and (max-width: 800px) {
+
+    @media only screen and (max-width: 767px) {
       .box {
-        width: 90%;
-        .heading {
-          font-size: 1.5rem;
-        }
-        .detail {
-          flex-direction: column;
-          font-size: 1.2rem;
-          p {
-            background-color: red;
-            width: -webkit-fill-available;
-            font-weight: 600;
-            display: flex;
-            justify-content: center;
-            padding-top: 0.5rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid white;
-            text-align: center;
-            background-color: #79abfb2b;
-          }
-          .p2 {
-            background-color: #ee3bed21;
-          }
-          span {
-            display: none;
-          }
-        }
         .data {
-          margin-top: 3rem;
-          background: none;
-          font-size: 1.5rem;
           .content {
-            width: 95%;
-            ul {
-              font-size: 1.2rem;
-              margin-left: 2rem;
-            }
-          }
-          .btn_box {
-            button {
-              font-size: 1.2rem;
-              width: -webkit-fill-available;
-            }
-          }
-        }
-      }
-    }
-    @media only screen and (max-width: 800px) {
-      .box {
-        .heading {
-          font-size: 1rem;
-        }
-        .detail {
-          p {
-            font-size: 1rem;
-            padding-top: 0.3rem;
-            padding-bottom: 0.7rem;
-          }
-        }
-        .data {
-          font-size: 1.2rem;
-          .content {
-            ul {
-              font-size: 1rem;
-              margin-left: 0.5rem;
-            }
-            .sec3f {
-              display: block;
-            }
+            width: 100%;
           }
         }
       }
@@ -554,7 +487,7 @@
     font-family: "sansation";
 
     .box {
-      width: 85%;
+      max-width: 85%;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -763,29 +696,186 @@
       }
     }
 
+    @media screen and (max-width: 1699px) {
+      .box {
+        max-width: 1100px;
+        // padding: 0 40px;
+        gap: 3rem;
+
+        .heading {
+          width: 100%;
+          .title {
+            font-size: 40px;
+            line-height: 40px;
+          }
+
+          .sub-date {
+            font-size: 24px;
+            line-height: 30px !important;
+          }
+          .detail {
+            padding: 10px 0px 0;
+            font-size: 24px;
+            line-height: 30px !important;
+            font-weight: 600;
+          }
+        }
+
+        .detail1 {
+          font-weight: 600;
+        }
+
+        .data {
+          display: flex;
+          justify-content: space-between;
+          gap: 3rem;
+          width: 100%;
+          align-items: center;
+          padding: 20px;
+          box-shadow: 0px 2px 18px 0px #6923ea;
+
+          .content {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            text-align: center;
+
+            P {
+              font-size: 70px;
+              line-height: 70px;
+            }
+
+            .p1 {
+              font-size: 70px;
+              line-height: 70px;
+            }
+
+            .p2 {
+              font-size: 70px;
+              line-height: 70px;
+            }
+
+            .p3 {
+              font-size: 22px;
+              line-height: 24px !important;
+            }
+
+            .nftp__left_timer {
+              width: 100% !important;
+            }
+          }
+
+          .wallet {
+            max-width: 550px;
+            padding: 2rem;
+
+            gap: 2rem;
+
+            .title {
+              font-family: "nurom";
+              color: #f831ec;
+              font-size: 34px;
+              line-height: 34px;
+            }
+            .detail {
+              font-size: 22px;
+              line-height: 24px;
+              margin-top: -1rem;
+            }
+
+            .profile {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              img {
+                width: 100px;
+              }
+              .price {
+                .p1 {
+                  text-align: right;
+
+                  font-size: 1.05rem;
+                }
+                .p2 {
+                  text-align: right;
+                  font-size: 1.3rem;
+                  font-family: "nurom";
+                  span {
+                    color: #f831ec;
+                  }
+                }
+                .p3 {
+                  text-align: right;
+
+                  font-size: 0.7rem;
+                  text-align: right;
+                }
+              }
+            }
+
+            button {
+              margin-top: 1rem;
+            }
+          }
+        }
+      }
+    }
+
     @media only screen and (max-width: 1200px) {
       .box {
         width: 90%;
+
+        .data {
+          max-width: 100%;
+
+          .content {
+            P {
+              font-size: 50px;
+              line-height: 50px;
+            }
+
+            .p1 {
+              font-size: 50px;
+              line-height: 50px;
+            }
+
+            .p2 {
+              font-size: 50px;
+              line-height: 50px;
+            }
+
+            .p3 {
+              font-size: 20px;
+              line-height: 30px !important;
+            }
+
+            .nftp__left_timer {
+              width: 100% !important;
+            }
+          }
+        }
         .data {
           width: 100%;
 
-          .content {
-            font-size: 3rem;
-          }
           .wallet {
             max-width: 500px;
           }
         }
       }
     }
-    @media only screen and (max-width: 1024px) {
+
+    @media only screen and (max-width: 991px) {
       .box {
         .data {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+
           .content {
-            width: 100%;
+            width: 90%;
             font-size: 3rem;
             gap: 2rem;
             * {
@@ -793,13 +883,27 @@
             }
           }
           .wallet {
-            max-width: 550px;
+            max-width: 100%;
           }
         }
       }
     }
-    @media only screen and (max-width: 650px) {
+
+    @media only screen and (max-width: 767px) {
       .box {
+        .heading {
+          width: 100%;
+
+          .sub-date {
+            font-size: 20px;
+            line-height: 30px !important;
+          }
+          .detail {
+            font-size: 20px;
+            line-height: 30px !important;
+          }
+        }
+
         .data {
           flex-direction: column;
           justify-content: center;
@@ -812,8 +916,33 @@
               text-align: center;
             }
           }
+
+          .content {
+            gap: 2rem;
+
+            P {
+              font-size: 40px;
+              line-height: 40px !important;
+            }
+
+            .p1 {
+              font-size: 40px;
+              line-height: 40px !important;
+            }
+
+            .p2 {
+              font-size: 40px;
+              line-height: 40px !important;
+            }
+
+            .p3 {
+              font-size: 20px;
+              line-height: 30px !important;
+            }
+          }
+
           .wallet {
-            max-width: 550px;
+            // max-width: 550px;
 
             .title {
               font-size: 1.5rem;
@@ -852,6 +981,7 @@
         }
       }
     }
+
     @media only screen and (max-width: 450px) {
       .box {
         .data {
@@ -923,7 +1053,7 @@
     font-family: "sansation";
 
     .box {
-      width: 85%;
+      max-width: 85%;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -982,6 +1112,12 @@
         }
       }
     }
+
+    @media only screen and (max-width: 1699px) {
+      .box {
+        // max-width: 1100px;
+      }
+    }
     @media only screen and (max-width: 900px) {
       .box {
         width: 90%;
@@ -1015,6 +1151,7 @@
     }
   }
 }
+
 .detail1 {
   display: flex;
   grid-gap: 1.5rem;

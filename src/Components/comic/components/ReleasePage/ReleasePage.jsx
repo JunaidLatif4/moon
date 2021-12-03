@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import GradiantBtn from "../GradiantBtn/GradiantBtn";
 import LightBox from "../LightBox/LightBox";
 import "./ReleasePage.css";
@@ -10,6 +10,10 @@ const ReleasePage = () => {
   const [activeBox2, setActiveBox2] = useState("1");
   const [pageNumber, setPageNumber] = useState(1);
   const [numPages, setNumPages] = useState(null);
+
+  useEffect(() => {
+    document.getElementById("kk").click();
+  }, [activeBox2]);
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
   }
@@ -87,11 +91,15 @@ const ReleasePage = () => {
                     </Document>
                     <p>Page {pageNumber} of {numPages}</p>
                     <a href={File} style={{ color: "white" }}>Download File</a> */}
-            <iframe
+            {/* <iframe
               src={File}
               allowfullscreen
               style={{ width: "100%", height: "60vh" }}
-            ></iframe>
+            ></iframe> */}
+            <div
+              id="contain"
+              style={{ minHeight: "657px", position: "relative" }}
+            ></div>
           </div>
         </LightBox>
       )}

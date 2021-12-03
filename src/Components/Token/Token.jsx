@@ -11,6 +11,7 @@ import monkey8 from "../../assests/Token/monkey8.png";
 
 import { IoIosArrowForward } from "react-icons/io";
 import { Parallax } from "react-parallax";
+import { HashLink } from "react-router-hash-link";
 
 const Token = () => {
   window.scrollTo(0, 0);

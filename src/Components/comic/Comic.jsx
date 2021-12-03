@@ -1,4 +1,4 @@
-import React, { useState, Component } from "react";
+import React, { useState, Component, useEffect } from "react";
 import "./comic.scss";
 import part1 from "../../assests/comic/part-1.png";
 import part2 from "../../assests/comic/part2.png";
@@ -11,10 +11,15 @@ import { Parallax } from "react-parallax";
 import Modal from "@mui/material/Modal";
 import CloseIcon from "@mui/icons-material/Close";
 
+import $ from "jquery";
 const Comic = () => {
-  window.scrollTo(0, 0);
+  useEffect(() => {
+    window.scrollTo(0, 0);
 
-  const [comicModal, setComicModal] = useState(true);
+    // document.getElementById("kk").click();
+  }, []);
+
+  const [comicModal, setComicModal] = useState(false);
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -48,6 +53,7 @@ const Comic = () => {
                     1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
                   })`,
                   transition: "all .2s linear",
+                  overflow: "unset",
                 }}
               >
                 <h2 className="story_heading_style">THE STORYLINE</h2>
