@@ -136,7 +136,7 @@
       .grid {
         justify-content: space-between;
         .box {
-          width: 46%;
+          width: 44%;
 
           .img {
             .box__img {
@@ -147,7 +147,7 @@
       }
     }
 
-    @media screen and (max-width: 766px) {
+    @media screen and (max-width: 767px) {
       .grid {
         margin-top: 2rem;
         justify-content: center;
