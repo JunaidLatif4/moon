@@ -13,8 +13,8 @@ const NFTPage = () => {
   const [dropdown, setDropdown] = useState(false);
   const [activeBox1, setActiveBox1] = useState("1");
   const dropItems = ["1", "2", "3", "4", "5", "6", "7"];
-  const [currentTime, setCurrentTime] = useState(moment());
-  const targetTime = moment.utc("2021-12-16 07:00 pm");
+  const [currentTime, setCurrentTime] = useState(moment.utc());
+  const targetTime = moment.utc("2022-01-20 07:00 pm");
   const timeBetween = moment.duration(targetTime.diff(currentTime));
 
   useEffect(() => {
@@ -161,8 +161,20 @@ const NFTPage = () => {
                 <div className="nftp__left_sheading">
                   METEORIC SANSATIONS GUARANTEED!
                 </div>
-
                 <div className="nftp__left_timer">
+                  {timeBetween.months() > 0 ? (
+                    <>
+                      <div className="nftp__timer_days">
+                        <div className="nftp__timer_daystop">
+                          {timeBetween.months()}
+                        </div>
+                        <div className="nftp__timer_daysbottom">Month</div>
+                      </div>
+                      <div className="nftp__timer_days">
+                        <div className="nftp__timer_hourstop mt100">:</div>
+                      </div>
+                    </>
+                  ) : null}
                   <div className="nftp__timer_days">
                     <div className="nftp__timer_daystop">
                       {timeBetween.days()}

@@ -9,6 +9,7 @@ import "./Evaluation.scss";
 import EvolutionTree from "../calculator/evolutionTree";
 import { Parallax } from "react-parallax";
 import Table from "../calculator/table";
+import { HashLink } from "react-router-hash-link";
 
 function Evaluation() {
   useEffect(() => {
@@ -379,6 +380,12 @@ function Evaluation() {
                             </div>
                         </div> */}
 
+            <div className="new-text-add">
+              Make sure you fight to get the most rare Mooning Monkeys as the
+              traits rarity level of your evolved NFT’s will be matched with
+              those from your previous evolution stage
+            </div>
+
             <div className="tree_container">
               <div className="container  evolution_container">
                 <div className="d-flex justify-content-center">
@@ -413,14 +420,16 @@ function Evaluation() {
             </div>
 
             <div className="btn_box">
-              <button>
-                {" "}
-                check out profit calculator{" "}
-                <span>
+              <HashLink to="/calculator">
+                <button>
                   {" "}
-                  <IoIosArrowForward />{" "}
-                </span>{" "}
-              </button>
+                  check out profit calculator{" "}
+                  <span>
+                    {" "}
+                    <IoIosArrowForward />{" "}
+                  </span>{" "}
+                </button>
+              </HashLink>
             </div>
           </div>
         </section>

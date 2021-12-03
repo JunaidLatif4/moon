@@ -1,4 +1,4 @@
-import React, { useState, Component } from "react";
+import React, { useState, Component, useEffect } from "react";
 import "./comic.scss";
 import part1 from "../../assests/comic/part-1.png";
 import part2 from "../../assests/comic/part2.png";
@@ -9,15 +9,20 @@ import ReleasePage from "./components/ReleasePage/ReleasePage";
 import ComicModal from "./components/ComicModal/ComicModal";
 import { Parallax } from "react-parallax";
 
+import $ from "jquery";
 const Comic = () => {
-  window.scrollTo(0, 0);
+  useEffect(() => {
+    window.scrollTo(0, 0);
 
-  const [comicModal, setComicModal] = useState(true);
+    // document.getElementById("kk").click();
+  }, []);
+
+  const [comicModal, setComicModal] = useState(false);
 
   return (
     <>
       <div className="comic__container">
-        {/* {comicModal && <ComicModal onClose={() => setComicModal(false)} />} */}
+        {comicModal && <ComicModal onClose={() => setComicModal(false)} />}
         <div className="comic_section">
           <h2 className="heading_style">ONE COMIC,</h2>
           <h2 className="heading_style">ONE EPIC SPACE ODISSEY</h2>
@@ -43,11 +48,19 @@ const Comic = () => {
                     1 * (percentage + 0.2) > 1 ? 1 : 1 * (percentage + 0.2)
                   })`,
                   transition: "all .2s linear",
+                  overflow: "unset",
                 }}
               >
                 <h2 className="story_heading_style">THE STORYLINE</h2>
                 <div className="text-center">
-                  <button className="story_comic_button">READ STORYLINE</button>
+                  <button
+                    className="story_comic_button"
+                    onClick={() => {
+                      setComicModal(true);
+                    }}
+                  >
+                    READ STORYLINE
+                  </button>
                 </div>
               </div>
             )}

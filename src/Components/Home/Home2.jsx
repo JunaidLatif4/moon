@@ -234,7 +234,10 @@ const Home2 = () => {
         </div>
 
         <div className="sect3">
-          <div className="heading">THE MOONING MONKEY COMIC SERIE</div>
+          <div className="d-flex justify-content-end">
+            {" "}
+            <div className="heading">THE MOONING MONKEY COMIC SERIE</div>
+          </div>{" "}
           <div className="sections">
             <div className="sect3__left">
               <div className="right__paras">
@@ -376,7 +379,10 @@ const Home2 = () => {
         </div>
 
         <div className="sect3">
-          <div className="heading">INSANE SURPRISES</div>
+          <div className="d-flex justify-content-end">
+            {" "}
+            <div className="heading">INSANE SURPRISES</div>
+          </div>
           <div className="sections">
             <div className="sect3__left">
               <div className="right__paras">

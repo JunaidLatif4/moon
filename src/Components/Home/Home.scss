@@ -142,6 +142,7 @@
         flex-direction: column;
         padding: 2rem;
         button {
+          width: 100%;
           font-size: 1.5rem;
         }
       }
@@ -192,8 +193,8 @@
       width: 85%;
       margin: 0 auto;
       display: flex;
-      gap: 5rem;
-      align-items: center;
+      gap: 8rem;
+      align-items: flex-start;
 
       .card {
         position: relative;
@@ -209,6 +210,7 @@
         }
         background-color: black;
       }
+
       .data {
         color: white;
         display: flex;
@@ -216,49 +218,64 @@
         gap: 1.8rem;
 
         .heading {
-          font-size: 3.5rem;
+          font-size: 40px;
+          line-height: 40px;
           font-family: "nurom";
           background: linear-gradient(63deg, #5dc7fe 5%, #f831ec 66%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
         .detail {
-          font-size: 1.7rem;
+          font-size: 34px;
+          line-height: 50px;
+          font-family: "sansation";
           span {
             color: #f831ec;
           }
         }
       }
       @media only screen and (max-width: 1600px) {
+        gap: 6rem;
         .data {
           gap: 1.2rem;
           .heading {
-            font-size: 3.2rem;
+            // font-size: 3.2rem;
           }
           .detail {
-            font-size: 1.3rem;
+            font-size: 24px;
+            line-height: 30px;
           }
         }
       }
       @media only screen and (max-width: 1200px) {
+        gap: 4rem;
+
+        // .card {
+        //   width: 130%;
+        // }
+
         .data {
           gap: 1rem;
           .heading {
-            font-size: 3rem;
+            // font-size: 3rem;
           }
           .detail {
-            font-size: 1.1rem;
+            font-size: 20px;
+            line-height: 30px;
           }
         }
       }
       @media only screen and (max-width: 1000px) {
+        flex-direction: column;
+
         .data {
           gap: 0.5rem;
           .heading {
-            font-size: 2rem;
+            // font-size: 2rem;
           }
           .detail {
-            font-size: 0.9rem;
+            font-size: 20px;
+            line-height: 30px;
           }
         }
       }
@@ -267,10 +284,12 @@
         .data {
           gap: 1.5rem;
           .heading {
-            font-size: 3rem;
+            font-size: 35px;
+            line-height: 35px;
           }
           .detail {
-            font-size: 1.4rem;
+            font-size: 20px;
+            line-height: 30px;
           }
         }
       }
@@ -347,7 +366,7 @@
         background: url(../../assests/Home/sec3back.png);
         background-repeat: no-repeat;
         background-position: right;
-        background-size: 80%;
+        background-size: 90%;
         flex-direction: column;
         margin-top: 5rem;
         display: flex;
@@ -356,7 +375,7 @@
           display: flex;
           flex-direction: column;
           gap: 1.5rem;
-          width: 900px;
+          width: 850px;
           font-family: "sansation";
 
           .title {
@@ -422,6 +441,13 @@
             }
           }
         }
+      }
+
+      .data1 {
+        background: url(../../assests/Home/sec4front.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 45%;
       }
     }
 

@@ -167,6 +167,33 @@ tr:nth-child(even) {
   text-align: center;
 }
 
+.newtextAdd1 {
+  color: #f831ec !important;
+  /* color: white; */
+  font-size: 24px;
+  line-height: 50px;
+  max-width: 90%;
+
+  text-align: center;
+  margin: 50px auto 20px;
+}
+
+@media screen and (max-width: 1224px) {
+  .newtextAdd1 {
+    font-size: 24px;
+    line-height: 35px;
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .newtextAdd1 {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 90%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .dn {
     display: none;

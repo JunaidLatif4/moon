@@ -465,7 +465,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="data">
+            <div className={game == "1" ? "data": "data data1"}>
               <div className="content">
                 {game == "1" ? (
                   <>
@@ -663,7 +663,7 @@ const Home = () => {
                           <div className="price">
                             <div className="p1">Price per Monkey</div>
                             <div className="p2">
-                              <span> X.99 </span> SOL each
+                              <span> X </span> SOL each
                             </div>
                             <div className="p3">12,000 amount remaining</div>
                           </div>
@@ -676,7 +676,7 @@ const Home = () => {
                           <div className="p1"> Total </div>
                           <div className="p2">
                             {" "}
-                            <span> XX.9 </span> SOL{" "}
+                            <span> XX </span> SOL{" "}
                           </div>
                         </div>
                         <button>

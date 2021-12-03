@@ -209,7 +209,10 @@
     }
     .sect2__right {
       // width: 800px;
-      margin-left: 10rem;
+      margin-left: 12rem;
+      @media only screen and (max-width: "1669px") {
+        margin-left: 8rem;
+      }
       @media only screen and (max-width: "1250px") {
         margin-left: 5rem;
       }
@@ -218,12 +221,12 @@
       }
       .right__paras {
         color: white;
-        font-size: 36px;
+        font-size: 34px;
         line-height: 50px;
         margin-bottom: 5rem;
-        margin-top: 13rem;
+        margin-top: 9rem;
         @media only screen and (max-width: "1550px") {
-          font-size: 26px;
+          font-size: 24px;
           line-height: 30px;
           margin-bottom: 3rem;
         }
@@ -456,6 +459,7 @@
     }
 
     .heading {
+      width: fit-content;
       font-family: "nurom";
       font-size: 40px;
       font-weight: 600;
@@ -475,7 +479,11 @@
     }
     .sections {
       display: flex;
-      gap: 15rem;
+      gap: 13rem;
+
+      @media only screen and (max-width: "1699px") {
+        gap: 10rem;
+      }
 
       @media only screen and (max-width: "1450px") {
         gap: 5rem;
@@ -500,13 +508,13 @@
         // }
         .right__paras {
           color: white;
-          font-size: 36px;
+          font-size: 34px;
           line-height: 50px;
           margin-bottom: 5rem;
           margin-top: 5rem;
           text-align: right;
-          @media only screen and (max-width: "1550px") {
-            font-size: 34px;
+          @media only screen and (max-width: "1600px") {
+            font-size: 24px;
             line-height: 30px;
             margin-bottom: 3rem;
           }
@@ -595,7 +603,7 @@
             justify-content: center;
           }
           .left__img {
-            @media only screen and (max-width: "1550px") {
+            @media only screen and (max-width: "1600px") {
               height: 500px;
             }
             @media only screen and (max-width: "1250px") {

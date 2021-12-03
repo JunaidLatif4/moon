@@ -85,8 +85,8 @@ const StackingCalculator = () => {
       {
         label: "Rewards",
         data: total,
-        borderColor: "rgb(255, 99, 132)",
-        backgroundColor: "rgba(255, 99, 132, 0.5)",
+        borderColor: "rgb(98,10,197)",
+        backgroundColor: "rgb(98,10,197)",
       },
     ],
   };
