@@ -1197,9 +1197,11 @@
     color: #f831ec;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   .detail1 {
     flex-direction: column;
+    grid-gap: 0.5rem;
+    gap: 0.5rem;
   }
   .detail1 p {
     width: -webkit-fill-available;

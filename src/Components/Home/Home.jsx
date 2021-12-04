@@ -492,7 +492,7 @@ const Home = () => {
                 </div>
               )}
             ></Parallax>
-            <div className="detail">
+            <div className="detail1">
               {/* <p style={{ color: '#5dcbf6' }}> GAME CONCEPT </p> */}
               <p
                 onClick={() => {
