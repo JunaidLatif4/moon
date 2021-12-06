@@ -883,6 +883,7 @@
 
       .sections {
         display: flex;
+        flex-direction: column;
         gap: 5rem;
 
         .sect3__left {
@@ -902,6 +903,8 @@
         }
 
         .sect3__right {
+          display: flex;
+          justify-content: center;
           .img {
             margin-top: 2rem;
 
