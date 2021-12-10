@@ -1,0 +1,230 @@
+.homeSection1 {
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+  position: relative;
+  color: white;
+
+  .back {
+    position: absolute;
+    top: 0;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    object-fit: cover;
+    object-position: center;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .content {
+    max-width: 1690px;
+    margin: auto;
+
+    .heading {
+      max-width: 89%;
+      margin: auto;
+
+      background: linear-gradient(65deg, #5dc7fe 5%, #f831ec);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      font-family: "nurom";
+      font-size: 67px;
+      line-height: 67px;
+      font-weight: 500;
+
+      text-align: center;
+
+      margin-bottom: 2.5%;
+    }
+
+    .detail1,
+    .detail2,
+    .detail3 {
+      max-width: 80%;
+
+      font-family: "sansation";
+      text-align: center;
+      font-size: 34px;
+      line-height: 50px;
+      font-weight: 400;
+
+      margin: 0 auto 2.5%;
+
+      span {
+        color: #f831ec;
+      }
+    }
+
+    .detail2,
+    .detail3 {
+      max-width: 90%;
+    }
+  }
+
+  .btn_box {
+    max-width: 1690px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+
+      text-transform: uppercase;
+
+      font-family: "nurom";
+      font-size: 34px;
+      line-height: 50px;
+      font-weight: 500;
+
+      cursor: pointer;
+      padding: 0.7rem 1.5rem 0.3rem 1.5rem;
+      background-color: RGB(134, 60, 235);
+      border-radius: 10px;
+      border: none;
+      color: white;
+      position: relative;
+      box-shadow: 1px 2px 160px 11px #631de7;
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 30px;
+        top: 0.07rem;
+        height: -webkit-fill-available;
+        opacity: 0;
+
+        transition: all 0.5s ease-in-out;
+      }
+
+      &:hover {
+        span {
+          opacity: 1;
+          right: 2px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1700px) {
+    .content {
+      max-width: 1200px;
+      margin: auto;
+
+      .heading {
+        max-width: 89%;
+        margin: auto;
+
+        font-size: 67px;
+        line-height: 67px;
+        font-weight: 500;
+
+        margin-bottom: 2.5%;
+      }
+
+      .detail1,
+      .detail2,
+      .detail3 {
+        max-width: 80%;
+
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 500;
+
+        margin: 0 auto 2.5%;
+      }
+
+      .detail2,
+      .detail3 {
+        max-width: 90%;
+      }
+    }
+
+    .btn_box {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+
+      button {
+        font-size: 20px;
+        line-height: 34px;
+        font-weight: 500;
+        padding: 0.7rem 1.5rem 0.3rem 1.5rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .content {
+      padding: 0 30px;
+      .heading {
+        max-width: 100%;
+        margin: auto;
+        font-size: 45px;
+        line-height: 45px;
+        margin-bottom: 30px;
+      }
+
+      .detail1,
+      .detail2,
+      .detail3 {
+        max-width: 100%;
+        margin: 0 auto 30px;
+      }
+    }
+
+    .btn_box {
+      padding: 0 30px;
+
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+
+      button {
+      }
+    }
+  }
+
+  @media only screen and (max-width: 766px) {
+    padding: 12rem 0 50px;
+    .content {
+      padding: 0px;
+      max-width: 90%;
+      margin: auto;
+
+      .heading {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 30px;
+      }
+
+      .detail1,
+      .detail2,
+      .detail3 {
+        margin: 0 auto 30px;
+      }
+    }
+
+    .btn_box {
+      padding: 0px;
+      max-width: 90%;
+      margin: auto;
+      gap: 20px;
+      flex-direction: column;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

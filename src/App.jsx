@@ -10,6 +10,8 @@ import Token from "./Components/Token/Token";
 import Comic from "./Components/comic/Comic";
 import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
+import HomeNew from "./Components/Home New/Home";
+
 import Home2 from "./Components/Home/Home2";
 import Evaluation from "./Components/EvaluationLab/Evaluation";
 import Attributes from "./Components/Attributes/Attributes";
@@ -49,7 +51,9 @@ const App = () => {
         <RiArrowUpSLine />
       </span>
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/oldhome" component={Home} />
+        <Route exact path="/" component={HomeNew} />
+
         {/* <Route exact path="/home" component={Home} /> */}
         <Route exact path="/token" component={Token} />
         <Route exact path="/comic" component={Comic} />
